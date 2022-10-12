@@ -12,19 +12,21 @@ type Service interface{
 }
 
 const SPECIFIC_LCK_VIDEO_ID = "jxr_NONF74k"
+const PART_OPTION ="snippet"
 
 type ServiceWithVideoId struct {
 	key string
 	videoId string
+	part string
 }
-
+	
 func NewServiceWithVideoId(key string) *ServiceWithVideoId {
-	ins := &ServiceWithVideoId{key: key, videoId: SPECIFIC_LCK_VIDEO_ID}
+	ins := &ServiceWithVideoId{key: key, videoId: SPECIFIC_LCK_VIDEO_ID, part: PART_OPTION}
 	return ins
 }
 
 func (s *ServiceWithVideoId) GetChannelId() (string, error) {
-	url := fmt.Sprintf("https://www.googleapis.com/youtube/v3/videos?id=%s&part=%s&key=%s", s.videoId, "snippet",s.key)
+	url := fmt.Sprintf("https://www.googleapis.com/youtube/v3/videos?id=%s&part=%s&key=%s", s.videoId, s.part,s.key)
 	res ,err := http.Get(url)
 	if err != nil {
 		panic(err)
@@ -37,8 +39,8 @@ func (s *ServiceWithVideoId) GetChannelId() (string, error) {
 		panic(err)
 	}
 	for _, item := range video.Items {
-		if item.ID != "" {
-			return item.ID, nil
+		if item.Snippet.ChannelID != "" {
+			return item.Snippet.ChannelID, nil
 		}
 	}
 	return "", fmt.Errorf("ERR!")

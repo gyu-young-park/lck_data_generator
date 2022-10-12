@@ -1,0 +1,2151 @@
+{
+    "kind": "youtube#playlistListResponse",
+    "etag": "Xuz77fCCW6e03hMzReeZEhx_-0M",
+    "nextPageToken": "CDIQAA",
+    "pageInfo": {
+        "totalResults": 130,
+        "resultsPerPage": 50
+    },
+    "items": [
+        {
+            "kind": "youtube#playlist",
+            "etag": "nhC9DzZLg78CLOhdHxttwJtJnnw",
+            "id": "PLIWtfvmBcNocX8LZU2BK863cWjI-BhWYJ",
+            "snippet": {
+                "publishedAt": "2022-09-30T05:09:32Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2022 인터뷰",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/DFPvq3tm7wU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/DFPvq3tm7wU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/DFPvq3tm7wU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/DFPvq3tm7wU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/DFPvq3tm7wU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2022 인터뷰",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "32CZvomaMc0e3TNcCzQWzcGlbvo",
+            "id": "PLIWtfvmBcNofiNSnrwM03xGv8suNu-Rjb",
+            "snippet": {
+                "publishedAt": "2022-09-29T18:07:22Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2022 Daily Teaser",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/44qskZwAaW8/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/44qskZwAaW8/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/44qskZwAaW8/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/44qskZwAaW8/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/44qskZwAaW8/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2022 Daily Teaser",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "dVfRLC4w8XnkTQXG0hrB_egSTpg",
+            "id": "PLIWtfvmBcNof-eijolaNuAany0mz8XT4f",
+            "snippet": {
+                "publishedAt": "2022-09-20T01:29:35Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2022 데이 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/nC4ScpIuHcs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/nC4ScpIuHcs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/nC4ScpIuHcs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/nC4ScpIuHcs/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/nC4ScpIuHcs/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2022 데이 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "JRTDs7cCsqGR0WHbZ1jVvUOQaog",
+            "id": "PLIWtfvmBcNocUmABPEbPtHi2bdH7k5IjZ",
+            "snippet": {
+                "publishedAt": "2022-09-20T01:29:28Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2022 LCK 매치 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/mPtB2Rcf-wM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/mPtB2Rcf-wM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/mPtB2Rcf-wM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/mPtB2Rcf-wM/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/mPtB2Rcf-wM/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2022 LCK 매치 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "W1-1hsafG7B0dasQIZldsF58H3s",
+            "id": "PLIWtfvmBcNodwk1L0fBra0s2fAlPeHIhe",
+            "snippet": {
+                "publishedAt": "2022-09-20T01:29:19Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2022 LCK 게임 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2022 LCK 게임 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "kbjEa1zft-YnR1eAcq37fSPa9q0",
+            "id": "PLIWtfvmBcNocJTPrtSVrKlUYxe_5h1Hga",
+            "snippet": {
+                "publishedAt": "2022-09-20T01:29:09Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2022 매드무비",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/In4xGTTtHNI/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/In4xGTTtHNI/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/In4xGTTtHNI/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/In4xGTTtHNI/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/In4xGTTtHNI/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2022 매드무비",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "hp5sCXytuDiciWWS9jaZq1fq2Ss",
+            "id": "PLIWtfvmBcNocJMIh2P0Bg0b_3EaQClN7H",
+            "snippet": {
+                "publishedAt": "2022-09-08T02:29:39Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2022",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/jxr_NONF74k/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/jxr_NONF74k/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/jxr_NONF74k/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/jxr_NONF74k/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/jxr_NONF74k/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2022",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "fReGmbwnFbAl0lHQENBJqa36z1U",
+            "id": "PLIWtfvmBcNofjjjRDB8sWXr4W8Ecz50Um",
+            "snippet": {
+                "publishedAt": "2022-09-01T09:12:46Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 LCK 대표 선발전 인터뷰",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/e2R2UmbpPr8/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/e2R2UmbpPr8/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/e2R2UmbpPr8/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/e2R2UmbpPr8/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/e2R2UmbpPr8/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 LCK 대표 선발전 인터뷰",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "G87egIoObMSlE0-KU2KCh-hFk8g",
+            "id": "PLIWtfvmBcNoeZ6EL81B1rvEFFKgkdzGRK",
+            "snippet": {
+                "publishedAt": "2022-09-01T09:12:40Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 LCK 대표 선발전 매치 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/MYa9t2SLrqg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/MYa9t2SLrqg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/MYa9t2SLrqg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/MYa9t2SLrqg/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/MYa9t2SLrqg/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 LCK 대표 선발전 매치 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "Hu146X6g4WrgQ7QGa6gJqh5izLI",
+            "id": "PLIWtfvmBcNocvpwtOMOdOaFaiwdm7GqR9",
+            "snippet": {
+                "publishedAt": "2022-09-01T09:12:13Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 LCK 대표 선발전 게임 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/qCimh7DF9fc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/qCimh7DF9fc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/qCimh7DF9fc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/qCimh7DF9fc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/qCimh7DF9fc/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 LCK 대표 선발전 게임 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "dXyHCstdhYL8nTc4H8rbj2w2dZM",
+            "id": "PLIWtfvmBcNocdRB-lpe8WRUXWtlj06fx2",
+            "snippet": {
+                "publishedAt": "2022-07-03T08:18:15Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "스트릿 롤 파이터 [스롤파]",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/JLUvE2T7_3c/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/JLUvE2T7_3c/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/JLUvE2T7_3c/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/JLUvE2T7_3c/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/JLUvE2T7_3c/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "스트릿 롤 파이터 [스롤파]",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "YQ6gHX52YCMseNarlzs3og0PreI",
+            "id": "PLIWtfvmBcNofchgQOUHfrsn4MScIGvZQ3",
+            "snippet": {
+                "publishedAt": "2022-06-30T13:26:41Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "LCK 루키들의 모든 것 [루키즈 온 더 리프트]",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Ik4MBHJinQA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Ik4MBHJinQA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Ik4MBHJinQA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/Ik4MBHJinQA/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/Ik4MBHJinQA/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "LCK 루키들의 모든 것 [루키즈 온 더 리프트]",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "YqsCoAEidhEtsQahgR2BJtyeDMo",
+            "id": "PLIWtfvmBcNof4mxP9VnkRVFYMehN4zvvr",
+            "snippet": {
+                "publishedAt": "2022-06-17T13:47:57Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "모든 궁금증을 집도한다 [혓바닥터스]",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/_cl_Ysbf8rc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/_cl_Ysbf8rc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/_cl_Ysbf8rc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/_cl_Ysbf8rc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/_cl_Ysbf8rc/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "모든 궁금증을 집도한다 [혓바닥터스]",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "cjqNEcNysJcCHFA329u40KAY7Ko",
+            "id": "PLIWtfvmBcNoeNzX6XGa0NaSZAUpeEEw1g",
+            "snippet": {
+                "publishedAt": "2022-06-08T05:36:12Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 LCK 서머 스플릿 인터뷰",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/VenCLEXYzAo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/VenCLEXYzAo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/VenCLEXYzAo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/VenCLEXYzAo/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/VenCLEXYzAo/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 LCK 서머 스플릿 인터뷰",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "dgl0pc5X3sSYvDpLNWpptSuFnEY",
+            "id": "PLIWtfvmBcNoeyY9Jb6gIXwl2OdoH2R_FI",
+            "snippet": {
+                "publishedAt": "2022-06-08T05:36:06Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 LCK 서머 스플릿 매치 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/-qiXm42omCY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/-qiXm42omCY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/-qiXm42omCY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/-qiXm42omCY/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/-qiXm42omCY/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 LCK 서머 스플릿 매치 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "UMgGh9TsCgZBDMZdF1zuAtJob_c",
+            "id": "PLIWtfvmBcNofxeicrPRbRcPyi8EO1E8es",
+            "snippet": {
+                "publishedAt": "2022-06-08T05:35:57Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 LCK 서머 스플릿 게임 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Fog3TR8Xk1o/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Fog3TR8Xk1o/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Fog3TR8Xk1o/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/Fog3TR8Xk1o/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/Fog3TR8Xk1o/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 LCK 서머 스플릿 게임 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "fsqPcF-ghKJwpBgUulHWfQ2yJQ8",
+            "id": "PLIWtfvmBcNoeWcwCiMxDdt79YpWcgMs6J",
+            "snippet": {
+                "publishedAt": "2022-06-07T07:52:01Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 LCK 서머 스플릿 Special Features",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/RDscVniKHMo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/RDscVniKHMo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/RDscVniKHMo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/RDscVniKHMo/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/RDscVniKHMo/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 LCK 서머 스플릿 Special Features",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "vDVEeQ1o6rIvXkLteAfK1e43nUw",
+            "id": "PLIWtfvmBcNocASvkcNV71vuaWgNY9vAQb",
+            "snippet": {
+                "publishedAt": "2022-05-10T07:46:19Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 MSI Daily Tease",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/u3rentJLIhI/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/u3rentJLIhI/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/u3rentJLIhI/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/u3rentJLIhI/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/u3rentJLIhI/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 MSI Daily Tease",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "z7IUoYpP2uZpc4u3OxVUgNPwU0M",
+            "id": "PLIWtfvmBcNoe1Y9qvi0hjc9Zi0gpqiqad",
+            "snippet": {
+                "publishedAt": "2022-05-09T02:21:14Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 MSI Shorts",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/QUV2jpWyY0I/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/QUV2jpWyY0I/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/QUV2jpWyY0I/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/QUV2jpWyY0I/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/QUV2jpWyY0I/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 MSI Shorts",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "F5kzlY2sI6gTMl86r6roMrCcYdw",
+            "id": "PLIWtfvmBcNoekZsWcb3RqajjZZ5urxFk0",
+            "snippet": {
+                "publishedAt": "2022-05-09T02:20:46Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 MSI LCK 게임 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/WG9YTLIaIfQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/WG9YTLIaIfQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/WG9YTLIaIfQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/WG9YTLIaIfQ/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/WG9YTLIaIfQ/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 MSI LCK 게임 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "JxeW_WcJftiO7io-aHpJWl9KpT4",
+            "id": "PLIWtfvmBcNodkaUzFsVI0s-VQReDzIHGU",
+            "snippet": {
+                "publishedAt": "2022-05-09T02:20:38Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 MSI LCK 매치 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/7XQPMgBqjl0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/7XQPMgBqjl0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/7XQPMgBqjl0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/7XQPMgBqjl0/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/7XQPMgBqjl0/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 MSI LCK 매치 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "HsJnLfl1Y4wIphx_D8fAK3aApso",
+            "id": "PLIWtfvmBcNof1AeS4Try16rWEwXwO01t2",
+            "snippet": {
+                "publishedAt": "2022-05-09T02:19:37Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 MSI 데일리 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/7XQPMgBqjl0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/7XQPMgBqjl0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/7XQPMgBqjl0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/7XQPMgBqjl0/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/7XQPMgBqjl0/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 MSI 데일리 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "MV4_prDaOslvO9cg_aRli_5ivKc",
+            "id": "PLIWtfvmBcNoebiHZzGZ3JtZsHj50VwRvs",
+            "snippet": {
+                "publishedAt": "2022-05-09T02:18:43Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 MSI 매드무비",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/TkrirlhxKvk/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/TkrirlhxKvk/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/TkrirlhxKvk/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/TkrirlhxKvk/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/TkrirlhxKvk/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 MSI 매드무비",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "BOOHZ4TsLIStjoyRF2MiFTVyUSU",
+            "id": "PLIWtfvmBcNodVEBm9rsQU_Dut02hmzzGr",
+            "snippet": {
+                "publishedAt": "2022-04-27T09:56:03Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 MSI Special Features",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/vmHRhKGbYgM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/vmHRhKGbYgM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/vmHRhKGbYgM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/vmHRhKGbYgM/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/vmHRhKGbYgM/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 MSI Special Features",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "aJprOWe_YwW9105NHPJXIzMk8Q0",
+            "id": "PLIWtfvmBcNof1DB9k_sSS8EKgeD-bzrxc",
+            "snippet": {
+                "publishedAt": "2022-01-23T15:45:43Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "LCK 10주년 [베스트 모먼트]",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/3x9iovEqGZU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/3x9iovEqGZU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/3x9iovEqGZU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/3x9iovEqGZU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/3x9iovEqGZU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "LCK 10주년 [베스트 모먼트]",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "r_T72bf60PI6qOeM3mjyI7No77g",
+            "id": "PLIWtfvmBcNoc8ChYthLyBT5EE3NlCwrMK",
+            "snippet": {
+                "publishedAt": "2022-01-21T07:35:12Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "LCK 라이브 토크쇼 [롤리나잇]",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/j1i3PsGLbgo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/j1i3PsGLbgo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/j1i3PsGLbgo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/j1i3PsGLbgo/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/j1i3PsGLbgo/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "LCK 라이브 토크쇼 [롤리나잇]",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "90ohv0Npt8NKSujrl_lQ5X5OJqE",
+            "id": "PLIWtfvmBcNoeslJcIiA6YpzwNUvZl6nHI",
+            "snippet": {
+                "publishedAt": "2022-01-19T10:27:37Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "LCK로 배우는 영어 [레알 클래스]",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/QG7-r9nH4DA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/QG7-r9nH4DA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/QG7-r9nH4DA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/QG7-r9nH4DA/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/QG7-r9nH4DA/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "LCK로 배우는 영어 [레알 클래스]",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "_m1J-2yY28nkTaIGzWNxFgZzNkM",
+            "id": "PLIWtfvmBcNodvFsrtDn09-UgDE8EEWoZi",
+            "snippet": {
+                "publishedAt": "2022-01-13T14:47:18Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "LCK 버라이어티 [핵가족]",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/G4sBZ8kuwAc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/G4sBZ8kuwAc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/G4sBZ8kuwAc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/G4sBZ8kuwAc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/G4sBZ8kuwAc/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "LCK 버라이어티 [핵가족]",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "7sSyVNrNDptRVTQSRB_3vWWL38c",
+            "id": "PLIWtfvmBcNoe_U1E6AYm8aeDzqqxQzjvH",
+            "snippet": {
+                "publishedAt": "2022-01-12T14:13:50Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "LCK 하이라이트 쇼츠",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/JIdgQSaj0zA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/JIdgQSaj0zA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/JIdgQSaj0zA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/JIdgQSaj0zA/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/JIdgQSaj0zA/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "LCK 하이라이트 쇼츠",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "3naPcdJFmfVDR-v5GH05Kc_QvM8",
+            "id": "PLIWtfvmBcNod_WUeMhbC5oXpbFbGwHise",
+            "snippet": {
+                "publishedAt": "2022-01-11T04:08:15Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 LCK 스프링 인터뷰",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/24KfvN6eiPI/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/24KfvN6eiPI/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/24KfvN6eiPI/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/24KfvN6eiPI/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/24KfvN6eiPI/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 LCK 스프링 인터뷰",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "-OAhUYAOW7DDrFylv2RiNL86fKQ",
+            "id": "PLIWtfvmBcNofglxnpU6zLjotOMab1ZGRx",
+            "snippet": {
+                "publishedAt": "2022-01-11T04:07:54Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 LCK 스프링 매치 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Jx7iqee8GtA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Jx7iqee8GtA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Jx7iqee8GtA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/Jx7iqee8GtA/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/Jx7iqee8GtA/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 LCK 스프링 매치 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "VJJPY94EaYjg4QAHrpbOQSxzIi8",
+            "id": "PLIWtfvmBcNof3rJz5KkphWxv5ggiqSwUg",
+            "snippet": {
+                "publishedAt": "2022-01-11T04:07:33Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 LCK 스프링 게임 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/uucpupFp_fY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/uucpupFp_fY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/uucpupFp_fY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/uucpupFp_fY/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/uucpupFp_fY/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 LCK 스프링 게임 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "NVdMv6nswUQOxCHCEqyKInSZrdo",
+            "id": "PLIWtfvmBcNoftwT58uM_LF2Gg6syn36Ot",
+            "snippet": {
+                "publishedAt": "2022-01-10T00:47:50Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "LCK Event",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/t98cTfdfuNU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/t98cTfdfuNU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/t98cTfdfuNU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/t98cTfdfuNU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/t98cTfdfuNU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "LCK Event",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "8-Zwt0OxT3Fk9tkb-KhDeWpilqc",
+            "id": "PLIWtfvmBcNoeMr0HC_DnDofY5-oOaiyEO",
+            "snippet": {
+                "publishedAt": "2022-01-09T09:00:34Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2022 LCK Spring Special Features",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/0zfBfaY-lRw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/0zfBfaY-lRw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/0zfBfaY-lRw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/0zfBfaY-lRw/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/0zfBfaY-lRw/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2022 LCK Spring Special Features",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "4lEoN6cKsbwxwtDEqi_A5NjOJU8",
+            "id": "PLIWtfvmBcNofStzL9Kajbt1SEa8HVwmll",
+            "snippet": {
+                "publishedAt": "2021-11-25T05:37:23Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "롤 더 넥스트 2021 FULL VOD",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/0fBD6jMzl2g/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/0fBD6jMzl2g/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/0fBD6jMzl2g/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/0fBD6jMzl2g/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/0fBD6jMzl2g/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "롤 더 넥스트 2021 FULL VOD",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "qR88VOmz8mJipTVEbauPsQC1Jeg",
+            "id": "PLIWtfvmBcNoetpRMD00OVDDM9sbpBbSmi",
+            "snippet": {
+                "publishedAt": "2021-11-05T08:12:41Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "롤 더 넥스트 2021",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/YAbzAPEP9Y0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/YAbzAPEP9Y0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/YAbzAPEP9Y0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/YAbzAPEP9Y0/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/YAbzAPEP9Y0/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "롤 더 넥스트 2021",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "UeR3BeFczYGKLNptY_0DheBr8-8",
+            "id": "PLIWtfvmBcNodJdwPz7hOP3lVKPZJQZINk",
+            "snippet": {
+                "publishedAt": "2021-10-06T12:21:24Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2021 Daily Tease",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/YVzI_FEiIus/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/YVzI_FEiIus/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/YVzI_FEiIus/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/YVzI_FEiIus/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/YVzI_FEiIus/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2021 Daily Tease",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "nLnLWJEtkepiAv4N3bNHmmk7O7w",
+            "id": "PLIWtfvmBcNofrR0AZnblpsqwPC-_czPVh",
+            "snippet": {
+                "publishedAt": "2021-10-06T02:15:28Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2021 LCK Shorts",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/yCGtTT34z4U/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/yCGtTT34z4U/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/yCGtTT34z4U/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/yCGtTT34z4U/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/yCGtTT34z4U/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2021 LCK Shorts",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "pTMXi7gILEkCMVN0Cg-qz5-RxU8",
+            "id": "PLIWtfvmBcNoe_pKodhtCVJNraOwwhciEK",
+            "snippet": {
+                "publishedAt": "2021-10-05T10:34:55Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "LoL Esports",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/3eo1RwXVJNI/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/3eo1RwXVJNI/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/3eo1RwXVJNI/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/3eo1RwXVJNI/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/3eo1RwXVJNI/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "LoL Esports",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "ATA2EdBj3HBXzfLqC7aFZPMx8cc",
+            "id": "PLIWtfvmBcNoerHgYH_feC2Ae3-DK0ADpw",
+            "snippet": {
+                "publishedAt": "2021-10-05T10:25:52Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2021 매드무비",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/X_3Sk6w-eI0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/X_3Sk6w-eI0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/X_3Sk6w-eI0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/X_3Sk6w-eI0/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/X_3Sk6w-eI0/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2021 매드무비",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "b6eq34vWfBQaPZ0q6LglAC9JDhw",
+            "id": "PLIWtfvmBcNoeWYOk-jROiI6IrNEou6XgN",
+            "snippet": {
+                "publishedAt": "2021-10-05T10:25:29Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2021 LCK 게임 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/26fonRpNNxs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/26fonRpNNxs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/26fonRpNNxs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/26fonRpNNxs/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/26fonRpNNxs/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2021 LCK 게임 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "UDRkwK2_8oNJTdc4KD_kUzX7xO8",
+            "id": "PLIWtfvmBcNodOxZ2TI6NFvKAf6F6bQiFg",
+            "snippet": {
+                "publishedAt": "2021-10-05T10:25:18Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2021 LCK 매치 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ZeF9WGCnViE/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ZeF9WGCnViE/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ZeF9WGCnViE/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/ZeF9WGCnViE/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/ZeF9WGCnViE/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2021 LCK 매치 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "MXsKxjwjhm9qgnSFUKaqaVqjwfA",
+            "id": "PLIWtfvmBcNoey4gRdYLJDSVGOyvevH2nD",
+            "snippet": {
+                "publishedAt": "2021-10-05T10:25:04Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2021 데일리 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ZeF9WGCnViE/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ZeF9WGCnViE/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ZeF9WGCnViE/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/ZeF9WGCnViE/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/ZeF9WGCnViE/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2021 데일리 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "D7yUqX4SPUE1pZcPGgs3ASc6Jdk",
+            "id": "PLIWtfvmBcNof8nvRMAfg_Ad_czapSn7Mp",
+            "snippet": {
+                "publishedAt": "2021-10-05T03:01:52Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2021 LCK Match up",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/3iFn2fHcPPQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/3iFn2fHcPPQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/3iFn2fHcPPQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/3iFn2fHcPPQ/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/3iFn2fHcPPQ/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2021 LCK Match up",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "y-9DMdyJdUSJGyNJTrek670W0M8",
+            "id": "PLIWtfvmBcNoe3hhQSJZasDl3v0QeLUROT",
+            "snippet": {
+                "publishedAt": "2021-08-31T08:22:35Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2021 Worlds LCK 대표 선발전 인터뷰",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/zmWFT_xhzK4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/zmWFT_xhzK4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/zmWFT_xhzK4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/zmWFT_xhzK4/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/zmWFT_xhzK4/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2021 Worlds LCK 대표 선발전 인터뷰",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "7qQN6mHj-XFvGi7u52KgUBPtW5M",
+            "id": "PLIWtfvmBcNodRMt5IYbE0xa_eYg5JzjKm",
+            "snippet": {
+                "publishedAt": "2021-08-31T08:22:28Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2021 Worlds LCK 대표 선발전 매치 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/UHcYtEZvLyk/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/UHcYtEZvLyk/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/UHcYtEZvLyk/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/UHcYtEZvLyk/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/UHcYtEZvLyk/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2021 Worlds LCK 대표 선발전 매치 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "-JnLiTZXgcZH_dK2KODx9Au8F4U",
+            "id": "PLIWtfvmBcNoc5MSHE2ruvgWH6EQp_kiQi",
+            "snippet": {
+                "publishedAt": "2021-08-31T08:22:21Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2021 Worlds LCK 대표 선발전 게임 하이라이트",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/R0fROaTIZac/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/R0fROaTIZac/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/R0fROaTIZac/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/R0fROaTIZac/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/R0fROaTIZac/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2021 Worlds LCK 대표 선발전 게임 하이라이트",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "maI1kB5Kve1VopI3v65Ui4A-DRs",
+            "id": "PLIWtfvmBcNofbAyGZDxjuwOfvurugx9sl",
+            "snippet": {
+                "publishedAt": "2021-08-10T07:43:26Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Wild Rift eSports",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/a9jOvxYJoso/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/a9jOvxYJoso/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/a9jOvxYJoso/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/a9jOvxYJoso/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/a9jOvxYJoso/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Wild Rift eSports",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "_pxSobNO5dUPd2KCcqjbH3QeS48",
+            "id": "PLIWtfvmBcNoeYSzFzAAOmkrqxq5uca7uo",
+            "snippet": {
+                "publishedAt": "2021-06-19T08:47:08Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "Worlds 2021",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/cOqBNqtY9fs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/cOqBNqtY9fs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/cOqBNqtY9fs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/cOqBNqtY9fs/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/cOqBNqtY9fs/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "Worlds 2021",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "WZo_u6590Ooh20pXF0U8Ba8No24",
+            "id": "PLIWtfvmBcNoeIMFlgglBikGJgjmnM1tPU",
+            "snippet": {
+                "publishedAt": "2021-06-08T08:31:00Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2021 LCK 서머 인터뷰",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ChrduGJBUNg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ChrduGJBUNg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ChrduGJBUNg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/ChrduGJBUNg/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/ChrduGJBUNg/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "localized": {
+                    "title": "2021 LCK 서머 인터뷰",
+                    "description": ""
+                }
+            }
+        }
+    ]
+}

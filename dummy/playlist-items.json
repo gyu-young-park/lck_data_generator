@@ -1,0 +1,1326 @@
+{
+    "kind": "youtube#playlistItemListResponse",
+    "etag": "2QNuNEzc0QvMdHeNGMHmmkyprWE",
+    "items": [
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "8M7GTFLxnXnHFzKGraKu2GMuxRg",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy5DMkU4NTY1QUFGQTYwMDE3",
+            "snippet": {
+                "publishedAt": "2019-01-17T13:22:24Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "천라지망 그리핀 KZ vs. GRF [2019 LCK 하이라이트]",
+                "description": "천라지망 그리핀 KZ vs. GRF [2019 LCK 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Hy84-Q-U2EA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Hy84-Q-U2EA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Hy84-Q-U2EA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/Hy84-Q-U2EA/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/Hy84-Q-U2EA/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 0,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "Hy84-Q-U2EA"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "re_hrguktnaf7JEOYytd2LnlR_g",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy4yQUE2Q0JEMTk4NTM3RTZC",
+            "snippet": {
+                "publishedAt": "2019-01-17T13:21:27Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "어나더 레벨 그리핀 KZ vs. GRF [2019 LCK 하이라이트]",
+                "description": "어나더 레벨 그리핀 KZ vs. GRF [2019 LCK 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/TApP6qj-FzY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/TApP6qj-FzY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/TApP6qj-FzY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/TApP6qj-FzY/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/TApP6qj-FzY/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 1,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "TApP6qj-FzY"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "97DyWXgATltbxm6VoxIusq2S6As",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy5DQ0MyQ0Y4Mzg0M0VGOEYw",
+            "snippet": {
+                "publishedAt": "2019-01-17T13:19:46Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "그리핀 vs. 킹존 1분간의 한타, 승자는? KZ vs. GRF [2019 LCK 하이라이트]",
+                "description": "그리핀 vs. 킹존 1분간의 한타, 승자는? KZ vs. GRF [2019 LCK 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/qMP7zEWRdT0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/qMP7zEWRdT0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/qMP7zEWRdT0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/qMP7zEWRdT0/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/qMP7zEWRdT0/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 2,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "qMP7zEWRdT0"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "LtowbsklXXt7FJWJZ03YYydqG0c",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy43MTI1NDIwOTMwQjIxMzNG",
+            "snippet": {
+                "publishedAt": "2019-01-17T12:25:43Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "협곡 어디에도 안전하지 않은 킹존 KZ vs. GRF [2019 LCK 하이라이트]",
+                "description": "협곡 어디에도 안전하지 않은 킹존 KZ vs. GRF [2019 LCK 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/UABAU36yLyc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/UABAU36yLyc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/UABAU36yLyc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/UABAU36yLyc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/UABAU36yLyc/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 3,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "UABAU36yLyc"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "gAOzUlbYKeFW_bkY61JLKkTXdqw",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy5DNzE1RjZEMUZCMjA0RDBB",
+            "snippet": {
+                "publishedAt": "2019-01-17T12:24:26Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "압도적인 경기력의 그리핀KZ vs. GRF [2019 LCK 하이라이트]",
+                "description": "압도적인 경기력의 그리핀 KZ vs. GRF [2019 LCK 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/IBO65snPu6o/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/IBO65snPu6o/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/IBO65snPu6o/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/IBO65snPu6o/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/IBO65snPu6o/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 4,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "IBO65snPu6o"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "J7Cn23Lo-2R3PvLUhJIaUZH3vqQ",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy45NzUwQkI1M0UxNThBMkU0",
+            "snippet": {
+                "publishedAt": "2019-01-17T12:23:41Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "초비 아칼리 \"이 전쟁을 끝내러 왔다\" KZ vs. GRF [2019 LCK 하이라이트]",
+                "description": "초비 아칼리 \"이 전쟁을 끝내러 왔다\" KZ vs. GRF [2019 LCK 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/bNMoNCrPA-c/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/bNMoNCrPA-c/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/bNMoNCrPA-c/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/bNMoNCrPA-c/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/bNMoNCrPA-c/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 5,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "bNMoNCrPA-c"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "z1LzQFwfnPmiitLTEkcgOjuwBaw",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy4zRjM0MkVCRTg0MkYyQTM0",
+            "snippet": {
+                "publishedAt": "2019-01-17T10:44:30Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "한타는 한화생명! KT vs. HLE [2019 LCK 하이라이트]",
+                "description": "한타는 한화생명! KT vs. HLE [2019 LCK 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/eVILGJFbbFY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/eVILGJFbbFY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/eVILGJFbbFY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/eVILGJFbbFY/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/eVILGJFbbFY/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 6,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "eVILGJFbbFY"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "1Dr0xWkeXcApclTRn02aeblj_fs",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy5GM0Q3M0MzMzY5NTJFNTdE",
+            "snippet": {
+                "publishedAt": "2019-01-17T10:43:12Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "트할 사이온 교통사고 실화? ㄷㄷ KT vs. HLE [2019 LCK 하이라이트]",
+                "description": "트할 사이온 교통사고 실화? ㄷㄷ KT vs. HLE [2019 LCK 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/jpaDHJOlck4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/jpaDHJOlck4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/jpaDHJOlck4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/jpaDHJOlck4/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/jpaDHJOlck4/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 7,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "jpaDHJOlck4"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "fR0-6IvWaZX0QKseHfm4cnBODMQ",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy4yMDhBMkNBNjRDMjQxQTg1",
+            "snippet": {
+                "publishedAt": "2019-01-17T10:43:05Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "스코어 신짜오 vs 보노 리신 KT vs. HLE [2019 LCK 하이라이트]",
+                "description": "스코어 신짜오 vs 보노 리신 KT vs. HLE [2019 LCK 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/zTsCLh4lPFc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/zTsCLh4lPFc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/zTsCLh4lPFc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/zTsCLh4lPFc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/zTsCLh4lPFc/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 8,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "zTsCLh4lPFc"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "NqqUOISMUiV5fPJMQVCQ8M-qXcU",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy5ENDU4Q0M4RDExNzM1Mjcy",
+            "snippet": {
+                "publishedAt": "2019-01-17T09:47:43Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "현상금 1000골드를 획득한 비디디 조이, 근데 미니언이 너무 많다.. KT vs. HLE [2019 LCK 하이라이트]",
+                "description": "현상금 1000골드를 획득한 비디디 조이, 근데 미니언이 너무 많다.. KT vs. HLE [2019 LCK 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/wyOcRU31OJY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/wyOcRU31OJY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/wyOcRU31OJY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/wyOcRU31OJY/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/wyOcRU31OJY/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 9,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "wyOcRU31OJY"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "n5heGpnjHU0u9W6JueEY0MgDRZs",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy45RTgxNDRBMzUwRjQ0MDhC",
+            "snippet": {
+                "publishedAt": "2019-01-17T09:47:10Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "한화 3세트 가나요? KT vs. HLE [2019 LCK 하이라이트]",
+                "description": "한화 3세트 가나요? KT vs. HLE [2019 LCK 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/E-XuDNU-i_A/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/E-XuDNU-i_A/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/E-XuDNU-i_A/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/E-XuDNU-i_A/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/E-XuDNU-i_A/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 10,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "E-XuDNU-i_A"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "AlJPT73fGQ0TZE5tjKbyVldLW6w",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy4yMUQyQTQzMjRDNzMyQTMy",
+            "snippet": {
+                "publishedAt": "2019-01-17T09:46:28Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "퍼블은 KT! 한타는 HLE! 그럼 승자는? KT vs. HLE [2019 LCK 하이라이트]",
+                "description": "퍼블은 KT! 한타는 HLE! 그럼 승자는? KT vs. HLE [2019 LCK 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/VXKgNG9u5Pc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/VXKgNG9u5Pc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/VXKgNG9u5Pc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/VXKgNG9u5Pc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/VXKgNG9u5Pc/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 11,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "VXKgNG9u5Pc"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "cyKeXLqw1XAb366gUoSoYvd59iw",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy41QTY1Q0UxMTVCODczNThE",
+            "snippet": {
+                "publishedAt": "2019-01-17T08:56:03Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "상윤 이즈리얼 앞비전..? 결과는? KT vs. HLE [LCK 2019 하이라이트]",
+                "description": "상윤 이즈리얼 앞비전..? 결과는? KT vs. HLE [LCK 2019 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/931TwOj4848/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/931TwOj4848/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/931TwOj4848/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/931TwOj4848/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/931TwOj4848/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 12,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "931TwOj4848"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "_ES-WtSaPVp0KDnUO7by7LoHREY",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy5EQUE1NTFDRjcwMDg0NEMz",
+            "snippet": {
+                "publishedAt": "2019-01-17T08:37:20Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "스맵 갈리오 말 그대로 영웅출현 KT vs. HLE [LCK 2019 하이라이트]",
+                "description": "스맵 갈리오 말 그대로 영웅출현 KT vs. HLE [LCK 2019 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/H6_m2I_wXeA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/H6_m2I_wXeA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/H6_m2I_wXeA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/H6_m2I_wXeA/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/H6_m2I_wXeA/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 13,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "H6_m2I_wXeA"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "Qi4XDhGsqn-U5os8t9wOqmRCSkA",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy41Mzk2QTAxMTkzNDk4MDhF",
+            "snippet": {
+                "publishedAt": "2019-01-17T08:37:08Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "그라가스 그 자체인 스코어 KT vs. HLE [LCK 2019 하이라이트]",
+                "description": "그라가스 그 자체인 스코어 KT vs. HLE [LCK 2019 하이라이트]\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/4rhAXdbBFO4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/4rhAXdbBFO4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/4rhAXdbBFO4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/4rhAXdbBFO4/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/4rhAXdbBFO4/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 14,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "4rhAXdbBFO4"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "MPCSzY9Os4BxvBtecIySu5FRqZI",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy45ODRDNTg0QjA4NkFBNkQy",
+            "snippet": {
+                "publishedAt": "2019-01-16T13:40:46Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "이번 스프링의 루키! 담원!",
+                "description": "2019 01 16 Match 2 Game 2 DWG vs GEN\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/6MhFLSp-QXI/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/6MhFLSp-QXI/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/6MhFLSp-QXI/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/6MhFLSp-QXI/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/6MhFLSp-QXI/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 15,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "6MhFLSp-QXI"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "ve8qqJ3YvmncudIS6OR-eq1NtsA",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy5EMEEwRUY5M0RDRTU3NDJC",
+            "snippet": {
+                "publishedAt": "2019-01-16T13:15:26Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "바텀의 승리자는 누구인가",
+                "description": "2019 01 16 Match 2 Game 2 DWG vs GEN\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/_KytynB3Q54/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/_KytynB3Q54/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/_KytynB3Q54/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/_KytynB3Q54/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/_KytynB3Q54/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 16,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "_KytynB3Q54"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "dkHIUk_yMZ4CUDCp1UbcSj2jF3k",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy40NzZCMERDMjVEN0RFRThB",
+            "snippet": {
+                "publishedAt": "2019-01-16T13:15:25Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "치열한 난타전! 마지막으로 남는자는!",
+                "description": "2019 01 16 Match 2 Game 2 DWG vs GEN\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/mF2lir56yPo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/mF2lir56yPo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/mF2lir56yPo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/mF2lir56yPo/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/mF2lir56yPo/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 17,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "mF2lir56yPo"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "cpivZDk3jzFfbDLOxAx88hROz8g",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy5GNjNDRDREMDQxOThCMDQ2",
+            "snippet": {
+                "publishedAt": "2019-01-16T11:57:32Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "'압도적' canyon의 카직스",
+                "description": "2019 01 16 Match 2 Game 1 DWG vs GEN\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/-gxKnidzFgU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/-gxKnidzFgU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/-gxKnidzFgU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/-gxKnidzFgU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/-gxKnidzFgU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 18,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "-gxKnidzFgU"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "MKFSZ8oIAVfTaMSuOz2WRkLam3c",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy45NDk1REZENzhEMzU5MDQz",
+            "snippet": {
+                "publishedAt": "2019-01-16T11:57:23Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "제대로 보여준 신입생의 패기",
+                "description": "2019 01 16 Match 2 Game 1 DWG vs GEN\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/V2cjQBKAzno/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/V2cjQBKAzno/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/V2cjQBKAzno/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/V2cjQBKAzno/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/V2cjQBKAzno/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 19,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "V2cjQBKAzno"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "viwwXncVf5uhqYql5bNTmBI0G2U",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy5DQUNERDQ2NkIzRUQxNTY1",
+            "snippet": {
+                "publishedAt": "2019-01-16T11:57:06Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "'압도적' canyon의 카직스",
+                "description": "2019 01 16 Match 2 Game 1 DWG vs GEN\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/-gxKnidzFgU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/-gxKnidzFgU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/-gxKnidzFgU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/-gxKnidzFgU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/-gxKnidzFgU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 20,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "-gxKnidzFgU"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "tAkvqJl-o_lJthfwEx_z87BxoGw",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy41MjE1MkI0OTQ2QzJGNzNG",
+            "snippet": {
+                "publishedAt": "2019-01-16T11:14:43Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "친정팀이라도 자비는 없다",
+                "description": "2019 01 16 Match 1 Game 2 SKT vs JAG\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/szL97FLWc8k/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/szL97FLWc8k/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/szL97FLWc8k/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/szL97FLWc8k/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/szL97FLWc8k/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 21,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "szL97FLWc8k"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "qAvLwlU5upsiyy8UVSuZqH5a_Tc",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy4wOTA3OTZBNzVEMTUzOTMy",
+            "snippet": {
+                "publishedAt": "2019-01-16T11:14:43Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "진에어의 한타 대승! 경기는 다시 오리무중",
+                "description": "2019 01 16 Match 1 Game 2 SKT vs JAG\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/opqT0TWEDac/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/opqT0TWEDac/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/opqT0TWEDac/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/opqT0TWEDac/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/opqT0TWEDac/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 22,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "opqT0TWEDac"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "GCF9DTAtGx3412qiLuJad56iW94",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy4xMkVGQjNCMUM1N0RFNEUx",
+            "snippet": {
+                "publishedAt": "2019-01-16T11:14:43Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "갱 vs 갱",
+                "description": "2019 01 16 Match 1 Game 2 SKT vs JAG\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/jitiE7TlMaM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/jitiE7TlMaM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/jitiE7TlMaM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/jitiE7TlMaM/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/jitiE7TlMaM/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 23,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "jitiE7TlMaM"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "8KnmXDz2fKk1tOIObetsmQjUbw8",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy41MzJCQjBCNDIyRkJDN0VD",
+            "snippet": {
+                "publishedAt": "2019-01-16T11:14:43Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "탑에 갱킹은 2번 온다",
+                "description": "2019 01 16 Match 1 Game 2 SKT vs JAG\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/xZAiEEqiwVo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/xZAiEEqiwVo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/xZAiEEqiwVo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/xZAiEEqiwVo/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/xZAiEEqiwVo/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 24,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "xZAiEEqiwVo"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "I3Vdkeps7eZAJ88dJj7kqkpxtkg",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy4wMTcyMDhGQUE4NTIzM0Y5",
+            "snippet": {
+                "publishedAt": "2019-01-16T11:14:43Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "경기를 끝내는 드림팀 SKT!!!",
+                "description": "2019 01 16 Match 1 Game 1 SKT vs JAG\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/3FRxxFL1HEQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/3FRxxFL1HEQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/3FRxxFL1HEQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/3FRxxFL1HEQ/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/3FRxxFL1HEQ/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 25,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "3FRxxFL1HEQ"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "s-2mgj67BWasGUmVazMZXKvRkCE",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy4yODlGNEE0NkRGMEEzMEQy",
+            "snippet": {
+                "publishedAt": "2019-01-16T11:14:43Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "첫 경기부터 날아다니는 클리드의 리 신!!",
+                "description": "2019 01 16 Match 1 Game 1 SKT vs JAG\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/-2JatBQ0nao/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/-2JatBQ0nao/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/-2JatBQ0nao/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/-2JatBQ0nao/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/-2JatBQ0nao/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 26,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "-2JatBQ0nao"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "_rha80ZXz_atd5JDIvn8tYCOAK8",
+            "id": "UExJV3Rmdm1CY05vYzcyYXZ0ZjRLaHVhSkdHWWl2ZVFqYy41NkI0NEY2RDEwNTU3Q0M2",
+            "snippet": {
+                "publishedAt": "2019-01-16T11:14:43Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "2019 LCK 개막전 첫 킬!!!",
+                "description": "2019 01 16 Match 1 Game 1 SKT vs JAG\n\n라이브는 아래 링크에서!\n\nNaver : https://sports.news.naver.com/esports/index.nhn\n\nAfreeca TV: http://afreecatv.com/aflol\n\nFacebook : https://www.facebook.com/lckkorea\n\nTwitch : https://www.twitch.tv/lck_korea",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/3tSpGMqN7WE/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/3tSpGMqN7WE/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/3tSpGMqN7WE/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/3tSpGMqN7WE/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/3tSpGMqN7WE/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "playlistId": "PLIWtfvmBcNoc72avtf4KhuaJGGYiveQjc",
+                "position": 27,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "3tSpGMqN7WE"
+                },
+                "videoOwnerChannelTitle": "LCK",
+                "videoOwnerChannelId": "UCw1DsweY9b2AKGjV4kGJP1A"
+            }
+        }
+    ],
+    "pageInfo": {
+        "totalResults": 28,
+        "resultsPerPage": 50
+    }
+}
