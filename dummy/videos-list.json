@@ -1,0 +1,138 @@
+{
+    "kind": "youtube#videoListResponse",
+    "etag": "XCmAKlzmhy1ybK9SxbRER_uE7Ko",
+    "items": [
+        {
+            "kind": "youtube#video",
+            "etag": "HFi4S7FufvHS0B3UruBWpxh161E",
+            "id": "jxr_NONF74k",
+            "snippet": {
+                "publishedAt": "2022-10-11T06:00:23Z",
+                "channelId": "UCw1DsweY9b2AKGjV4kGJP1A",
+                "title": "LCK의 날 (feat. Faker 선수의 월즈 100전) | Today's Worlds | 2022 월드 챔피언십",
+                "description": "#LCKWIN #WeMakeLegends #Worlds2022\n\n■LIVE & LIVE VOD\n- 네이버: https://sports.news.naver.com/esports/index.nhn\n- 아프리카TV: http://bj.afreecatv.com/aflol\n- 트위치: https://www.twitch.tv/lck_korea\n- 아프리카TV (케이블TV)\n\n■ LCK 채널 구독 및 좋아요!\n- LoL e스포츠 홈페이지:  https://lolesports.com/\n- LCK 공식 페이스북:  https://www.facebook.com/officiallck\n- LCK 공식 인스타그램:  https://www.instagram.com/lckofficial/\n- LCK 공식 틱톡 : https://tiktok.com/@lck_official\n- LCK 공식 트위터 (영문):  https://twitter.com/LCK\n\n* LCK 채널의 모든 영상은 라이엇 게임즈 코리아의 에셋으로, 무단으로 위 아티클을 무단 복제, 도용하거나 상업적으로 이용하는 행위는 위 권리들에 대한 침해에 해당하여 관련 법규에 의거 처벌될 수 있음을 안내드립니다.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/jxr_NONF74k/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/jxr_NONF74k/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/jxr_NONF74k/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/jxr_NONF74k/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/jxr_NONF74k/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LCK",
+                "tags": [
+                    "LCK",
+                    "LCK Korea",
+                    "롤챔스",
+                    "티원",
+                    "에욱",
+                    "SNL",
+                    "LCK썸네일",
+                    "편집자",
+                    "스크",
+                    "T1",
+                    "SKT",
+                    "skt",
+                    "t1",
+                    "썸네일",
+                    "DK",
+                    "GEN",
+                    "DRX",
+                    "KT",
+                    "HLE",
+                    "POG",
+                    "MVP",
+                    "WORLDS",
+                    "롤드컵",
+                    "MSI",
+                    "ALLSTAR",
+                    "lck 서머",
+                    "lck 썸머",
+                    "lck 써머",
+                    "lck 스프링",
+                    "lck summer",
+                    "lck spring",
+                    "LSB",
+                    "Liiv Sandbox",
+                    "NS",
+                    "Nongshim Red force",
+                    "한화생명",
+                    "농심",
+                    "케이티",
+                    "젠지",
+                    "아프리카",
+                    "담원",
+                    "프레딧 브리온",
+                    "Fredit Brion",
+                    "BRO",
+                    "므시",
+                    "올스타",
+                    "매드무비",
+                    "위클리 코맨터리",
+                    "MIC Check",
+                    "MIC 첵",
+                    "롤분토론",
+                    "동준좌",
+                    "클템",
+                    "성캐",
+                    "위클리 매드무비",
+                    "전프시",
+                    "오프더레코드",
+                    "월드챔피언십",
+                    "단톡",
+                    "롤더넥",
+                    "마이크체크",
+                    "광동",
+                    "광동프릭스",
+                    "KDF",
+                    "Kwangdong Freecs",
+                    "베스트모먼트",
+                    "롤리나잇",
+                    "레알클래스",
+                    "성캐쇼",
+                    "LCK10주년",
+                    "2022 MSI",
+                    "2022 서머",
+                    "2022 써머",
+                    "월즈 2022",
+                    "혓바닥터스",
+                    "헬리오스",
+                    "캡틴잭",
+                    "빠른별",
+                    "샤이"
+                ],
+                "categoryId": "20",
+                "liveBroadcastContent": "none",
+                "defaultLanguage": "ko",
+                "localized": {
+                    "title": "LCK의 날 (feat. Faker 선수의 월즈 100전) | Today's Worlds | 2022 월드 챔피언십",
+                    "description": "#LCKWIN #WeMakeLegends #Worlds2022\n\n■LIVE & LIVE VOD\n- 네이버: https://sports.news.naver.com/esports/index.nhn\n- 아프리카TV: http://bj.afreecatv.com/aflol\n- 트위치: https://www.twitch.tv/lck_korea\n- 아프리카TV (케이블TV)\n\n■ LCK 채널 구독 및 좋아요!\n- LoL e스포츠 홈페이지:  https://lolesports.com/\n- LCK 공식 페이스북:  https://www.facebook.com/officiallck\n- LCK 공식 인스타그램:  https://www.instagram.com/lckofficial/\n- LCK 공식 틱톡 : https://tiktok.com/@lck_official\n- LCK 공식 트위터 (영문):  https://twitter.com/LCK\n\n* LCK 채널의 모든 영상은 라이엇 게임즈 코리아의 에셋으로, 무단으로 위 아티클을 무단 복제, 도용하거나 상업적으로 이용하는 행위는 위 권리들에 대한 침해에 해당하여 관련 법규에 의거 처벌될 수 있음을 안내드립니다."
+                },
+                "defaultAudioLanguage": "en"
+            }
+        }
+    ],
+    "pageInfo": {
+        "totalResults": 1,
+        "resultsPerPage": 1
+    }
+}
