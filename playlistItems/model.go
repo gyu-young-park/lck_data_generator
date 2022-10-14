@@ -6,16 +6,18 @@ type PlaylistItemsModel struct {
 	Kind  string `json:"kind"`
 	Etag  string `json:"etag"`
 	NextPageToken string `json:"nextPageToken"`
-	Items []struct {
-		Kind    string `json:"kind"`
-		Etag    string `json:"etag"`
-		ID      string `json:"id"`
-		Snippet VideoSnippetModel `json:"snippet"`
-	} `json:"items"`
+	Items []VideoItemModel `json:"items"`
 	PageInfo struct {
 		TotalResults   int `json:"totalResults"`
 		ResultsPerPage int `json:"resultsPerPage"`
 	} `json:"pageInfo"`
+}
+
+type VideoItemModel struct {
+	Kind    string `json:"kind"`
+	Etag    string `json:"etag"`
+	ID      string `json:"id"`
+	Snippet VideoSnippetModel `json:"snippet"`
 }
 
 type VideoSnippetModel struct {

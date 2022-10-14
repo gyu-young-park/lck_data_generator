@@ -10,8 +10,11 @@ type PlaylistModel  struct {
 		TotalResults   int `json:"totalResults"`
 		ResultsPerPage int `json:"resultsPerPage"`
 	} `json:"pageInfo"`
-	Items []struct {
-		Kind    string `json:"kind"`
+	Items []PlaylistItemModel `json:"items"`
+}
+
+type PlaylistItemModel struct{
+	Kind    string `json:"kind"`
 		Etag    string `json:"etag"`
 		ID      string `json:"id"`
 		Snippet struct {
@@ -52,5 +55,4 @@ type PlaylistModel  struct {
 				Description string `json:"description"`
 			} `json:"localized"`
 		} `json:"snippet"`
-	} `json:"items"`
 }

@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 
 	"github.com/gyu-young-park/lck_data_generator/channel"
 	"github.com/gyu-young-park/lck_data_generator/config"
@@ -25,22 +26,34 @@ func NewApp() *App {
 		panic(err)
 	}
 	app.PlayListService = playlist.NewServiceWithChannelId(app.Config.Key,channelId)
-	playlistIds, err := app.PlayListService.GetPlayListId()
+	playListItems, err := app.PlayListService.GetPlayListItems()
 	if err != nil {
 		panic(err)
 	}
 	app.PlayListItemsService = playlistitems.NewServiceWithPlayListId(app.Config.Key)
-	for _, id := range playlistIds {
-		res, err := app.PlayListItemsService.GetPlayListItems(id)
+	fmt.Println(playListItems)
+	var tempMapper map[string]string = make(map[string]string)
+	for _, playListItem := range playListItems {
+		videoItems, err := app.PlayListItemsService.GetVideoItems(playListItem.ID)
 		if err != nil {
 			panic(err)
 		}
-		fmt.Println(res)
+		fmt.Println("-----------------------", playListItem.Snippet.Title, "-----------------------")
+		for _, videoItem := range videoItems {
+			fmt.Println("VIDEO ID:",videoItem.Snippet.ResourceID.VideoID)
+			fmt.Println("PUBLISHED AT:",videoItem.Snippet.PublishedAt)
+			fmt.Println("TITLE:",videoItem.Snippet.Title)
+			splitedTitile := strings.Split(videoItem.Snippet.Title, "|")
+			last := len(splitedTitile) -1
+			tempMapper[splitedTitile[last]] = splitedTitile[last]
+			fmt.Println()
+		}
+		fmt.Println("-----------------------", playListItem.Snippet.Title, "-----------------------")
 	}
 	return app
 }
 
 func main(){
 	app := NewApp()
-	fmt.Println(app)
+	fmt.Println("end", app)
 }

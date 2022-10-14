@@ -5,25 +5,28 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+
+	"github.com/gyu-young-park/lck_data_generator/filter"
 )
 
 type Service interface{
-	GetPlayListId() ([]string, error)
+	GetPlayListItems() ([]PlaylistItemModel, error)
 }
 
 const PART_OPTION ="snippet"
 
 type ServiceWithChannelId struct {
+	highlightMatchFilter filter.Filter
 	option *QueryOption
 }
 	
 func NewServiceWithChannelId(key string, channelId string) *ServiceWithChannelId {
-	ins := &ServiceWithChannelId{NewQueryOption(key, channelId, PART_OPTION, "", 50)}
+	ins := &ServiceWithChannelId{filter.NewHighlightMatchFilter(),NewQueryOption(key, channelId, PART_OPTION, "", 50)}
 	return ins
 }
 
-func (s *ServiceWithChannelId) GetPlayListId() ([]string, error) {
-	var playlistIds []string
+func (s *ServiceWithChannelId) GetPlayListItems() ([]PlaylistItemModel, error) {
+	var playListItems []PlaylistItemModel
 	for {
 		url := fmt.Sprintf("https://www.googleapis.com/youtube/v3/playlists?channelId=%s&part=%s&key=%s&maxResults=%d&pageToken=%s", 
 						s.option.ChannelId,s.option.Part,s.option.Key,s.option.Max, s.option.Next)
@@ -40,12 +43,15 @@ func (s *ServiceWithChannelId) GetPlayListId() ([]string, error) {
 		}
 		for _, item := range playlist.Items {
 			if item.ID != "" {
-				playlistIds = append(playlistIds, item.ID)
+				if  s.highlightMatchFilter.Filtering(item.Snippet.Title) {
+					fmt.Println("playlist title:",item.Snippet.Title)
+					playListItems = append(playListItems, item)
+				}
 			}
 		}
 		s.option.Next = playlist.NextPageToken
 		if playlist.NextPageToken == "" {
-			return playlistIds, nil
+			return playListItems, nil
 		}
 	}	
 }

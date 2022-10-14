@@ -8,7 +8,7 @@ import (
 )
 
 type Service interface{
-	GetPlayListItems(playlistId string) ([]VideoSnippetModel, error)
+	GetVideoItems(playlistId string) ([]VideoItemModel, error)
 }
 
 const PART_OPTION ="snippet"
@@ -22,8 +22,8 @@ func NewServiceWithPlayListId(key string) *ServiceWithPlayListId {
 	return ins
 }
 
-func (s *ServiceWithPlayListId) GetPlayListItems(playlistId string) ([]VideoSnippetModel, error) {
-	var videos []VideoSnippetModel
+func (s *ServiceWithPlayListId) GetVideoItems(playlistId string) ([]VideoItemModel, error) {
+	var videoItemList []VideoItemModel
 	s.option.PlaylistId = playlistId
 	for {
 		url := fmt.Sprintf("https://www.googleapis.com/youtube/v3/playlistItems?playlistId=%s&key=%s&maxResults=%d&pageToken=%s&part=%s", 
@@ -41,12 +41,12 @@ func (s *ServiceWithPlayListId) GetPlayListItems(playlistId string) ([]VideoSnip
 		}
 		for _, item := range playlistItems.Items {
 			if item.Snippet.ChannelID != "" {
-				videos = append(videos, item.Snippet)
+				videoItemList = append(videoItemList, item)
 			}
 		}
 		s.option.Next = playlistItems.NextPageToken
 		if s.option.Next == "" {
-			return videos, nil
+			return videoItemList, nil
 		}
 	}	
 }
