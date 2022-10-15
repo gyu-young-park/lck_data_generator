@@ -2,21 +2,20 @@ package config
 
 const CONFIG_JSON_FILE_PATH = "./config.json"
 
-type Config struct{
-	Key string `json:"key"`
+type Config struct {
+	Key    string `json:"key"`
 	setter ConfigSetter
 }
 
-func NewConfig(setter ConfigSetter) *Config{
+func NewConfig(setter ConfigSetter) *Config {
 	configInstance := &Config{setter: setter}
 	configInstance.setUpConfig()
 	return configInstance
 }
 
-func (c *Config)setUpConfig() {
+func (c *Config) setUpConfig() {
 	err := c.setter.Set(CONFIG_JSON_FILE_PATH, c)
 	if err != nil {
 		panic(err)
 	}
 }
-

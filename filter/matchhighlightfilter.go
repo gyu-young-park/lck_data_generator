@@ -3,15 +3,14 @@ package filter
 import "strings"
 
 type HighlightMatchFilter struct {
-	
 }
 
-func NewHighlightMatchFilter() *HighlightMatchFilter{
+func NewHighlightMatchFilter() *HighlightMatchFilter {
 	highlightMatchFilter := &HighlightMatchFilter{}
 	return highlightMatchFilter
 }
 
-func (h *HighlightMatchFilter)Filtering(data interface{}) bool{
+func (h *HighlightMatchFilter) Filtering(data interface{}) bool {
 	matchName, ok := data.(string)
 	if !ok {
 		return false

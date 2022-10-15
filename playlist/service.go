@@ -9,33 +9,37 @@ import (
 	"github.com/gyu-young-park/lck_data_generator/filter"
 )
 
-type Service interface{
+type Service interface {
 	GetPlayListItems() ([]PlaylistItemModel, error)
 }
 
-const PART_OPTION ="snippet"
+const PART_OPTION = "snippet"
 
 type ServiceWithChannelId struct {
 	highlightMatchFilter filter.Filter
-	option *QueryOption
+	setHightlightFilter  filter.Filter
+	option               *QueryOption
 }
-	
+
 func NewServiceWithChannelId(key string, channelId string) *ServiceWithChannelId {
-	ins := &ServiceWithChannelId{filter.NewHighlightMatchFilter(),NewQueryOption(key, channelId, PART_OPTION, "", 50)}
+	ins := &ServiceWithChannelId{
+		filter.NewHighlightMatchFilter(),
+		filter.NewSetHightlightFilter(),
+		NewQueryOption(key, channelId, PART_OPTION, "", 50)}
 	return ins
 }
 
 func (s *ServiceWithChannelId) GetPlayListItems() ([]PlaylistItemModel, error) {
 	var playListItems []PlaylistItemModel
 	for {
-		url := fmt.Sprintf("https://www.googleapis.com/youtube/v3/playlists?channelId=%s&part=%s&key=%s&maxResults=%d&pageToken=%s", 
-						s.option.ChannelId,s.option.Part,s.option.Key,s.option.Max, s.option.Next)
-		res ,err := http.Get(url)
+		url := fmt.Sprintf("https://www.googleapis.com/youtube/v3/playlists?channelId=%s&part=%s&key=%s&maxResults=%d&pageToken=%s",
+			s.option.ChannelId, s.option.Part, s.option.Key, s.option.Max, s.option.Next)
+		res, err := http.Get(url)
 		if err != nil {
 			panic(err)
 		}
 		defer res.Body.Close()
-		data ,err := ioutil.ReadAll(res.Body)
+		data, err := ioutil.ReadAll(res.Body)
 		var playlist PlaylistModel
 		err = json.Unmarshal(data, &playlist)
 		if err != nil {
@@ -43,8 +47,8 @@ func (s *ServiceWithChannelId) GetPlayListItems() ([]PlaylistItemModel, error) {
 		}
 		for _, item := range playlist.Items {
 			if item.ID != "" {
-				if  s.highlightMatchFilter.Filtering(item.Snippet.Title) {
-					fmt.Println("playlist title:",item.Snippet.Title)
+				if s.setHightlightFilter.Filtering(item.Snippet.Title) {
+					fmt.Println("playlist title:", item.Snippet.Title)
 					playListItems = append(playListItems, item)
 				}
 			}
@@ -53,5 +57,5 @@ func (s *ServiceWithChannelId) GetPlayListItems() ([]PlaylistItemModel, error) {
 		if playlist.NextPageToken == "" {
 			return playListItems, nil
 		}
-	}	
+	}
 }
