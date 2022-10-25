@@ -48,7 +48,6 @@ func (s *ServiceWithChannelId) GetPlayListItems() ([]PlaylistItemModel, error) {
 		for _, item := range playlist.Items {
 			if item.ID != "" {
 				if s.setHightlightFilter.Filtering(item.Snippet.Title) {
-					fmt.Println("playlist title:", item.Snippet.Title)
 					playListItems = append(playListItems, item)
 				}
 			}
