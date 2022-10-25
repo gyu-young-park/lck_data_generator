@@ -30,7 +30,6 @@ func NewApp() *App {
 	return app
 }
 
-// VideoItemListMapper[ date ] = item
 func (app*App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
 	videoItemMapper := make(videoitem.VideoItemListMapper)
 	channelId, err := app.ChannelService.GetChannelId()
@@ -67,6 +66,9 @@ func main() {
 		app.crawler.SetData(k)
 		rawSetResultData := app.crawler.GetResult()
 		setResultData, _:= rawSetResultData.([]*crawler.LCKSetDataModel)
+		for _, item := range setResultData {
+			fmt.Println(item)
+		}
 		for i, item := range v {
 			fmt.Println("------------------------")
 			fmt.Println("playlist:",item.PlayList)
