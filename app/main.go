@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"regexp"
+	"strings"
 
 	"github.com/gyu-young-park/lck_data_generator/channel"
 	"github.com/gyu-young-park/lck_data_generator/config"
@@ -31,6 +33,7 @@ func NewApp() *App {
 }
 
 func (app*App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
+	r ,_ := regexp.Compile("(0[1-9]|1[0-2]).(0[1-9]|[12][0-9]|3[01])")
 	videoItemMapper := make(videoitem.VideoItemListMapper)
 	channelId, err := app.ChannelService.GetChannelId()
 	if err != nil {
@@ -48,7 +51,19 @@ func (app*App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
 			panic(err)
 		}
 		for _, videoItem := range videoItems {
-			date := videoItem.Snippet.PublishedAt.Format("2006-01-02")
+			res := string(r.Find([]byte(videoItem.Snippet.Title)))
+			if res == "" {
+				fmt.Printf("debug %s find:%v\n", videoItem.Snippet.Title,res )
+				continue
+			}
+			fmt.Println(videoItem.Snippet.Title, ": ",res)
+			monthDay := strings.Split(res, ".")
+			if len(monthDay) != 2 {
+				fmt.Printf("debug monthDay:%v\n", monthDay)
+				continue
+			}
+			date := fmt.Sprintf("%v-%s-%s",videoItem.Snippet.PublishedAt.Year(), monthDay[0], monthDay[1])
+			// date := videoItem.Snippet.PublishedAt.Format("2006-01-02")
 			videoItemMapper[date] = append(videoItemMapper[date], videoitem.NewVideoItem(
 				playListItem.Snippet.Title, 
 				videoItem.Snippet.Title,
@@ -80,7 +95,7 @@ func main() {
 				fmt.Println("team2:", setResultData[i].TeamScore2.Team)
 				fmt.Println("team2-result:", setResultData[i].TeamScore2.Score)
 			} else {
-				fmt.Println("Error")
+				fmt.Println("Error ", setResultData," ",i)
 			}
 			fmt.Println("date:",item.Date)
 			// team1 := app.teamMatcher.Match(setResultData[i].TeamScore1.Team)
