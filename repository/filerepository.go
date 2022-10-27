@@ -5,10 +5,6 @@ import (
 	"os"
 )
 
-type Repository interface{
-	Store(interface{}) error
-}
-
 const DEFAULT_RECORDING_FILE_NAME = "./temp.txt"
 type FileRepository struct {
 	fileName string
