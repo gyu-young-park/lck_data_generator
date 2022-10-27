@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"regexp"
 	"strings"
@@ -11,6 +12,7 @@ import (
 	"github.com/gyu-young-park/lck_data_generator/matcher"
 	"github.com/gyu-young-park/lck_data_generator/playlist"
 	playlistitems "github.com/gyu-young-park/lck_data_generator/playlistItems"
+	"github.com/gyu-young-park/lck_data_generator/repository"
 	videoitem "github.com/gyu-young-park/lck_data_generator/videoItem"
 )
 
@@ -21,6 +23,7 @@ type App struct {
 	ChannelService       channel.Service
 	PlayListService      playlist.Service
 	PlayListItemsService playlistitems.Service
+	Repo repository.Repository
 }
 
 func NewApp() *App {
@@ -28,7 +31,7 @@ func NewApp() *App {
 	app.teamMatcher = matcher.NewLCKTeamMatcher()
 	app.Config = config.NewConfig(config.NewConfigSetterJSON())
 	app.ChannelService = channel.NewServiceWithVideoId(app.Config.Key)
-	
+	app.Repo = repository.NewFileRepository(repository.DEFAULT_RECORDING_JSON_FILE_NAME)
 	return app
 }
 
@@ -77,6 +80,7 @@ func (app*App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
 func main() {
 	app := NewApp()
 	videoItemMapper := app.MakeLCKVideoItemList()
+	repoDataList :=repository.LCKMatchListModel{}
 	for k, v := range videoItemMapper {
 		app.crawler.SetData(k)
 		rawSetResultData := app.crawler.GetResult()
@@ -84,23 +88,46 @@ func main() {
 		for _, item := range setResultData {
 			fmt.Println(item)
 		}
+
 		for i, item := range v {
+			var matchModel repository.LCKMatchModel 
 			fmt.Println("------------------------")
+			matchModel.PlayList = item.PlayList
+			matchModel.Title = item.Title
+			matchModel.LCKMatchVideoModel = *repository.NewLCKMatchVideoModel(item.PlayList, item.Title, item.VideoId, k)
 			fmt.Println("playlist:",item.PlayList)
 			fmt.Println("title:",item.Title)
 			fmt.Println("video:",item.VideoId)
 			if len(setResultData) > i {
+				matchModel.LCKMathTeamModel = *repository.NewLCKMathTeamModel(
+											setResultData[i].TeamScore1.Team,
+											setResultData[i].TeamScore1.Score,
+											setResultData[i].TeamScore2.Team,
+											setResultData[i].TeamScore2.Score)
 				fmt.Println("team1:", setResultData[i].TeamScore1.Team)
 				fmt.Println("team1-result:", setResultData[i].TeamScore1.Score)
 				fmt.Println("team2:", setResultData[i].TeamScore2.Team)
 				fmt.Println("team2-result:", setResultData[i].TeamScore2.Score)
 			} else {
+				matchModel.IsError = true
 				fmt.Println("Error ", setResultData," ",i)
 			}
 			fmt.Println("date:",item.Date)
 			// team1 := app.teamMatcher.Match(setResultData[i].TeamScore1.Team)
 			// team2 := app.teamMatcher.Match(setResultData[i].TeamScore2.Team)
 			fmt.Println("------------------------")
+			repoDataList.Data = append(repoDataList.Data, matchModel)
 		}
 	}
+	data, err := json.MarshalIndent(repoDataList,"",  "\t")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	err = app.Repo.Store(string(data))
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
 }

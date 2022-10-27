@@ -6,6 +6,7 @@ import (
 )
 
 const DEFAULT_RECORDING_FILE_NAME = "./temp.txt"
+const DEFAULT_RECORDING_JSON_FILE_NAME = "./temp.json"
 type FileRepository struct {
 	fileName string
 }
@@ -17,7 +18,7 @@ func NewFileRepository(fileName string) *FileRepository{
 }
 
 func (f *FileRepository) Store(rawData interface{}) error {
-	file, err := os.Open(f.fileName)
+	file, err := os.OpenFile(f.fileName, os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0755)
 	if err != nil {
 		return err
 	}

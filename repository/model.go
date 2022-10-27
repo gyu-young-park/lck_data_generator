@@ -20,17 +20,20 @@ type LCKMatchVideoModel struct {
 	PlayList string `json:"playlist"`
 	Title string `json:"title"`
 	VideoId string `json:"video_id"`
+	Date string `json:"date"`
 }
 
-func NewLCKMatchVideoModel(playlist, title, videoId string) *LCKMatchVideoModel{
+func NewLCKMatchVideoModel(playlist, title, videoId, date string) *LCKMatchVideoModel{
 	return &LCKMatchVideoModel{
 		PlayList: playlist,
 		Title: title,
 		VideoId: videoId,
+		Date: date,
 	}
 }
 
 type LCKMatchModel struct{
+	IsError bool `json:"error"`
 	LCKMatchVideoModel
 	LCKMathTeamModel
 }
@@ -38,3 +41,4 @@ type LCKMatchModel struct{
 type LCKMatchListModel struct {
 	Data []LCKMatchModel `json:"data"`
 }
+
