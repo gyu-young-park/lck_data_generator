@@ -12,6 +12,18 @@ func NewLCKTeamMatcher() *LCKTeamMatcher {
 	return &LCKTeamMatcher{
 		teamMatcher: []teamMatcher{
 			NewDKMatcher(),
+			NewDRXMatcher(),
+			NewFreditMatcher(),
+			NewGenGMatcher(),
+			NewGriffinMatcher(),
+			NewHanwhaMatcher(),
+			NewJinairMatcher(),
+			NewKTMatcher(),
+			NewNSMatcher(),
+			NewT1Matcher(),
+			NewLiivSandboxMatcher(),
+			NewKwangdongMatcher(),
+			NewSeolHaeOneMatcher(),
 		},
 	}
 }

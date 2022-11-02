@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"regexp"
@@ -14,6 +15,7 @@ import (
 	"github.com/gyu-young-park/lck_data_generator/playlist"
 	playlistitems "github.com/gyu-young-park/lck_data_generator/playlistItems"
 	"github.com/gyu-young-park/lck_data_generator/repository"
+	"github.com/gyu-young-park/lck_data_generator/team"
 	videoitem "github.com/gyu-young-park/lck_data_generator/videoItem"
 )
 
@@ -33,13 +35,20 @@ func NewApp() *App {
 	app.teamMatcher = matcher.NewLCKTeamMatcher()
 	app.Config = config.NewConfig(config.NewConfigSetterJSON())
 	app.ChannelService = channel.NewServiceWithVideoId(app.Config.Key)
-	app.Repo = repository.NewFileRepository(repository.DEFAULT_RECORDING_JSON_FILE_NAME)
+	app.Repo = repository.NewFileRepository()
 	app.server = api.NewHTTPServer()
 	return app
 }
 
+func SplitAny(s string, seps string) []string {
+    splitter := func(r rune) bool {
+        return strings.ContainsRune(seps, r)
+    }
+    return strings.FieldsFunc(s, splitter)
+}
+
 func (app *App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
-	r, _ := regexp.Compile("(0[1-9]|1[0-2]).(0[1-9]|[12][0-9]|3[01])")
+	dateParser, _ := regexp.Compile("(0[1-9]|1[0-2]).(0[1-9]|[12][0-9]|3[01])")
 	videoItemMapper := make(videoitem.VideoItemListMapper)
 	channelId, err := app.ChannelService.GetChannelId()
 	if err != nil {
@@ -57,7 +66,7 @@ func (app *App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
 			panic(err)
 		}
 		for _, videoItem := range videoItems {
-			res := string(r.Find([]byte(videoItem.Snippet.Title)))
+			res := string(dateParser.Find([]byte(videoItem.Snippet.Title)))
 			if res == "" {
 				fmt.Printf("debug %s find:%v\n", videoItem.Snippet.Title, res)
 				continue
@@ -68,12 +77,42 @@ func (app *App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
 				fmt.Printf("debug monthDay:%v\n", monthDay)
 				continue
 			}
+			// titles := SplitAny(videoItem.Snippet.Title, "|[]")
+			playlistSplited := strings.Split(playListItem.Snippet.Title, " ")
+			var buf bytes.Buffer
+			for _ , word := range playlistSplited {
+				if strings.Contains(word, "게임") || strings.Contains(word, "세트"){
+					break
+				}
+				buf.WriteString(word)
+				buf.WriteString(" ")
+			}
+			var season string
+			// if len(titles) == 0 || len(titles) == 1 {
+			// 	// titles := strings.Split(videoItem.Snippet.Title, ` `)
+			// 	// fmt.Println(titles)
+			// 	// if len(titles) == 0 || len(titles) == 1 {
+			// 	// 	fmt.Printf("Season Error:%v\n", titles)
+			// 	// 	season = "null"
+			// 	// } else {
+			// 	// 	season = titles[len(titles) - 1]
+			// 	// }
+			// 	fmt.Printf("Season Error:%v\n", titles)
+			// 		season = "null"
+			// } else {
+			// 	season = titles[len(titles) - 1]
+			// }
+			season = strings.TrimSpace(buf.String()) 
+			if strings.Contains(season, "[") {
+				season = SplitAny(season, "[]")[0]
+			}
 			date := fmt.Sprintf("%v-%s-%s", videoItem.Snippet.PublishedAt.Year(), monthDay[0], monthDay[1])
 			// date := videoItem.Snippet.PublishedAt.Format("2006-01-02")
 			videoItemMapper[date] = append(videoItemMapper[date], videoitem.NewVideoItem(
 				playListItem.Snippet.Title,
 				videoItem.Snippet.Title,
 				videoItem.Snippet.ResourceID.VideoID,
+				season,
 				videoItem.Snippet.PublishedAt))
 		}
 	}
@@ -83,7 +122,8 @@ func (app *App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
 func main() {
 	app := NewApp()
 	videoItemMapper := app.MakeLCKVideoItemList()
-	repoDataList := repository.LCKMatchListModel{}
+	matchList := repository.LCKMatchListModel{}
+	teamListWithSeason := repository.LCKTeamWithSeasonListModel{}
 	for k, v := range videoItemMapper {
 		app.crawler.SetData(k)
 		rawSetResultData := app.crawler.GetResult()
@@ -95,43 +135,69 @@ func main() {
 		for i, item := range v {
 			var matchModel repository.LCKMatchModel
 			fmt.Println("------------------------")
-			matchModel.PlayList = item.PlayList
-			matchModel.Title = item.Title
-			matchModel.LCKMatchVideoModel = *repository.NewLCKMatchVideoModel(item.PlayList, item.Title, item.VideoId, k)
+			matchModel.LCKMatchVideoModel = *repository.NewLCKMatchVideoModel(item.PlayList, item.Title, item.VideoId, item.Season, k)
 			fmt.Println("playlist:", item.PlayList)
 			fmt.Println("title:", item.Title)
 			fmt.Println("video:", item.VideoId)
+			fmt.Println("season:", item.Season)
 			if len(setResultData) > i {
+				team1 := app.teamMatcher.Match(setResultData[i].TeamScore1.Team)
+				team2 := app.teamMatcher.Match(setResultData[i].TeamScore2.Team)
 				matchModel.LCKMathTeamModel = *repository.NewLCKMathTeamModel(
-					setResultData[i].TeamScore1.Team,
+					team1,
 					setResultData[i].TeamScore1.Score,
-					setResultData[i].TeamScore2.Team,
+					team2,
 					setResultData[i].TeamScore2.Score)
-				fmt.Println("team1:", setResultData[i].TeamScore1.Team)
+				fmt.Println("team1:", team1)
 				fmt.Println("team1-result:", setResultData[i].TeamScore1.Score)
-				fmt.Println("team2:", setResultData[i].TeamScore2.Team)
+				fmt.Println("team2:", team2)
 				fmt.Println("team2-result:", setResultData[i].TeamScore2.Score)
 			} else {
 				matchModel.IsError = true
 				fmt.Println("Error ", setResultData, " ", i)
 			}
 			fmt.Println("date:", item.Date)
-			// team1 := app.teamMatcher.Match(setResultData[i].TeamScore1.Team)
-			// team2 := app.teamMatcher.Match(setResultData[i].TeamScore2.Team)
 			fmt.Println("------------------------")
-			repoDataList.Data = append(repoDataList.Data, matchModel)
+			matchList.Data = append(matchList.Data, matchModel)
 		}
 	}
 
-	if len(repoDataList.Data) == 0 {
-		repoDataList.Error = "Error: There are no data"
+	if len(matchList.Data) == 0 {
+		matchList.Error = "Error: There are no data"
 	}
-	data, err := json.MarshalIndent(repoDataList, "", "\t")
+	matchList.Error = "null"
+	teamMapperWithSeason := team.GenerateTeamWithSeason(&matchList)
+	if teamMapperWithSeason == nil {
+		teamListWithSeason.Error = "Erorr"
+		fmt.Println("Error!! team mapper:Can't get team with season")
+	} else {
+		for season, teamSet := range teamMapperWithSeason {
+			var teamWithSeason repository.LCKTeamWithSeasonModel
+			teamWithSeason.Season = season
+			for team, _ := range teamSet {
+				teamWithSeason.TeamList = append(teamWithSeason.TeamList,team)
+			}
+			teamListWithSeason.Data = append(teamListWithSeason.Data, teamWithSeason)
+		}
+		teamListWithSeason.Error = "null"
+	}
+	
+	data, err := json.MarshalIndent(matchList, "", "\t")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 	err = app.Repo.Store(string(repository.ALL_MATCH), string(data))
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	data, err = json.MarshalIndent(teamListWithSeason, "", "\t")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	err = app.Repo.Store(string(repository.ALL_TEAM_WITH_SEASON), string(data))
 	if err != nil {
 		fmt.Println(err)
 		return
