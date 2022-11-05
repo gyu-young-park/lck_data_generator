@@ -4,6 +4,7 @@ const CONFIG_JSON_FILE_PATH = "./config.json"
 
 type Config struct {
 	Key    string `json:"key"`
+	FirebaseKeyPath string `json:"firebase-key-path"`
 	setter ConfigSetter
 }
 

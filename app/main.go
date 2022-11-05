@@ -11,6 +11,7 @@ import (
 	"github.com/gyu-young-park/lck_data_generator/channel"
 	"github.com/gyu-young-park/lck_data_generator/config"
 	"github.com/gyu-young-park/lck_data_generator/crawler"
+	"github.com/gyu-young-park/lck_data_generator/firebaseapi"
 	"github.com/gyu-young-park/lck_data_generator/matcher"
 	"github.com/gyu-young-park/lck_data_generator/playlist"
 	playlistitems "github.com/gyu-young-park/lck_data_generator/playlistItems"
@@ -27,6 +28,7 @@ type App struct {
 	ChannelService       channel.Service
 	PlayListService      playlist.Service
 	PlayListItemsService playlistitems.Service
+	FirebaseApp 		*firebaseapi.FirebaseApp
 	Repo                 repository.Repository
 }
 
@@ -37,6 +39,7 @@ func NewApp() *App {
 	app.ChannelService = channel.NewServiceWithVideoId(app.Config.Key)
 	app.Repo = repository.NewFileRepository()
 	app.server = api.NewHTTPServer()
+	app.FirebaseApp = firebaseapi.NewFireBaseAPI(app.Config.FirebaseKeyPath)
 	return app
 }
 
@@ -188,7 +191,16 @@ func main() {
 		}
 		teamListWithSeason.Error = "null"
 	}
-	
+
+	// app.FirebaseApp.StoreDump()
+	// dumpList := app.FirebaseApp.ReadDump()
+	// fmt.Println("dump start-----")
+	// for _, fireSotreSchema := range dumpList {
+	// 	fmt.Println("-----step----")
+	// 	for k, v := range fireSotreSchema {
+	// 		fmt.Printf("key:%s value:%v\n", k, v)
+	// 	}
+	// }
 	data, err := json.MarshalIndent(matchList, "", "\t")
 	if err != nil {
 		fmt.Println(err)
