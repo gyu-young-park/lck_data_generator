@@ -1,5 +1,7 @@
 package repository
 
+import playlistitems "github.com/gyu-young-park/lck_data_generator/playlistItems"
+
 type LCKMathTeamModel struct {
 	Team1    string `json:"team1"`
 	Outcome1 string `json:"outcome1"`
@@ -21,15 +23,17 @@ type LCKMatchVideoModel struct {
 	Title    string `json:"title"`
 	VideoId  string `json:"video_id"`
 	Season   string `json:"season"`
+	Thumbnails playlistitems.VideoThumbnailModel `json:"thumbnails"`
 	Date     string `json:"date"`
 }
 
-func NewLCKMatchVideoModel(playlist, title, videoId,season, date string) *LCKMatchVideoModel {
+func NewLCKMatchVideoModel(playlist, title, videoId ,season string, thumbnails playlistitems.VideoThumbnailModel,date string) *LCKMatchVideoModel {
 	return &LCKMatchVideoModel{
 		PlayList: playlist,
 		Title:    title,
 		VideoId:  videoId,
 		Season: season,
+		Thumbnails: thumbnails,
 		Date:     date,
 	}
 }

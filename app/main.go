@@ -113,6 +113,7 @@ func (app *App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
 				videoItem.Snippet.Title,
 				videoItem.Snippet.ResourceID.VideoID,
 				season,
+				videoItem.Snippet.Thumbnails,
 				videoItem.Snippet.PublishedAt))
 		}
 	}
@@ -135,7 +136,13 @@ func main() {
 		for i, item := range v {
 			var matchModel repository.LCKMatchModel
 			fmt.Println("------------------------")
-			matchModel.LCKMatchVideoModel = *repository.NewLCKMatchVideoModel(item.PlayList, item.Title, item.VideoId, item.Season, k)
+			matchModel.LCKMatchVideoModel = *repository.NewLCKMatchVideoModel(
+						item.PlayList, 
+						item.Title, 
+						item.VideoId, 
+						item.Season, 
+						item.Thumbnails,
+						k)
 			fmt.Println("playlist:", item.PlayList)
 			fmt.Println("title:", item.Title)
 			fmt.Println("video:", item.VideoId)
