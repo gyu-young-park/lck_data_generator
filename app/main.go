@@ -7,6 +7,7 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/fatih/structs"
 	"github.com/gyu-young-park/lck_data_generator/api"
 	"github.com/gyu-young-park/lck_data_generator/channel"
 	"github.com/gyu-young-park/lck_data_generator/config"
@@ -153,7 +154,7 @@ func main() {
 			if len(setResultData) > i {
 				team1 := app.teamMatcher.Match(setResultData[i].TeamScore1.Team)
 				team2 := app.teamMatcher.Match(setResultData[i].TeamScore2.Team)
-				matchModel.LCKMathTeamModel = *repository.NewLCKMathTeamModel(
+				matchModel.LCKMatchTeamModel = *repository.NewLCKMatchTeamModel(
 					team1,
 					setResultData[i].TeamScore1.Score,
 					team2,
@@ -201,6 +202,32 @@ func main() {
 	// 		fmt.Printf("key:%s value:%v\n", k, v)
 	// 	}
 	// }
+	err := app.FirebaseApp.RemoveCollection("lck_match_team")
+	if err != nil {
+		fmt.Println(err)
+	}
+	err = app.FirebaseApp.RemoveCollection("lck_match_video")
+	if err != nil {
+		fmt.Println(err)
+	}
+	err = app.FirebaseApp.RemoveCollection("lck_season_with_team")
+	if err != nil {
+		fmt.Println(err)
+	}
+	for _, matchData := range matchList.Data {
+		app.FirebaseApp.StoreDataWithDoc("lck_match_team", matchData.VideoId,firebaseapi.FireStoreDataSchema(structs.Map(matchData.LCKMatchTeamModel)))
+		app.FirebaseApp.StoreDataWithDoc("lck_match_video", matchData.VideoId,firebaseapi.FireStoreDataSchema(structs.Map(matchData.LCKMatchVideoModel)))
+	}
+
+	for _,teamSeasonData := range teamListWithSeason.Data {
+		app.FirebaseApp.StoreDataWithDoc("lck_season_with_team", teamSeasonData.Season,firebaseapi.FireStoreDataSchema(structs.Map(teamSeasonData.TeamList)))
+	}
+
+	// firebaseReadData := app.FirebaseApp.ReadData("lck_match")
+	// for _,readData := range firebaseReadData {
+	// 	fmt.Println("Read: ", readData)
+	// }
+	
 	data, err := json.MarshalIndent(matchList, "", "\t")
 	if err != nil {
 		fmt.Println(err)

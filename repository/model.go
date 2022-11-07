@@ -2,15 +2,15 @@ package repository
 
 import playlistitems "github.com/gyu-young-park/lck_data_generator/playlistItems"
 
-type LCKMathTeamModel struct {
+type LCKMatchTeamModel struct {
 	Team1    string `json:"team1"`
 	Outcome1 string `json:"outcome1"`
 	Team2    string `json:"team2"`
 	Outcome2 string `json:"outcome2"`
 }
 
-func NewLCKMathTeamModel(team1, outcome1, team2, outcome2 string) *LCKMathTeamModel {
-	return &LCKMathTeamModel{
+func NewLCKMatchTeamModel(team1, outcome1, team2, outcome2 string) *LCKMatchTeamModel {
+	return &LCKMatchTeamModel{
 		Team1:    team1,
 		Team2:    team2,
 		Outcome1: outcome1,
@@ -41,7 +41,7 @@ func NewLCKMatchVideoModel(playlist, title, videoId ,season string, thumbnails p
 type LCKMatchModel struct {
 	IsError bool `json:"error"`
 	LCKMatchVideoModel
-	LCKMathTeamModel
+	LCKMatchTeamModel
 }
 
 type LCKMatchListModel struct {
