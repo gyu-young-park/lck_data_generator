@@ -58,3 +58,13 @@ type LCKTeamWithSeasonListModel struct {
 	Data  []LCKTeamWithSeasonModel `json:"data"`
 	Error string          `json:"error"`
 }
+
+type LCKSeasonWithTeamModel struct {
+	Team string `json:"team"`
+	SeasonList []string `json:"seasons"`
+}
+
+type LCKSeasonWithTeamListModel struct {
+	Data  []LCKSeasonWithTeamModel `json:"data"`
+	Error string          `json:"error"`
+}
