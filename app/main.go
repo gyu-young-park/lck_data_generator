@@ -53,7 +53,6 @@ func SplitAny(s string, seps string) []string {
 }
 
 func (app *App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
-	dateParser, _ := regexp.Compile("(0[1-9]|1[0-2]).(0[1-9]|[12][0-9]|3[01])")
 	videoItemMapper := make(videoitem.VideoItemListMapper)
 	channelId, err := app.ChannelService.GetChannelId()
 	if err != nil {
@@ -71,10 +70,20 @@ func (app *App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
 			panic(err)
 		}
 		for _, videoItem := range videoItems {
+			dateParser, _ := regexp.Compile("\\| (0[1-9]|1[0-2]).(0[1-9]|[12][0-9]|3[01]) \\|")
+			is19Season := false
 			res := string(dateParser.Find([]byte(videoItem.Snippet.Title)))
 			if res == "" {
-				fmt.Printf("debug %s find:%v\n", videoItem.Snippet.Title, res)
-				continue
+				dateParser, _ = regexp.Compile("(0[1-9]|1[0-2]).(0[1-9]|[12][0-9]|3[01])")
+				res = string(dateParser.Find([]byte(videoItem.Snippet.Title)))
+				if res == "" {
+					fmt.Printf("Can't find data: %s\n",videoItem.Snippet.Title)
+					continue
+				}
+				is19Season = true
+			}
+			if !is19Season {
+				res = strings.Split(res, " ")[1]
 			}
 			fmt.Println(videoItem.Snippet.Title, ": ", res)
 			monthDay := strings.Split(res, ".")
@@ -111,7 +120,7 @@ func (app *App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
 			if strings.Contains(season, "[") {
 				season = SplitAny(season, "[]")[0]
 			}
-			date := fmt.Sprintf("%v-%s-%s", videoItem.Snippet.PublishedAt.Year(), monthDay[0], monthDay[1])
+			date := fmt.Sprintf("%v-%s-%s", videoItem.Snippet.PublishedAt.Year(), strings.TrimSpace(monthDay[0]),strings.TrimSpace(monthDay[1]))
 			// date := videoItem.Snippet.PublishedAt.Format("2006-01-02")
 			videoItemMapper[date] = append(videoItemMapper[date], videoitem.NewVideoItem(
 				playListItem.Snippet.Title,
@@ -249,10 +258,10 @@ func main() {
 		app.FirebaseApp.StoreDataWithDoc("lck_team_with_season", seasonTeamData.Team,firebaseapi.FireStoreDataSchema(structs.Map(seasonTeamData)))
 	}
 
-	// firebaseReadData := app.FirebaseApp.ReadData("lck_match")
-	// for _,readData := range firebaseReadData {
-	// 	fmt.Println("Read: ", readData)
-	// }
+	firebaseReadData := app.FirebaseApp.ReadData("lck_match")
+	for _,readData := range firebaseReadData {
+		fmt.Println("Read: ", readData)
+	}
 	
 	data, err := json.MarshalIndent(matchList, "", "\t")
 	if err != nil {
