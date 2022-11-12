@@ -2,46 +2,38 @@ package repository
 
 import playlistitems "github.com/gyu-young-park/lck_data_generator/playlistItems"
 
-type LCKMatchTeamModel struct {
-	Team1    string `json:"team1"`
-	Outcome1 string `json:"outcome1"`
-	Team2    string `json:"team2"`
-	Outcome2 string `json:"outcome2"`
-}
-
-func NewLCKMatchTeamModel(team1, outcome1, team2, outcome2 string) *LCKMatchTeamModel {
-	return &LCKMatchTeamModel{
-		Team1:    team1,
-		Team2:    team2,
-		Outcome1: outcome1,
-		Outcome2: outcome2,
-	}
-}
-
-type LCKMatchVideoModel struct {
-	PlayList string `json:"playlist"`
-	Title    string `json:"title"`
-	VideoId  string `json:"video_id"`
-	Season   string `json:"season"`
-	Thumbnails playlistitems.VideoThumbnailModel `json:"thumbnails"`
-	Date     string `json:"date"`
-}
-
-func NewLCKMatchVideoModel(playlist, title, videoId ,season string, thumbnails playlistitems.VideoThumbnailModel,date string) *LCKMatchVideoModel {
-	return &LCKMatchVideoModel{
-		PlayList: playlist,
-		Title:    title,
-		VideoId:  videoId,
-		Season: season,
-		Thumbnails: thumbnails,
-		Date:     date,
-	}
-}
-
 type LCKMatchModel struct {
-	IsError bool `json:"error"`
-	LCKMatchVideoModel
-	LCKMatchTeamModel
+	IsError     bool                              `json:"error"`
+	PlayList    string                            `json:"playlist"`
+	Title       string                            `json:"title"`
+	VideoId     string                            `json:"video_id"`
+	Season      string                            `json:"season"`
+	Team1       string                            `json:"team1"`
+	Outcome1    string                            `json:"outcome1"`
+	Team2       string                            `json:"team2"`
+	Outcome2    string                            `json:"outcome2"`
+	Views       string                            `json:"views"`
+	Thumbnails  playlistitems.VideoThumbnailModel `json:"thumbnails"`
+	Date        string                            `json:"date"`
+	PublishedAt int64                             `json:"published_at"`
+}
+
+func (l *LCKMatchModel) SetLCKMatchVideo(playlist string, title string, videoId string, season string, views string, thumbnails playlistitems.VideoThumbnailModel, date string, publishedAt int64) {
+	l.PlayList = playlist
+	l.Title = title
+	l.VideoId = videoId
+	l.Season = season
+	l.Views = views
+	l.Thumbnails = thumbnails
+	l.Date = date
+	l.PublishedAt = publishedAt
+}
+
+func (l *LCKMatchModel) SetLCKMatchScore(team1, score1, team2, score2 string) {
+	l.Team1 = team1
+	l.Outcome1 = score1
+	l.Team2 = team2
+	l.Outcome2 = score2
 }
 
 type LCKMatchListModel struct {
@@ -50,21 +42,21 @@ type LCKMatchListModel struct {
 }
 
 type LCKTeamWithSeasonModel struct {
-	Season string `json:"season"`
+	Season   string   `json:"season"`
 	TeamList []string `json:"teams"`
 }
 
 type LCKTeamWithSeasonListModel struct {
 	Data  []LCKTeamWithSeasonModel `json:"data"`
-	Error string          `json:"error"`
+	Error string                   `json:"error"`
 }
 
 type LCKSeasonWithTeamModel struct {
-	Team string `json:"team"`
+	Team       string   `json:"team"`
 	SeasonList []string `json:"seasons"`
 }
 
 type LCKSeasonWithTeamListModel struct {
 	Data  []LCKSeasonWithTeamModel `json:"data"`
-	Error string          `json:"error"`
+	Error string                   `json:"error"`
 }

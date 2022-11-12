@@ -12,7 +12,7 @@ import (
 
 type FirebaseApp struct {
 	ctx *context.Context
-	db *fireStoreClient
+	db  *fireStoreClient
 }
 
 func NewFireBaseAPI(secretFirebaseServiceAccountKeyPath string) *FirebaseApp {
@@ -25,7 +25,7 @@ func NewFireBaseAPI(secretFirebaseServiceAccountKeyPath string) *FirebaseApp {
 	// Initialize the app with a service account, granting admin privileges
 	app, err := firebase.NewApp(ctx, conf, opt)
 	if err != nil {
-			log.Fatalln("Error initializing app:", err)
+		log.Fatalln("Error initializing app:", err)
 	}
 	firebaseApp.ctx = &ctx
 	firebaseApp.db = newFireStoreClient(ctx, app)
@@ -66,7 +66,7 @@ func (f *FirebaseApp) RemoveCollection(collection string) error {
 	}
 }
 
-func (f *FirebaseApp) StoreDataWithDoc(collection string ,doc string,data FireStoreDataSchema) error{
+func (f *FirebaseApp) StoreDataWithDoc(collection string, doc string, data FireStoreDataSchema) error {
 	_, err := f.db.client.Collection(collection).Doc(doc).Set(*f.ctx, data)
 	if err != nil {
 		return fmt.Errorf("[%s]Error can't store data, collection:[%s], data[%v]", "StoreData", collection, data)
@@ -94,9 +94,9 @@ func (f *FirebaseApp) ReadData(collection string) []FireStoreDataSchema {
 
 func (f *FirebaseApp) StoreDump() {
 	_, _, err := f.db.client.Collection("users").Add(*f.ctx, FireStoreDataSchema{
-        "first": "Ada",
-        "last":  "Lovelace",
-        "born":  1815,
+		"first": "Ada",
+		"last":  "Lovelace",
+		"born":  1815,
 	})
 	if err != nil {
 		log.Fatalf("Failed adding alovelace: %v", err)
@@ -107,14 +107,14 @@ func (f *FirebaseApp) ReadDump() []FireStoreDataSchema {
 	var fireStoreDataSchemaList []FireStoreDataSchema
 	iter := f.db.client.Collection("users").Documents(*f.ctx)
 	for {
-			doc, err := iter.Next()
-			if err == iterator.Done {
-					break
-			}
-			if err != nil {
-					log.Fatalf("Failed to iterate: %v", err)
-			}
-			fireStoreDataSchemaList = append(fireStoreDataSchemaList, doc.Data())
+		doc, err := iter.Next()
+		if err == iterator.Done {
+			break
+		}
+		if err != nil {
+			log.Fatalf("Failed to iterate: %v", err)
+		}
+		fireStoreDataSchemaList = append(fireStoreDataSchemaList, doc.Data())
 	}
 	return fireStoreDataSchemaList
 }

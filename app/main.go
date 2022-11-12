@@ -20,18 +20,20 @@ import (
 	"github.com/gyu-young-park/lck_data_generator/season"
 	"github.com/gyu-young-park/lck_data_generator/team"
 	videoitem "github.com/gyu-young-park/lck_data_generator/videoItem"
+	"github.com/gyu-young-park/lck_data_generator/videostatistics"
 )
 
 type App struct {
-	Config               *config.Config
-	server               *api.Server
-	teamMatcher          matcher.Matcher
-	crawler              crawler.Crawler
-	ChannelService       channel.Service
-	PlayListService      playlist.Service
-	PlayListItemsService playlistitems.Service
-	FirebaseApp 		*firebaseapi.FirebaseApp
-	Repo                 repository.Repository
+	Config                 *config.Config
+	server                 *api.Server
+	teamMatcher            matcher.Matcher
+	crawler                crawler.Crawler
+	ChannelService         channel.Service
+	PlayListService        playlist.Service
+	PlayListItemsService   playlistitems.Service
+	VideoStatisticsService videostatistics.Service
+	FirebaseApp            *firebaseapi.FirebaseApp
+	Repo                   repository.Repository
 }
 
 func NewApp() *App {
@@ -39,6 +41,7 @@ func NewApp() *App {
 	app.teamMatcher = matcher.NewLCKTeamMatcher()
 	app.Config = config.NewConfig(config.NewConfigSetterJSON())
 	app.ChannelService = channel.NewServiceWithVideoId(app.Config.Key)
+	app.VideoStatisticsService = videostatistics.NewServiceWithVideoStatistics(app.Config.Key)
 	app.Repo = repository.NewFileRepository()
 	app.server = api.NewHTTPServer()
 	app.FirebaseApp = firebaseapi.NewFireBaseAPI(app.Config.FirebaseKeyPath)
@@ -46,10 +49,10 @@ func NewApp() *App {
 }
 
 func SplitAny(s string, seps string) []string {
-    splitter := func(r rune) bool {
-        return strings.ContainsRune(seps, r)
-    }
-    return strings.FieldsFunc(s, splitter)
+	splitter := func(r rune) bool {
+		return strings.ContainsRune(seps, r)
+	}
+	return strings.FieldsFunc(s, splitter)
 }
 
 func (app *App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
@@ -77,7 +80,7 @@ func (app *App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
 				dateParser, _ = regexp.Compile("(0[1-9]|1[0-2]).(0[1-9]|[12][0-9]|3[01])")
 				res = string(dateParser.Find([]byte(videoItem.Snippet.Title)))
 				if res == "" {
-					fmt.Printf("Can't find data: %s\n",videoItem.Snippet.Title)
+					fmt.Printf("Can't find data: %s\n", videoItem.Snippet.Title)
 					continue
 				}
 				is19Season = true
@@ -94,8 +97,8 @@ func (app *App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
 			// titles := SplitAny(videoItem.Snippet.Title, "|[]")
 			playlistSplited := strings.Split(playListItem.Snippet.Title, " ")
 			var buf bytes.Buffer
-			for _ , word := range playlistSplited {
-				if strings.Contains(word, "게임") || strings.Contains(word, "세트"){
+			for _, word := range playlistSplited {
+				if strings.Contains(word, "게임") || strings.Contains(word, "세트") {
 					break
 				}
 				buf.WriteString(word)
@@ -116,17 +119,22 @@ func (app *App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
 			// } else {
 			// 	season = titles[len(titles) - 1]
 			// }
-			season = strings.TrimSpace(buf.String()) 
+			season = strings.TrimSpace(buf.String())
 			if strings.Contains(season, "[") {
 				season = SplitAny(season, "[]")[0]
 			}
-			date := fmt.Sprintf("%v-%s-%s", videoItem.Snippet.PublishedAt.Year(), strings.TrimSpace(monthDay[0]),strings.TrimSpace(monthDay[1]))
+			date := fmt.Sprintf("%v-%s-%s", videoItem.Snippet.PublishedAt.Year(), strings.TrimSpace(monthDay[0]), strings.TrimSpace(monthDay[1]))
 			// date := videoItem.Snippet.PublishedAt.Format("2006-01-02")
+			videostatistics, err := app.VideoStatisticsService.GetVideoStatistics(videoItem.Snippet.ResourceID.VideoID)
+			if err != nil {
+				fmt.Println(err)
+			}
 			videoItemMapper[date] = append(videoItemMapper[date], videoitem.NewVideoItem(
 				playListItem.Snippet.Title,
 				videoItem.Snippet.Title,
 				videoItem.Snippet.ResourceID.VideoID,
 				season,
+				videostatistics,
 				videoItem.Snippet.Thumbnails,
 				videoItem.Snippet.PublishedAt))
 		}
@@ -151,13 +159,16 @@ func main() {
 		for i, item := range v {
 			var matchModel repository.LCKMatchModel
 			fmt.Println("------------------------")
-			matchModel.LCKMatchVideoModel = *repository.NewLCKMatchVideoModel(
-						item.PlayList, 
-						item.Title, 
-						item.VideoId, 
-						item.Season, 
-						item.Thumbnails,
-						k)
+			matchModel.SetLCKMatchVideo(
+				item.PlayList,
+				item.Title,
+				item.VideoId,
+				item.Season,
+				item.Statistics.Views,
+				item.Thumbnails,
+				k,
+				item.PublishedAt.Unix(),
+			)
 			fmt.Println("playlist:", item.PlayList)
 			fmt.Println("title:", item.Title)
 			fmt.Println("video:", item.VideoId)
@@ -165,7 +176,7 @@ func main() {
 			if len(setResultData) > i {
 				team1 := app.teamMatcher.Match(setResultData[i].TeamScore1.Team)
 				team2 := app.teamMatcher.Match(setResultData[i].TeamScore2.Team)
-				matchModel.LCKMatchTeamModel = *repository.NewLCKMatchTeamModel(
+				matchModel.SetLCKMatchScore(
 					team1,
 					setResultData[i].TeamScore1.Score,
 					team2,
@@ -178,7 +189,7 @@ func main() {
 				matchModel.IsError = true
 				fmt.Println("Error ", setResultData, " ", i)
 			}
-			fmt.Println("date:", item.Date)
+			fmt.Println("date:", item.PublishedAt)
 			fmt.Println("------------------------")
 			matchList.Data = append(matchList.Data, matchModel)
 		}
@@ -197,7 +208,7 @@ func main() {
 			var teamWithSeason repository.LCKTeamWithSeasonModel
 			teamWithSeason.Season = season
 			for team, _ := range teamSet {
-				teamWithSeason.TeamList = append(teamWithSeason.TeamList,team)
+				teamWithSeason.TeamList = append(teamWithSeason.TeamList, team)
 			}
 			teamListWithSeason.Data = append(teamListWithSeason.Data, teamWithSeason)
 		}
@@ -220,20 +231,16 @@ func main() {
 		seasonListWithTeam.Error = "null"
 	}
 
-	// app.FirebaseApp.StoreDump()
-	// dumpList := app.FirebaseApp.ReadDump()
-	// fmt.Println("dump start-----")
-	// for _, fireSotreSchema := range dumpList {
-	// 	fmt.Println("-----step----")
-	// 	for k, v := range fireSotreSchema {
-	// 		fmt.Printf("key:%s value:%v\n", k, v)
-	// 	}
-	// }
-	err := app.FirebaseApp.RemoveCollection("lck_match_team")
-	if err != nil {
-		fmt.Println(err)
+	app.FirebaseApp.StoreDump()
+	dumpList := app.FirebaseApp.ReadDump()
+	fmt.Println("dump start-----")
+	for _, fireSotreSchema := range dumpList {
+		fmt.Println("-----step----")
+		for k, v := range fireSotreSchema {
+			fmt.Printf("key:%s value:%v\n", k, v)
+		}
 	}
-	err = app.FirebaseApp.RemoveCollection("lck_match_video")
+	err := app.FirebaseApp.RemoveCollection("lck_match")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -246,23 +253,17 @@ func main() {
 		fmt.Println(err)
 	}
 	for _, matchData := range matchList.Data {
-		app.FirebaseApp.StoreDataWithDoc("lck_match_team", matchData.VideoId,firebaseapi.FireStoreDataSchema(structs.Map(matchData.LCKMatchTeamModel)))
-		app.FirebaseApp.StoreDataWithDoc("lck_match_video", matchData.VideoId,firebaseapi.FireStoreDataSchema(structs.Map(matchData.LCKMatchVideoModel)))
+		app.FirebaseApp.StoreDataWithDoc("lck_match", matchData.VideoId, firebaseapi.FireStoreDataSchema(structs.Map(matchData)))
 	}
 
-	for _,teamWithSeasonData := range teamListWithSeason.Data {
-		app.FirebaseApp.StoreDataWithDoc("lck_season_with_team", teamWithSeasonData.Season,firebaseapi.FireStoreDataSchema(structs.Map(teamWithSeasonData)))
+	for _, teamWithSeasonData := range teamListWithSeason.Data {
+		app.FirebaseApp.StoreDataWithDoc("lck_season_with_team", teamWithSeasonData.Season, firebaseapi.FireStoreDataSchema(structs.Map(teamWithSeasonData)))
 	}
 
 	for _, seasonTeamData := range seasonListWithTeam.Data {
-		app.FirebaseApp.StoreDataWithDoc("lck_team_with_season", seasonTeamData.Team,firebaseapi.FireStoreDataSchema(structs.Map(seasonTeamData)))
+		app.FirebaseApp.StoreDataWithDoc("lck_team_with_season", seasonTeamData.Team, firebaseapi.FireStoreDataSchema(structs.Map(seasonTeamData)))
 	}
 
-	firebaseReadData := app.FirebaseApp.ReadData("lck_match")
-	for _,readData := range firebaseReadData {
-		fmt.Println("Read: ", readData)
-	}
-	
 	data, err := json.MarshalIndent(matchList, "", "\t")
 	if err != nil {
 		fmt.Println(err)
