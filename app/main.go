@@ -258,7 +258,7 @@ func main() {
 	}
 	app.FirebaseApp.StoreDataWithDoc("lck-teams", "teams", firebaseapi.FireStoreDataSchema(structs.Map(teamList)))
 	app.FirebaseApp.StoreDataWithDoc("lck-seasons", "seasons", firebaseapi.FireStoreDataSchema(structs.Map(seasonList)))
-	fmt.Println("teamss:", teamList)
+	fmt.Println("teams:", teamList)
 	fmt.Println("seasons", seasonList)
 
 	data, err := json.MarshalIndent(matchList, "", "\t")
