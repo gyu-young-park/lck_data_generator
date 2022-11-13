@@ -12,6 +12,8 @@ type LCKMatchModel struct {
 	Outcome1    string                            `json:"outcome1"`
 	Team2       string                            `json:"team2"`
 	Outcome2    string                            `json:"outcome2"`
+	WinTeam     string                            `json:"win_team"`
+	LoseTeam    string                            `json:"lose_team"`
 	Views       string                            `json:"views"`
 	Thumbnails  playlistitems.VideoThumbnailModel `json:"thumbnails"`
 	Date        string                            `json:"date"`
@@ -34,6 +36,13 @@ func (l *LCKMatchModel) SetLCKMatchScore(team1, score1, team2, score2 string) {
 	l.Outcome1 = score1
 	l.Team2 = team2
 	l.Outcome2 = score2
+	if l.Outcome1 == "W" {
+		l.WinTeam = team1
+		l.LoseTeam = team2
+	} else if l.Outcome1 == "L" {
+		l.LoseTeam = team1
+		l.WinTeam = team2
+	}
 }
 
 type LCKMatchListModel struct {
