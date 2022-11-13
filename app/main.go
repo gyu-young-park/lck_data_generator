@@ -220,7 +220,7 @@ func main() {
 		seasonListWithTeam.Error = "Error"
 		fmt.Println("Error!! team mapper:Can't get season with team")
 	} else {
-		for team, seasonSet := range teamMapperWithSeason {
+		for team, seasonSet := range seasonMapperWithTeam {
 			var seasonWithTeam repository.LCKSeasonWithTeamModel
 			seasonWithTeam.Team = team
 			for season, _ := range seasonSet {
@@ -231,20 +231,13 @@ func main() {
 		seasonListWithTeam.Error = "null"
 	}
 
-	app.FirebaseApp.StoreDump()
-	dumpList := app.FirebaseApp.ReadDump()
-	fmt.Println("dump start-----")
-	for _, fireSotreSchema := range dumpList {
-		fmt.Println("-----step----")
-		for k, v := range fireSotreSchema {
-			fmt.Printf("key:%s value:%v\n", k, v)
-		}
-	}
-	err := app.FirebaseApp.RemoveCollection("lck_match")
-	if err != nil {
-		fmt.Println(err)
-	}
-	err = app.FirebaseApp.RemoveCollection("lck_season_with_team")
+	teamList := team.GenerateTeamList(&matchList)
+	seasonList := season.GenerateSeasonList(&matchList)
+	// err := app.FirebaseApp.RemoveCollection("lck_match")
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+	err := app.FirebaseApp.RemoveCollection("lck_season_with_team")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -252,28 +245,32 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	for _, matchData := range matchList.Data {
-		app.FirebaseApp.StoreDataWithDoc("lck_match", matchData.VideoId, firebaseapi.FireStoreDataSchema(structs.Map(matchData)))
-	}
+	// for _, matchData := range matchList.Data {
+	// 	app.FirebaseApp.StoreDataWithDoc("lck_match", matchData.VideoId, firebaseapi.FireStoreDataSchema(structs.Map(matchData)))
+	// }
 
 	for _, teamWithSeasonData := range teamListWithSeason.Data {
-		app.FirebaseApp.StoreDataWithDoc("lck_season_with_team", teamWithSeasonData.Season, firebaseapi.FireStoreDataSchema(structs.Map(teamWithSeasonData)))
+		app.FirebaseApp.StoreDataWithDoc("lck_team_with_season", teamWithSeasonData.Season, firebaseapi.FireStoreDataSchema(structs.Map(teamWithSeasonData)))
 	}
 
-	for _, seasonTeamData := range seasonListWithTeam.Data {
-		app.FirebaseApp.StoreDataWithDoc("lck_team_with_season", seasonTeamData.Team, firebaseapi.FireStoreDataSchema(structs.Map(seasonTeamData)))
+	for _, seasonWithTeamData := range seasonListWithTeam.Data {
+		app.FirebaseApp.StoreDataWithDoc("lck_season_with_team", seasonWithTeamData.Team, firebaseapi.FireStoreDataSchema(structs.Map(seasonWithTeamData)))
 	}
+	app.FirebaseApp.StoreDataWithDoc("lck-teams", "teams", firebaseapi.FireStoreDataSchema(structs.Map(teamList)))
+	app.FirebaseApp.StoreDataWithDoc("lck-seasons", "seasons", firebaseapi.FireStoreDataSchema(structs.Map(seasonList)))
+	fmt.Println("team-list:", teamList)
+	fmt.Println("season-list", seasonList)
 
 	data, err := json.MarshalIndent(matchList, "", "\t")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	err = app.Repo.Store(string(repository.ALL_MATCH), string(data))
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+	// err = app.Repo.Store(string(repository.ALL_MATCH), string(data))
+	// if err != nil {
+	// 	fmt.Println(err)
+	// 	return
+	// }
 	data, err = json.MarshalIndent(teamListWithSeason, "", "\t")
 	if err != nil {
 		fmt.Println(err)

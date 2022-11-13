@@ -25,3 +25,24 @@ func GenerateTeamWithSeason(matchList *repository.LCKMatchListModel) TeamMapperW
 	}
 	return mapper
 }
+
+type TeamList struct {
+	Teams []string `json:"teams"`
+}
+
+func GenerateTeamList(matchList *repository.LCKMatchListModel) *TeamList {
+	if matchList.Error != "null" {
+		return nil
+	}
+	fmt.Println("Start:", "GenerateTeamList")
+	var ret TeamList
+	var teamSet Set
+	for _, data := range matchList.Data {
+		teamSet[data.Team1] = struct{}{}
+		teamSet[data.Team2] = struct{}{}
+	}
+	for team, _ := range teamSet {
+		ret.Teams = append(ret.Teams, team)
+	}
+	return &ret
+}
