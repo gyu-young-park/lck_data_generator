@@ -1,0 +1,311 @@
+{
+	"data": [
+		{
+			"season": "2022 LCK 스프링",
+			"teams": [
+				"DK",
+				"T1",
+				"Fredit BRION",
+				"NS RED FORCE",
+				"Hanwha Life",
+				"KT Rolster",
+				"Liiv Sandbox",
+				"GEN.G",
+				"Kwangdong Freecs",
+				"DRX"
+			]
+		},
+		{
+			"season": "2020 LCK 서머",
+			"teams": [
+				"Liiv Sandbox",
+				"T1",
+				"Kwangdong Freecs",
+				"DRX",
+				"SeolHaeOne Prince",
+				"DK",
+				"Hanwha Life",
+				"",
+				"GEN.G",
+				"NS RED FORCE",
+				"KT Rolster"
+			]
+		},
+		{
+			"season": "2020 LCK 스프링",
+			"teams": [
+				"Griffin",
+				"KT Rolster",
+				"DK",
+				"",
+				"T1",
+				"Liiv Sandbox",
+				"DRX",
+				"SeolHaeOne Prince",
+				"GEN.G",
+				"Kwangdong Freecs",
+				"Hanwha Life"
+			]
+		},
+		{
+			"season": "2021 LCK Spring Split",
+			"teams": [
+				"DRX",
+				"Liiv Sandbox",
+				"NS RED FORCE",
+				"Hanwha Life",
+				"KT Rolster",
+				"Kwangdong Freecs",
+				"DK",
+				"Fredit BRION",
+				"",
+				"T1",
+				"GEN.G"
+			]
+		},
+		{
+			"season": "2019 LCK Summer 승강전",
+			"teams": [
+				"VSG",
+				"",
+				"Jin Air",
+				"KT Rolster",
+				"ES Sharks"
+			]
+		},
+		{
+			"season": "2022 LCK 서머 스플릿",
+			"teams": [
+				"Fredit BRION",
+				"DK",
+				"Kwangdong Freecs",
+				"T1",
+				"GEN.G",
+				"DRX",
+				"NS RED FORCE",
+				"KT Rolster",
+				"Hanwha Life",
+				"Liiv Sandbox"
+			]
+		},
+		{
+			"season": "2019 Worlds Championship",
+			"teams": [
+				"J Team",
+				"Isurus Gaming",
+				"MAMMOTH",
+				"Flamengo eSports",
+				"",
+				"GAM Esports",
+				"FunPlus Phoenix",
+				"DK",
+				"ahq",
+				"Clutch Gaming",
+				"Fnatic",
+				"T1",
+				"DetonatioN",
+				"Royal Youth",
+				"Griffin",
+				"Team Liquid",
+				"UOL",
+				"Hong Kong Attitude",
+				"Splyce",
+				"IG",
+				"RNG",
+				"G2 Esports",
+				"Lowkey Esports",
+				"MEGA",
+				"Cloud 9"
+			]
+		},
+		{
+			"season": "Worlds 2021 LCK",
+			"teams": [
+				"NS RED FORCE",
+				"Hanwha Life",
+				"Beyond Gaming",
+				"DK",
+				"T1",
+				"",
+				"EDward Gaming",
+				"GEN.G",
+				"Cloud 9"
+			]
+		},
+		{
+			"season": "2020 LCK 서머 승강전",
+			"teams": [
+				"",
+				"Griffin",
+				"NS RED FORCE",
+				"Seorabeol Gaming",
+				"Liiv Sandbox"
+			]
+		},
+		{
+			"season": "2021 Worlds LCK 대표 선발전",
+			"teams": [
+				"NS RED FORCE",
+				"Hanwha Life",
+				"Liiv Sandbox",
+				"T1"
+			]
+		},
+		{
+			"season": "2020 LoL 미드 시즌 컵",
+			"teams": [
+				"GEN.G",
+				"Invictus Gaming",
+				"",
+				"T1",
+				"DRX",
+				"JD Gaming",
+				"FunPlus Phoenix",
+				"Top Esports",
+				"DK"
+			]
+		},
+		{
+			"season": "2019 우리은행 LCK Summer",
+			"teams": [
+				"DK",
+				"DRX",
+				"Jin Air",
+				"Kwangdong Freecs",
+				"Griffin",
+				"KT Rolster",
+				"",
+				"T1",
+				"Hanwha Life",
+				"GEN.G",
+				"Liiv Sandbox"
+			]
+		},
+		{
+			"season": "Worlds 2022 LCK",
+			"teams": [
+				"GEN.G",
+				"DRX",
+				"T1",
+				"Royal Never Give Up",
+				"JDG Intel Esports Club",
+				"Edward Gaming Hycan",
+				"DK"
+			]
+		},
+		{
+			"season": "2020 LCK 스프링 승강전",
+			"teams": [
+				"NS RED FORCE",
+				"Jin Air",
+				"Hanwha Life",
+				"SeolHaeOne Prince"
+			]
+		},
+		{
+			"season": "2022 LCK 대표 선발전",
+			"teams": [
+				"DRX",
+				"Liiv Sandbox",
+				"DK",
+				"KT Rolster"
+			]
+		},
+		{
+			"season": "2022 MSI LCK",
+			"teams": [
+				"G2 Esports",
+				"Royal Never Give Up",
+				"T1"
+			]
+		},
+		{
+			"season": "2021 LCK 서머",
+			"teams": [
+				"DK",
+				"Kwangdong Freecs",
+				"Hanwha Life",
+				"GEN.G",
+				"DRX",
+				"KT Rolster",
+				"T1",
+				"Fredit BRION",
+				"",
+				"Liiv Sandbox",
+				"NS RED FORCE"
+			]
+		},
+		{
+			"season": "2020 월드 챔피언십",
+			"teams": [
+				"Suning",
+				"V3 Esports",
+				"INTZ E-sports",
+				"Rogue",
+				"Team Liquid",
+				"Team SoloMid",
+				"DRX",
+				"G2 Esports",
+				"Machi Esports",
+				"JD Gaming",
+				"Papara SuperMassive",
+				"Fnatic",
+				"GEN.G",
+				"DK",
+				"FlyQuest",
+				"Top Esports",
+				"",
+				"Legacy Esports",
+				"NS RED FORCE",
+				"PSG Talon",
+				"LGD Gaming",
+				"Rainbow7"
+			]
+		},
+		{
+			"season": "2019 스무살우리 LCK Spring",
+			"teams": [
+				"Kwangdong Freecs",
+				"DRX",
+				"Liiv Sandbox",
+				"Hanwha Life",
+				"Jin Air",
+				"",
+				"KT Rolster",
+				"GEN.G",
+				"DK",
+				"Griffin",
+				"T1"
+			]
+		},
+		{
+			"season": "2021 MSI",
+			"teams": [
+				"DK",
+				"Royal Never Give Up",
+				"NS RED FORCE",
+				"PSG Talon",
+				""
+			]
+		},
+		{
+			"season": "2020 LoL 월드 챔피언십 LCK 선발전",
+			"teams": [
+				"Kwangdong Freecs",
+				"KT Rolster",
+				"T1",
+				"GEN.G"
+			]
+		},
+		{
+			"season": "2019 LoL 월드 챔피언십 한국 대표 선발전",
+			"teams": [
+				"DRX",
+				"Kwangdong Freecs",
+				"Liiv Sandbox",
+				"DK"
+			]
+		}
+	],
+	"error": "null"
+}

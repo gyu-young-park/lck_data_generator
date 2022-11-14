@@ -3,11 +3,11 @@ package season
 import (
 	"fmt"
 
+	"github.com/gyu-young-park/lck_data_generator/commontype"
 	"github.com/gyu-young-park/lck_data_generator/repository"
-	"github.com/gyu-young-park/lck_data_generator/team"
 )
 
-type SeasonMapperWithTeam map[string]team.Set
+type SeasonMapperWithTeam map[string]commontype.Set
 
 func GenerateSeasonWithTeam(matchList *repository.LCKMatchListModel) SeasonMapperWithTeam {
 	if matchList.Error != "null" {
@@ -17,10 +17,10 @@ func GenerateSeasonWithTeam(matchList *repository.LCKMatchListModel) SeasonMappe
 	mapper := SeasonMapperWithTeam{}
 	for _, data := range matchList.Data {
 		if _, ok := mapper[data.Team1]; !ok {
-			mapper[data.Team1] = team.Set{}
+			mapper[data.Team1] = commontype.Set{}
 		}
 		if _, ok := mapper[data.Team2]; !ok {
-			mapper[data.Team2] = team.Set{}
+			mapper[data.Team2] = commontype.Set{}
 		}
 		mapper[data.Team1][data.Season] = struct{}{}
 		mapper[data.Team2][data.Season] = struct{}{}
@@ -38,7 +38,7 @@ func GenerateSeasonList(matchList *repository.LCKMatchListModel) *SeasonList {
 	}
 	fmt.Println("Start:", "GenerateSeasonList")
 	var ret SeasonList
-	var seasonSet team.Set
+	seasonSet := commontype.Set{}
 	for _, data := range matchList.Data {
 		seasonSet[data.Season] = struct{}{}
 	}

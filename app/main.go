@@ -231,7 +231,7 @@ func main() {
 		seasonListWithTeam.Error = "null"
 	}
 
-	teamList := team.GenerateTeamList(&matchList)
+	teamList := team.GenerateTeamList()
 	seasonList := season.GenerateSeasonList(&matchList)
 	// err := app.FirebaseApp.RemoveCollection("lck_match")
 	// if err != nil {
@@ -261,17 +261,18 @@ func main() {
 	fmt.Println("teams:", teamList)
 	fmt.Println("seasons", seasonList)
 
-	data, err := json.MarshalIndent(matchList, "", "\t")
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+	// data, err := json.MarshalIndent(matchList, "", "\t")
+	// if err != nil {
+	// 	fmt.Println(err)
+	// 	return
+	// }
+
 	// err = app.Repo.Store(string(repository.ALL_MATCH), string(data))
 	// if err != nil {
 	// 	fmt.Println(err)
 	// 	return
 	// }
-	data, err = json.MarshalIndent(teamListWithSeason, "", "\t")
+	data, err := json.MarshalIndent(teamListWithSeason, "", "\t")
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -288,6 +289,28 @@ func main() {
 		return
 	}
 	err = app.Repo.Store(string(repository.ALL_SEASON_WITH_TEAM), string(data))
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	data, err = json.MarshalIndent(teamList, "", "\t")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	err = app.Repo.Store(string(repository.ALL_TEAM_LIST), string(data))
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	data, err = json.MarshalIndent(seasonList, "", "\t")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	err = app.Repo.Store(string(repository.ALL_SEASON_LIST), string(data))
 	if err != nil {
 		fmt.Println(err)
 		return
