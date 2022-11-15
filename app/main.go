@@ -245,6 +245,14 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
+	err = app.FirebaseApp.RemoveCollection("lck_teams")
+	if err != nil {
+		fmt.Println(err)
+	}
+	err = app.FirebaseApp.RemoveCollection("lck_seasons")
+	if err != nil {
+		fmt.Println(err)
+	}
 	// for _, matchData := range matchList.Data {
 	// 	app.FirebaseApp.StoreDataWithDoc("lck_match", matchData.VideoId, firebaseapi.FireStoreDataSchema(structs.Map(matchData)))
 	// }
@@ -256,8 +264,8 @@ func main() {
 	for _, seasonWithTeamData := range seasonListWithTeam.Data {
 		app.FirebaseApp.StoreDataWithDoc("lck_season_with_team", seasonWithTeamData.Team, firebaseapi.FireStoreDataSchema(structs.Map(seasonWithTeamData)))
 	}
-	app.FirebaseApp.StoreDataWithDoc("lck-teams", "teams", firebaseapi.FireStoreDataSchema(structs.Map(teamList)))
-	app.FirebaseApp.StoreDataWithDoc("lck-seasons", "seasons", firebaseapi.FireStoreDataSchema(structs.Map(seasonList)))
+	app.FirebaseApp.StoreDataWithDoc("lck_teams", "teams", firebaseapi.FireStoreDataSchema(structs.Map(teamList)))
+	app.FirebaseApp.StoreDataWithDoc("lck_seasons", "seasons", firebaseapi.FireStoreDataSchema(structs.Map(seasonList)))
 	fmt.Println("teams:", teamList)
 	fmt.Println("seasons", seasonList)
 
