@@ -253,9 +253,9 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	// for _, matchData := range matchList.Data {
-	// 	app.FirebaseApp.StoreDataWithDoc("lck_match", matchData.VideoId, firebaseapi.FireStoreDataSchema(structs.Map(matchData)))
-	// }
+	for _, matchData := range matchList.Data {
+		app.FirebaseApp.StoreDataWithDoc("lck_match", matchData.VideoId, firebaseapi.FireStoreDataSchema(structs.Map(matchData)))
+	}
 
 	for _, teamWithSeasonData := range teamListWithSeason.Data {
 		app.FirebaseApp.StoreDataWithDoc("lck_team_with_season", teamWithSeasonData.Season, firebaseapi.FireStoreDataSchema(structs.Map(teamWithSeasonData)))
@@ -269,18 +269,18 @@ func main() {
 	fmt.Println("teams:", teamList)
 	fmt.Println("seasons", seasonList)
 
-	// data, err := json.MarshalIndent(matchList, "", "\t")
-	// if err != nil {
-	// 	fmt.Println(err)
-	// 	return
-	// }
+	data, err := json.MarshalIndent(matchList, "", "\t")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 
-	// err = app.Repo.Store(string(repository.ALL_MATCH), string(data))
-	// if err != nil {
-	// 	fmt.Println(err)
-	// 	return
-	// }
-	data, err := json.MarshalIndent(teamListWithSeason, "", "\t")
+	err = app.Repo.Store(string(repository.ALL_MATCH), string(data))
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	data, err = json.MarshalIndent(teamListWithSeason, "", "\t")
 	if err != nil {
 		fmt.Println(err)
 		return
