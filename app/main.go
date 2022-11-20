@@ -12,6 +12,7 @@ import (
 	"github.com/gyu-young-park/lck_data_generator/channel"
 	"github.com/gyu-young-park/lck_data_generator/config"
 	"github.com/gyu-young-park/lck_data_generator/crawler"
+	"github.com/gyu-young-park/lck_data_generator/filter"
 	"github.com/gyu-young-park/lck_data_generator/firebaseapi"
 	"github.com/gyu-young-park/lck_data_generator/matcher"
 	"github.com/gyu-young-park/lck_data_generator/playlist"
@@ -28,6 +29,7 @@ type App struct {
 	server                 *api.Server
 	teamMatcher            matcher.Matcher
 	crawler                crawler.Crawler
+	videoFilter            filter.Filter
 	ChannelService         channel.Service
 	PlayListService        playlist.Service
 	PlayListItemsService   playlistitems.Service
@@ -44,6 +46,7 @@ func NewApp() *App {
 	app.VideoStatisticsService = videostatistics.NewServiceWithVideoStatistics(app.Config.Key)
 	app.Repo = repository.NewFileRepository()
 	app.server = api.NewHTTPServer()
+	app.videoFilter = filter.NewVideoFilter()
 	app.FirebaseApp = firebaseapi.NewFireBaseAPI(app.Config.FirebaseKeyPath)
 	return app
 }
@@ -73,6 +76,10 @@ func (app *App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
 			panic(err)
 		}
 		for _, videoItem := range videoItems {
+			if app.videoFilter.Filtering(videoItem.Snippet.ResourceID.VideoID) {
+				fmt.Printf("Filtered: ttile[%s]", videoItem.Snippet.Title)
+				continue
+			}
 			dateParser, _ := regexp.Compile("\\| (0[1-9]|1[0-2]).(0[1-9]|[12][0-9]|3[01]) \\|")
 			is19Season := false
 			res := string(dateParser.Find([]byte(videoItem.Snippet.Title)))
@@ -129,7 +136,7 @@ func (app *App) MakeLCKVideoItemList() videoitem.VideoItemListMapper {
 			if err != nil {
 				fmt.Println(err)
 			}
-			videoItemMapper[date] = append(videoItemMapper[date], videoitem.NewVideoItem(
+			videoItemMapper.AppendWithDuplicatedCheck(date, videoitem.NewVideoItem(
 				playListItem.Snippet.Title,
 				videoItem.Snippet.Title,
 				videoItem.Snippet.ResourceID.VideoID,
