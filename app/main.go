@@ -146,6 +146,7 @@ func main() {
 	app := NewApp()
 	videoItemMapper := app.MakeLCKVideoItemList()
 	matchList := repository.LCKMatchListModel{}
+	errorMatchList := repository.LCKMatchListModel{}
 	teamListWithSeason := repository.LCKTeamWithSeasonListModel{}
 	seasonListWithTeam := repository.LCKSeasonWithTeamListModel{}
 	for k, v := range videoItemMapper {
@@ -185,18 +186,20 @@ func main() {
 				fmt.Println("team1-result:", setResultData[i].TeamScore1.Score)
 				fmt.Println("team2:", team2)
 				fmt.Println("team2-result:", setResultData[i].TeamScore2.Score)
+				fmt.Println("date:", item.PublishedAt)
+				fmt.Println("------------------------")
+				matchList.Data = append(matchList.Data, matchModel)
 			} else {
 				matchModel.IsError = true
 				fmt.Println("Error ", setResultData, " ", i)
+				errorMatchList.Data = append(errorMatchList.Data, matchModel)
 			}
-			fmt.Println("date:", item.PublishedAt)
-			fmt.Println("------------------------")
-			matchList.Data = append(matchList.Data, matchModel)
 		}
 	}
 
 	if len(matchList.Data) == 0 {
 		matchList.Error = "Error: There are no data"
+		return
 	}
 	matchList.Error = "null"
 	teamMapperWithSeason := team.GenerateTeamWithSeason(&matchList)
@@ -253,9 +256,9 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	for _, matchData := range matchList.Data {
-		app.FirebaseApp.StoreDataWithDoc("lck_match", matchData.VideoId, firebaseapi.FireStoreDataSchema(structs.Map(matchData)))
-	}
+	// for _, matchData := range matchList.Data {
+	// 	app.FirebaseApp.StoreDataWithDoc("lck_match", matchData.VideoId, firebaseapi.FireStoreDataSchema(structs.Map(matchData)))
+	// }
 
 	for _, teamWithSeasonData := range teamListWithSeason.Data {
 		app.FirebaseApp.StoreDataWithDoc("lck_team_with_season", teamWithSeasonData.Season, firebaseapi.FireStoreDataSchema(structs.Map(teamWithSeasonData)))
@@ -319,6 +322,18 @@ func main() {
 	}
 
 	err = app.Repo.Store(string(repository.ALL_SEASON_LIST), string(data))
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	data, err = json.MarshalIndent(errorMatchList, "", "\t")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	err = app.Repo.Store(string(repository.ALL_ERROR_MATCH_LIST), string(data))
 	if err != nil {
 		fmt.Println(err)
 		return

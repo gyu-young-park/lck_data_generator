@@ -1,14 +1,16 @@
 package crawler
 
 import (
+	"fmt"
+
 	"github.com/gocolly/colly/v2"
 )
 
 type LCKSetResultCrawler struct {
 	collector   *colly.Collector
 	QueryOption *InvenLCKResultQueryParam
-	Result []*LCKSetDataModel
-	done chan bool
+	Result      []*LCKSetDataModel
+	done        chan bool
 }
 
 func NewLCKSetResultCrawler() *LCKSetResultCrawler {
@@ -29,14 +31,14 @@ func (l *LCKSetResultCrawler) Ready() {
 		leftTeamScore := e.ChildText("div.wTeam > div.rightPart > div")
 		rightTeamScore := e.ChildText("div.lTeam > div.leftPart > div")
 		rightTeamName := e.ChildText("div.lTeam > div.rightPart > a.teamname")
-		l.Result = append(l.Result,&LCKSetDataModel{
+		l.Result = append(l.Result, &LCKSetDataModel{
 			Date: l.QueryOption.Date,
 			TeamScore1: TeamScore{
-				Team: leftTeamName,
+				Team:  leftTeamName,
 				Score: leftTeamScore,
 			},
 			TeamScore2: TeamScore{
-				Team: rightTeamName,
+				Team:  rightTeamName,
 				Score: rightTeamScore,
 			},
 		})
@@ -53,7 +55,8 @@ func (l *LCKSetResultCrawler) SetData(data interface{}) {
 	l.QueryOption.Date = date
 }
 
-func (l *LCKSetResultCrawler) GetResult() interface{}{
+func (l *LCKSetResultCrawler) GetResult() interface{} {
 	l.collector.Visit(l.QueryOption.MakeQueryURL())
+	fmt.Printf("craowler-url: %s\n", l.QueryOption.MakeQueryURL())
 	return l.Result
 }
