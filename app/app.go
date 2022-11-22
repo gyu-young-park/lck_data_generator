@@ -116,100 +116,78 @@ func (app *App) makeLCKVideoItemListMapperWithDate() videoitem.VideoItemListMapp
 	return videoItemMapper
 }
 
-func (app *App) mappingVideoAndResultStage(done chan interface{}, rawResultChan chan interface{}, date string, videoList videoitem.VideoItemList) chan repository.LCKMatchModel {
-	matchChan := make(chan repository.LCKMatchModel)
-	go func() {
-		defer close(matchChan)
-		for rawResult := range rawResultChan {
-			setResultData := rawResult.([]*crawler.LCKSetDataModel)
-			for _, item := range setResultData {
-				fmt.Println(item)
-			}
+func (app *App) mappingVideoAndResult(setResultData []*crawler.LCKSetDataModel, date string, videoList videoitem.VideoItemList) *[]repository.LCKMatchModel {
+	var ret []repository.LCKMatchModel
+	for _, item := range setResultData {
+		fmt.Println(item)
+	}
 
-			for i, videoItem := range videoList {
-				var matchModel repository.LCKMatchModel
-				fmt.Println("------------------------")
-				matchModel.SetLCKMatchVideo(
-					videoItem.PlayList,
-					videoItem.Title,
-					videoItem.VideoId,
-					videoItem.Season,
-					videoItem.Statistics.Views,
-					videoItem.Thumbnails,
-					date,
-					videoItem.PublishedAt.Unix(),
-				)
-				fmt.Println("playlist:", videoItem.PlayList)
-				fmt.Println("title:", videoItem.Title)
-				fmt.Println("video:", videoItem.VideoId)
-				fmt.Println("season:", videoItem.Season)
-				if len(setResultData) > i {
-					team1 := app.teamMatcher.Match(setResultData[i].TeamScore1.Team)
-					team2 := app.teamMatcher.Match(setResultData[i].TeamScore2.Team)
-					matchModel.SetLCKMatchScore(
-						team1,
-						setResultData[i].TeamScore1.Score,
-						team2,
-						setResultData[i].TeamScore2.Score)
-					fmt.Println("team1:", team1)
-					fmt.Println("team1-result:", setResultData[i].TeamScore1.Score)
-					fmt.Println("team2:", team2)
-					fmt.Println("team2-result:", setResultData[i].TeamScore2.Score)
-					fmt.Println("date:", videoItem.PublishedAt)
-					fmt.Println("------------------------")
-				} else {
-					matchModel.IsError = true
-					fmt.Println("Error ", setResultData, " ", i)
-				}
-				select {
-				case <-done:
-					return
-				case matchChan <- matchModel:
-				}
-			}
+	for i, videoItem := range videoList {
+		var matchModel repository.LCKMatchModel
+		fmt.Println("------------------------")
+		matchModel.SetLCKMatchVideo(
+			videoItem.PlayList,
+			videoItem.Title,
+			videoItem.VideoId,
+			videoItem.Season,
+			videoItem.Statistics.Views,
+			videoItem.Thumbnails,
+			date,
+			videoItem.PublishedAt.Unix(),
+		)
+		fmt.Println("playlist:", videoItem.PlayList)
+		fmt.Println("title:", videoItem.Title)
+		fmt.Println("video:", videoItem.VideoId)
+		fmt.Println("season:", videoItem.Season)
+		if len(setResultData) > i {
+			team1 := app.teamMatcher.Match(setResultData[i].TeamScore1.Team)
+			team2 := app.teamMatcher.Match(setResultData[i].TeamScore2.Team)
+			matchModel.SetLCKMatchScore(
+				team1,
+				setResultData[i].TeamScore1.Score,
+				team2,
+				setResultData[i].TeamScore2.Score)
+			fmt.Println("team1:", team1)
+			fmt.Println("team1-result:", setResultData[i].TeamScore1.Score)
+			fmt.Println("team2:", team2)
+			fmt.Println("team2-result:", setResultData[i].TeamScore2.Score)
+			fmt.Println("date:", videoItem.PublishedAt)
+			fmt.Println("------------------------")
+		} else {
+			matchModel.IsError = true
+			fmt.Println("Error ", setResultData, " ", i)
 		}
-	}()
-	return matchChan
+		ret = append(ret, matchModel)
+	}
+	return &ret
 }
 
 func (app *App) makeMatchAndErrorList() (*repository.LCKMatchListModel, *repository.LCKMatchListModel) {
 	videoItemMapper := app.makeLCKVideoItemListMapperWithDate()
 	matchList := repository.LCKMatchListModel{}
 	errorMatchList := repository.LCKMatchListModel{}
-	done := make(chan interface{})
-	defer close(done)
-	// for date, _ := range videoItemMapper {
-	// 	app.crawler.SetData(date)
-	// 	dataSetResultMapper[date] = app.crawler.GoroutineGetResult(done)
-	// }
-	// for rawSetResultData := range dataSetResultMapper[date].(<-chan interface{}) {
-	// 	rawSetResultData.([]*crawler.LCKSetDataModel)
-	// }
-	mapperMatchWithDate := make(map[string]chan repository.LCKMatchModel)
-	// matchChanList := make([]chan repository.LCKMatchModel, 10)
 	for date, videoList := range videoItemMapper {
 		app.crawler.SetData(date)
-		mapperMatchWithDate[date] = app.mappingVideoAndResultStage(done, app.crawler.GoroutineGetResult(done), date, videoList)
-	}
-	for _, matchChan := range mapperMatchWithDate {
-		for match := range matchChan {
+		rawResult := app.crawler.GetResult()
+		setResultData := rawResult.([]*crawler.LCKSetDataModel)
+		matchAndErrList := app.mappingVideoAndResult(setResultData, date, videoList)
+		for _, match := range *matchAndErrList {
 			if match.IsError {
 				errorMatchList.Data = append(errorMatchList.Data, match)
 			} else {
 				matchList.Data = append(matchList.Data, match)
 			}
-			close(matchChan)
 		}
 	}
 	return &matchList, &errorMatchList
 }
 
 func (app *App) removeAllDBSchema() {
-	err := app.FirebaseApp.RemoveCollection("lck_match")
-	if err != nil {
-		fmt.Println(err)
-	}
-	err = app.FirebaseApp.RemoveCollection("lck_season_with_team")
+	// err := app.FirebaseApp.RemoveCollection("lck_match")
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+	err := app.FirebaseApp.RemoveCollection("lck_season_with_team")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -234,9 +212,9 @@ func (app *App) storeAllDataInFirebase(
 	teamList *team.TeamList,
 	seasonList *season.SeasonList,
 ) {
-	for _, matchData := range matchList.Data {
-		app.FirebaseApp.StoreDataWithDoc("lck_match", matchData.VideoId, firebaseapi.FireStoreDataSchema(structs.Map(matchData)))
-	}
+	// for _, matchData := range matchList.Data {
+	// 	app.FirebaseApp.StoreDataWithDoc("lck_match", matchData.VideoId, firebaseapi.FireStoreDataSchema(structs.Map(matchData)))
+	// }
 
 	for _, teamWithSeasonData := range teamListWithSeason.Data {
 		app.FirebaseApp.StoreDataWithDoc("lck_team_with_season", teamWithSeasonData.Season, firebaseapi.FireStoreDataSchema(structs.Map(teamWithSeasonData)))

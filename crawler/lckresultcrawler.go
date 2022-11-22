@@ -60,19 +60,3 @@ func (l *LCKSetResultCrawler) GetResult() interface{} {
 	fmt.Printf("craowler-url: %s\n", l.QueryOption.MakeQueryURL())
 	return l.Result
 }
-
-func (l *LCKSetResultCrawler) GoroutineGetResult(done <-chan interface{}) chan interface{} {
-	resultDataChan := make(chan interface{})
-	crawData := func(done <-chan interface{}) {
-		l.collector.Visit(l.QueryOption.MakeQueryURL())
-		fmt.Printf("craowler-url: %s\n", l.QueryOption.MakeQueryURL())
-		select {
-		case <-done:
-			close(resultDataChan)
-			return
-		case resultDataChan <- l.Result:
-		}
-	}
-	go crawData(done)
-	return resultDataChan
-}

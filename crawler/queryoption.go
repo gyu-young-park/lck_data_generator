@@ -5,7 +5,7 @@ import "fmt"
 type SHIPGROUP string
 
 const (
-	ALL = SHIPGROUP("")
+	ALL   = SHIPGROUP("")
 	LCK   = SHIPGROUP("1")
 	CHAMS = SHIPGROUP("3")
 )
@@ -38,4 +38,8 @@ func (i *InvenLCKResultQueryParam) SetShipGroup(shipGroup string) {
 
 func (i *InvenLCKResultQueryParam) MakeQueryURL() string {
 	return fmt.Sprintf(i.Url, ALL, i.Date, i.Date)
+}
+
+func (i *InvenLCKResultQueryParam) MakeQueryURLWithDate(date string) string {
+	return fmt.Sprintf(i.Url, ALL, date, date)
 }
