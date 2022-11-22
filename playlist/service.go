@@ -10,26 +10,21 @@ import (
 )
 
 type Service interface {
-	GetPlayListItems() ([]PlaylistItemModel, error)
+	GetPlayListItems(filterOpt filter.Filter) ([]PlaylistItemModel, error)
 }
 
 const PART_OPTION = "snippet"
 
 type ServiceWithChannelId struct {
-	highlightMatchFilter filter.Filter
-	setHightlightFilter  filter.Filter
-	option               *QueryOption
+	option *QueryOption
 }
 
 func NewServiceWithChannelId(key string, channelId string) *ServiceWithChannelId {
-	ins := &ServiceWithChannelId{
-		filter.NewHighlightMatchFilter(),
-		filter.NewSetHightlightFilter(),
-		NewQueryOption(key, channelId, PART_OPTION, "", 50)}
+	ins := &ServiceWithChannelId{NewQueryOption(key, channelId, PART_OPTION, "", 50)}
 	return ins
 }
 
-func (s *ServiceWithChannelId) GetPlayListItems() ([]PlaylistItemModel, error) {
+func (s *ServiceWithChannelId) GetPlayListItems(filterOpt filter.Filter) ([]PlaylistItemModel, error) {
 	var playListItems []PlaylistItemModel
 	for {
 		url := fmt.Sprintf("https://www.googleapis.com/youtube/v3/playlists?channelId=%s&part=%s&key=%s&maxResults=%d&pageToken=%s",
@@ -47,7 +42,7 @@ func (s *ServiceWithChannelId) GetPlayListItems() ([]PlaylistItemModel, error) {
 		}
 		for _, item := range playlist.Items {
 			if item.ID != "" {
-				if s.setHightlightFilter.Filtering(item.Snippet.Title) {
+				if filterOpt.Filtering(item.Snippet.Title) {
 					playListItems = append(playListItems, item)
 				}
 			}

@@ -1,7 +1,6 @@
 package app
 
 import (
-	"bytes"
 	"encoding/json"
 	"fmt"
 	"regexp"
@@ -51,13 +50,13 @@ func NewApp() *App {
 	return app
 }
 
-func (app *App) makeLCKPlayList() *[]playlist.PlaylistItemModel {
+func (app *App) makeLCKPlayList(filterOpt filter.Filter) *[]playlist.PlaylistItemModel {
 	channelId, err := app.ChannelService.GetChannelId()
 	if err != nil {
 		panic(err)
 	}
 	app.PlayListService = playlist.NewServiceWithChannelId(app.Config.Key, channelId)
-	playListItems, err := app.PlayListService.GetPlayListItems()
+	playListItems, err := app.PlayListService.GetPlayListItems(filterOpt)
 	if err != nil {
 		panic(err)
 	}
@@ -97,10 +96,9 @@ func (app *App) setVideoItemMapper(videoItemMapper videoitem.VideoItemListMapper
 		videoItem.Snippet.PublishedAt))
 }
 
-func (app *App) makeLCKVideoItemListMapperWithDate() videoitem.VideoItemListMapper {
+func (app *App) makeLCKMatchVideoItemListMapperWithDate() videoitem.VideoItemListMapper {
 	videoItemMapper := make(videoitem.VideoItemListMapper)
-
-	playListItems := app.makeLCKPlayList()
+	playListItems := app.makeLCKPlayList(filter.NewSetHightlightFilter())
 	app.PlayListItemsService = playlistitems.NewServiceWithPlayListId(app.Config.Key)
 	for _, playListItem := range *playListItems {
 		season := getSeasonFromPlayList(&playListItem)
@@ -163,7 +161,7 @@ func (app *App) mappingVideoAndResult(setResultData []*crawler.LCKSetDataModel, 
 }
 
 func (app *App) makeMatchAndErrorList() (*repository.LCKMatchListModel, *repository.LCKMatchListModel) {
-	videoItemMapper := app.makeLCKVideoItemListMapperWithDate()
+	videoItemMapper := app.makeLCKMatchVideoItemListMapperWithDate()
 	matchList := repository.LCKMatchListModel{}
 	errorMatchList := repository.LCKMatchListModel{}
 	for date, videoList := range videoItemMapper {
@@ -321,89 +319,4 @@ func (app *App) Start() {
 	app.storeAllDataInFirebase(matchList, teamListWithSeason, seasonListWithTeam, teamList, seasonList)
 	app.storeAllDataInJSONFile(matchList, errorMatchList, teamListWithSeason, seasonListWithTeam, teamList, seasonList)
 	app.server.StartServer()
-}
-
-func SplitAny(s string, seps string) []string {
-	splitter := func(r rune) bool {
-		return strings.ContainsRune(seps, r)
-	}
-	return strings.FieldsFunc(s, splitter)
-}
-
-func getDateFromVideoTitle(dateParser *regexp.Regexp, videoItem *playlistitems.VideoItemModel) string {
-	is19Season := false
-	res := string(dateParser.Find([]byte(videoItem.Snippet.Title)))
-	if res == "" {
-		dateParser, _ = regexp.Compile("(0[1-9]|1[0-2]).(0[1-9]|[12][0-9]|3[01])")
-		res = string(dateParser.Find([]byte(videoItem.Snippet.Title)))
-		if res == "" {
-			fmt.Printf("Can't find data: %s\n", videoItem.Snippet.Title)
-		}
-		is19Season = true
-	}
-	if !is19Season {
-		res = strings.Split(res, " ")[1]
-	}
-	fmt.Println(videoItem.Snippet.Title, ": ", res)
-	return res
-}
-
-func getSeasonFromPlayList(playListItem *playlist.PlaylistItemModel) string {
-	var season string
-	var buf bytes.Buffer
-
-	playlistSplited := strings.Split(playListItem.Snippet.Title, " ")
-	for _, word := range playlistSplited {
-		if strings.Contains(word, "게임") || strings.Contains(word, "세트") {
-			break
-		}
-		buf.WriteString(word)
-		buf.WriteString(" ")
-	}
-
-	season = strings.TrimSpace(buf.String())
-	if strings.Contains(season, "[") {
-		season = SplitAny(season, "[]")[0]
-	}
-	return season
-}
-
-func makeTeamListWithSeason(matchList *repository.LCKMatchListModel) *repository.LCKTeamWithSeasonListModel {
-	teamListWithSeason := repository.LCKTeamWithSeasonListModel{}
-	teamMapperWithSeason := team.GenerateTeamWithSeason(matchList)
-	if teamMapperWithSeason == nil {
-		teamListWithSeason.Error = "Erorr"
-		fmt.Println("Error!! team mapper:Can't get team with season")
-	} else {
-		for season, teamSet := range teamMapperWithSeason {
-			var teamWithSeason repository.LCKTeamWithSeasonModel
-			teamWithSeason.Season = season
-			for team, _ := range teamSet {
-				teamWithSeason.TeamList = append(teamWithSeason.TeamList, team)
-			}
-			teamListWithSeason.Data = append(teamListWithSeason.Data, teamWithSeason)
-		}
-		teamListWithSeason.Error = "null"
-	}
-	return &teamListWithSeason
-}
-
-func makeSeasonWithTeamList(matchList *repository.LCKMatchListModel) *repository.LCKSeasonWithTeamListModel {
-	seasonListWithTeam := repository.LCKSeasonWithTeamListModel{}
-	seasonMapperWithTeam := season.GenerateSeasonWithTeam(matchList)
-	if seasonMapperWithTeam == nil {
-		seasonListWithTeam.Error = "Error"
-		fmt.Println("Error!! team mapper:Can't get season with team")
-	} else {
-		for team, seasonSet := range seasonMapperWithTeam {
-			var seasonWithTeam repository.LCKSeasonWithTeamModel
-			seasonWithTeam.Team = team
-			for season, _ := range seasonSet {
-				seasonWithTeam.SeasonList = append(seasonWithTeam.SeasonList, season)
-			}
-			seasonListWithTeam.Data = append(seasonListWithTeam.Data, seasonWithTeam)
-		}
-		seasonListWithTeam.Error = "null"
-	}
-	return &seasonListWithTeam
 }

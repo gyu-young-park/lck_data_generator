@@ -3,9 +3,10 @@ package config
 const CONFIG_JSON_FILE_PATH = "./config.json"
 
 type Config struct {
-	Key    string `json:"key"`
+	Key             string `json:"key"`
 	FirebaseKeyPath string `json:"firebase-key-path"`
-	setter ConfigSetter
+	PlayList        string `json:"playlist"`
+	setter          ConfigSetter
 }
 
 func NewConfig(setter ConfigSetter) *Config {
