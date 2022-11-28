@@ -11,6 +11,7 @@ import (
 	"github.com/gyu-young-park/lck_data_generator/channel"
 	"github.com/gyu-young-park/lck_data_generator/config"
 	"github.com/gyu-young-park/lck_data_generator/crawler"
+	"github.com/gyu-young-park/lck_data_generator/crawler/inven"
 	"github.com/gyu-young-park/lck_data_generator/filter"
 	"github.com/gyu-young-park/lck_data_generator/firebaseapi"
 	"github.com/gyu-young-park/lck_data_generator/matcher"
@@ -38,7 +39,7 @@ type App struct {
 }
 
 func NewApp() *App {
-	app := &App{crawler: crawler.NewLCKSetResultCrawler()}
+	app := &App{crawler: inven.NewLCKSetResultCrawler()}
 	app.teamMatcher = matcher.NewLCKTeamMatcher()
 	app.Config = config.NewConfig(config.NewConfigSetterJSON())
 	app.ChannelService = channel.NewServiceWithVideoId(app.Config.Key)
@@ -114,7 +115,7 @@ func (app *App) makeLCKMatchVideoItemListMapperWithDate() videoitem.VideoItemLis
 	return videoItemMapper
 }
 
-func (app *App) mappingVideoAndResult(setResultData []*crawler.LCKSetDataModel, date string, videoList videoitem.VideoItemList) *[]repository.LCKMatchModel {
+func (app *App) mappingVideoAndResult(setResultData []*inven.LCKSetDataModel, date string, videoList videoitem.VideoItemList) *[]repository.LCKMatchModel {
 	var ret []repository.LCKMatchModel
 	for _, item := range setResultData {
 		fmt.Println(item)
@@ -167,7 +168,7 @@ func (app *App) makeMatchAndErrorList() (*repository.LCKMatchListModel, *reposit
 	for date, videoList := range videoItemMapper {
 		app.crawler.SetData(date)
 		rawResult := app.crawler.GetResult()
-		setResultData := rawResult.([]*crawler.LCKSetDataModel)
+		setResultData := rawResult.([]*inven.LCKSetDataModel)
 		matchAndErrList := app.mappingVideoAndResult(setResultData, date, videoList)
 		for _, match := range *matchAndErrList {
 			if match.IsError {

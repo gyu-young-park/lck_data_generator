@@ -1,4 +1,4 @@
-package crawler
+package inven
 
 import (
 	"fmt"
