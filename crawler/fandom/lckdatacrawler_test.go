@@ -8,7 +8,7 @@ import (
 )
 
 func TestLckResultCrawler(t *testing.T) {
-	crawler := fandom.NewLCKSetResultCrawler()
+	crawler := fandom.NewLCKDataCrawler()
 	data := crawler.GetResult()
 	fmt.Println(data)
 }

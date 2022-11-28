@@ -6,16 +6,15 @@ import (
 	"github.com/gocolly/colly/v2"
 )
 
-type LCKSetResultCrawler struct {
+type LCKDataCrawler struct {
 	collector   *colly.Collector
 	queryOption *QueryOption
 	result      []*LCKSetDataModel
-	done        chan bool
 	testResult  string
 }
 
-func NewLCKSetResultCrawler() *LCKSetResultCrawler {
-	lckSetResultCrawler := &LCKSetResultCrawler{
+func NewLCKDataCrawler() *LCKDataCrawler {
+	lckSetResultCrawler := &LCKDataCrawler{
 		collector:   colly.NewCollector(),
 		queryOption: NewQueryOption(),
 	}
@@ -23,7 +22,7 @@ func NewLCKSetResultCrawler() *LCKSetResultCrawler {
 	return lckSetResultCrawler
 }
 
-func (l *LCKSetResultCrawler) Ready() {
+func (l *LCKDataCrawler) Ready() {
 	l.collector.OnHTML(" div.wide-content-scroll", func(e *colly.HTMLElement) {
 		e.ForEach("tbody > tr.multirow-highlighter", func(i int, element *colly.HTMLElement) {
 			patch := element.ChildText("td:nth-child(2)")
@@ -38,11 +37,11 @@ func (l *LCKSetResultCrawler) Ready() {
 	})
 }
 
-func (l *LCKSetResultCrawler) SetData(data interface{}) {
+func (l *LCKDataCrawler) SetData(data interface{}) {
 
 }
 
-func (l *LCKSetResultCrawler) GetResult() interface{} {
+func (l *LCKDataCrawler) GetResult() interface{} {
 	l.collector.UserAgent = "Mozilla/5.0"
 	fmt.Printf("crawler-url: %s\n", l.queryOption.makeQueryUrl())
 	err := l.collector.Visit(l.queryOption.makeQueryUrl())
