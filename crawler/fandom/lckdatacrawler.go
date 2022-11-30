@@ -11,13 +11,12 @@ type LCKDataCrawler struct {
 	collector   *colly.Collector
 	queryOption *crawler.QueryOption
 	result      []*crawler.LCKSetDataModel
-	testResult  string
 }
 
 func NewLCKDataCrawler() *LCKDataCrawler {
 	lckSetResultCrawler := &LCKDataCrawler{
 		collector:   colly.NewCollector(),
-		queryOption: newQueryOption(),
+		queryOption: NewQueryOption(),
 	}
 	lckSetResultCrawler.Ready()
 	return lckSetResultCrawler

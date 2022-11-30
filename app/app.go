@@ -11,7 +11,7 @@ import (
 	"github.com/gyu-young-park/lck_data_generator/channel"
 	"github.com/gyu-young-park/lck_data_generator/config"
 	"github.com/gyu-young-park/lck_data_generator/crawler"
-	"github.com/gyu-young-park/lck_data_generator/crawler/inven"
+	"github.com/gyu-young-park/lck_data_generator/crawler/fandom"
 	"github.com/gyu-young-park/lck_data_generator/filter"
 	"github.com/gyu-young-park/lck_data_generator/firebaseapi"
 	"github.com/gyu-young-park/lck_data_generator/matcher"
@@ -28,6 +28,7 @@ type App struct {
 	Config                 *config.Config
 	server                 *api.Server
 	teamMatcher            matcher.Matcher
+	seasonMatcher          matcher.Matcher
 	crawler                crawler.Crawler
 	videoFilter            filter.Filter
 	ChannelService         channel.Service
@@ -39,8 +40,10 @@ type App struct {
 }
 
 func NewApp() *App {
-	app := &App{crawler: inven.NewLCKSetResultCrawler()}
+	// app := &App{crawler: inven.NewLCKSetResultCrawler()}
+	app := &App{crawler: fandom.NewLCKDataCrawler()}
 	app.teamMatcher = matcher.NewLCKTeamMatcher()
+	app.seasonMatcher = matcher.NewLCKSeasonAndFandomSeasonMatcher()
 	app.Config = config.NewConfig(config.NewConfigSetterJSON())
 	app.ChannelService = channel.NewServiceWithVideoId(app.Config.Key)
 	app.VideoStatisticsService = videostatistics.NewServiceWithVideoStatistics(app.Config.Key)
@@ -166,7 +169,11 @@ func (app *App) makeMatchAndErrorList() (*repository.LCKMatchListModel, *reposit
 	matchList := repository.LCKMatchListModel{}
 	errorMatchList := repository.LCKMatchListModel{}
 	for date, videoList := range videoItemMapper {
-		app.crawler.SetQueryOption(inven.NewInvenLCKResultQueryParamWithDate(date))
+		fandomSeason := app.seasonMatcher.Match(date)
+		if fandomSeason == "" {
+			fmt.Println("[fandomSeason]Error date: ", date)
+		}
+		app.crawler.SetQueryOption(fandom.NewInvenLCKResultQueryParamWithDateAndSeason(date, fandomSeason))
 		rawResult := app.crawler.GetResult()
 		setResultData := rawResult.([]*crawler.LCKSetDataModel)
 		matchAndErrList := app.mappingVideoAndResult(setResultData, date, videoList)
