@@ -115,7 +115,7 @@ func (app *App) makeLCKMatchVideoItemListMapperWithDate() videoitem.VideoItemLis
 	return videoItemMapper
 }
 
-func (app *App) mappingVideoAndResult(setResultData []*inven.LCKSetDataModel, date string, videoList videoitem.VideoItemList) *[]repository.LCKMatchModel {
+func (app *App) mappingVideoAndResult(setResultData []*crawler.LCKSetDataModel, date string, videoList videoitem.VideoItemList) *[]repository.LCKMatchModel {
 	var ret []repository.LCKMatchModel
 	for _, item := range setResultData {
 		fmt.Println(item)
@@ -139,17 +139,17 @@ func (app *App) mappingVideoAndResult(setResultData []*inven.LCKSetDataModel, da
 		fmt.Println("video:", videoItem.VideoId)
 		fmt.Println("season:", videoItem.Season)
 		if len(setResultData) > i {
-			team1 := app.teamMatcher.Match(setResultData[i].TeamScore1.Team)
-			team2 := app.teamMatcher.Match(setResultData[i].TeamScore2.Team)
+			team1 := app.teamMatcher.Match(setResultData[i].Team1.Team)
+			team2 := app.teamMatcher.Match(setResultData[i].Team2.Team)
 			matchModel.SetLCKMatchScore(
 				team1,
-				setResultData[i].TeamScore1.Score,
+				setResultData[i].Team1.Score,
 				team2,
-				setResultData[i].TeamScore2.Score)
+				setResultData[i].Team2.Score)
 			fmt.Println("team1:", team1)
-			fmt.Println("team1-result:", setResultData[i].TeamScore1.Score)
+			fmt.Println("team1-result:", setResultData[i].Team1.Score)
 			fmt.Println("team2:", team2)
-			fmt.Println("team2-result:", setResultData[i].TeamScore2.Score)
+			fmt.Println("team2-result:", setResultData[i].Team2.Score)
 			fmt.Println("date:", videoItem.PublishedAt)
 			fmt.Println("------------------------")
 		} else {
@@ -166,9 +166,9 @@ func (app *App) makeMatchAndErrorList() (*repository.LCKMatchListModel, *reposit
 	matchList := repository.LCKMatchListModel{}
 	errorMatchList := repository.LCKMatchListModel{}
 	for date, videoList := range videoItemMapper {
-		app.crawler.SetData(date)
+		app.crawler.SetQueryOption(inven.NewInvenLCKResultQueryParamWithDate(date))
 		rawResult := app.crawler.GetResult()
-		setResultData := rawResult.([]*inven.LCKSetDataModel)
+		setResultData := rawResult.([]*crawler.LCKSetDataModel)
 		matchAndErrList := app.mappingVideoAndResult(setResultData, date, videoList)
 		for _, match := range *matchAndErrList {
 			if match.IsError {
@@ -316,8 +316,8 @@ func (app *App) Start() {
 	teamList := team.GenerateTeamList()
 	seasonList := season.GenerateSeasonList(matchList)
 
-	app.removeAllDBSchema()
-	app.storeAllDataInFirebase(matchList, teamListWithSeason, seasonListWithTeam, teamList, seasonList)
+	// app.removeAllDBSchema()
+	// app.storeAllDataInFirebase(matchList, teamListWithSeason, seasonListWithTeam, teamList, seasonList)
 	app.storeAllDataInJSONFile(matchList, errorMatchList, teamListWithSeason, seasonListWithTeam, teamList, seasonList)
 	app.server.StartServer()
 }

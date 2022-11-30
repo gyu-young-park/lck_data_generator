@@ -1,7 +1,7 @@
-package fandom
+package crawler
 
 type LCKSetDataModel struct {
-	Data  string
+	Date  string
 	Team1 TeamInfo
 	Team2 TeamInfo
 }
@@ -9,6 +9,6 @@ type LCKSetDataModel struct {
 type TeamInfo struct {
 	Team      string
 	Score     string
-	Champions []string
-	Roster    []string
+	Champions string
+	Roster    string
 }
