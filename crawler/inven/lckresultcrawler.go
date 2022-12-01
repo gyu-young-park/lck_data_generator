@@ -4,13 +4,13 @@ import (
 	"fmt"
 
 	"github.com/gocolly/colly/v2"
-	"github.com/gyu-young-park/lck_data_generator/crawler"
+	crawlermodel "github.com/gyu-young-park/lck_data_generator/crawler/model"
 )
 
 type LCKSetResultCrawler struct {
 	collector   *colly.Collector
-	queryOption *crawler.QueryOption
-	result      []*crawler.LCKSetDataModel
+	queryOption *crawlermodel.QueryOption
+	result      []*crawlermodel.LCKSetDataModel
 	done        chan bool
 }
 
@@ -28,7 +28,7 @@ func NewLCKSetResultCrawler() *LCKSetResultCrawler {
 
 func (l *LCKSetResultCrawler) Ready() {
 	l.collector.OnHTML("body > div#esportsBody div.listFrame", func(e *colly.HTMLElement) {
-		var resultData crawler.LCKSetDataModel
+		var resultData crawlermodel.LCKSetDataModel
 		leftTeamName := e.ChildText("div.wTeam > div.leftPart > a.teamname")
 		leftTeamScore := e.ChildText("div.wTeam > div.rightPart > div")
 		rightTeamScore := e.ChildText("div.lTeam > div.leftPart > div")
@@ -47,7 +47,7 @@ func (l *LCKSetResultCrawler) Clear() {
 	l.queryOption = nil
 }
 
-func (l *LCKSetResultCrawler) SetQueryOption(queryOption *crawler.QueryOption) {
+func (l *LCKSetResultCrawler) SetQueryOption(queryOption *crawlermodel.QueryOption) {
 	l.Clear()
 	l.queryOption = queryOption
 }

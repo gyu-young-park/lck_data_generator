@@ -6,6 +6,7 @@ type Config struct {
 	Key             string `json:"key"`
 	FirebaseKeyPath string `json:"firebase-key-path"`
 	PlayList        string `json:"playlist"`
+	CrawlerMode 	string `json:"crawler-mode"` // fandom, crawler
 	setter          ConfigSetter
 }
 
