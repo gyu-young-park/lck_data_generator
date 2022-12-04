@@ -164,7 +164,7 @@ func (app *App) mappingVideoAndResult(setResultData []*crawlermodel.LCKSetDataMo
 			fmt.Println("------------------------")
 		} else {
 			matchModel.IsError = true
-			fmt.Println("Error ", setResultData, " ", i)
+			fmt.Println("Error ", setResultData, " ", i, "Date", matchModel.Date)
 		}
 		ret = append(ret, matchModel)
 	}

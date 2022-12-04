@@ -2,6 +2,7 @@ package calibratorvideo
 
 import (
 	"fmt"
+	"sort"
 
 	videoitem "github.com/gyu-young-park/lck_data_generator/videoItem"
 	"github.com/gyu-young-park/lck_data_generator/videostatistics"
@@ -21,11 +22,11 @@ func (v *VideoInjectorImpl) Calibrate(videoMapper videoitem.VideoItemListMapper,
 		if !isExist {
 			continue
 		}
-		// append videoList
 		for _, videoId := range caliData.VideoIdList {
-			// get video id
-			videoStatisticsData, err := videoStatisticsService.GetVideoStatistics(videoId)
-			fmt.Printf("Omitted Video Calibrated: %s %s %s\n", videoId, caliData.PlayListTitle, caliData.Date)
+			videoStatisticsData, err := videoStatisticsService.TempGetVideoStatistics(videoId)
+			if err != nil {
+				fmt.Println("[Calibrate] Error:", err)
+			}
 			videoItem := videoitem.NewVideoItem(
 				caliData.PlayListTitle,
 				videoStatisticsData.Items[0].Snippet.Title,
@@ -38,6 +39,13 @@ func (v *VideoInjectorImpl) Calibrate(videoMapper videoitem.VideoItemListMapper,
 				fmt.Printf("[%s]Error: %s", "Calibrate", err.Error())
 			}
 			videoList = append(videoList, videoItem)
+			fmt.Printf("[Calibrate]Success append %s %s\n", videoId, date)
 		}
+
+		sort.Slice(videoList, func(i, j int) bool {
+			return videoList[i].PublishedAt.After(videoList[j].PublishedAt)
+		})
+
+		videoMapper[date] = videoList
 	}
 }
