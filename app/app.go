@@ -173,7 +173,8 @@ func (app *App) makeMatchAndErrorList() (*repository.LCKMatchListModel, *reposit
 		if fandomSeason == "" {
 			fmt.Println("[fandomSeason]Error date: ", date)
 		}
-		app.crawler.SetQueryOption(fandom.NewInvenLCKResultQueryParamWithDateAndSeason(date, fandomSeason))
+		// TODO: config를 사용하여 crawler 의존성 주입할 수 있도록 만들기
+		app.crawler.SetQueryOption(fandom.NewFandomLCKResultQueryParamWithDateAndSeason(date, fandomSeason))
 		rawResult := app.crawler.GetResult()
 		setResultData := rawResult.([]*crawler.LCKSetDataModel)
 		matchAndErrList := app.mappingVideoAndResult(setResultData, date, videoList)

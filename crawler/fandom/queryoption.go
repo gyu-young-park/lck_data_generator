@@ -29,7 +29,7 @@ func NewQueryOption() *crawler.QueryOption {
 	}
 }
 
-func NewInvenLCKResultQueryParamWithDateAndSeason(date string, season string) *crawler.QueryOption {
+func NewFandomLCKResultQueryParamWithDateAndSeason(date string, season string) *crawler.QueryOption {
 	return &crawler.QueryOption{
 		Url:               FANDOM_URL,
 		FandomQueryOption: crawler.FandomQueryOption{Season: season},
