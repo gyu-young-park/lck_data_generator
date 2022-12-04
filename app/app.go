@@ -8,10 +8,12 @@ import (
 
 	"github.com/fatih/structs"
 	"github.com/gyu-young-park/lck_data_generator/api"
+	"github.com/gyu-young-park/lck_data_generator/calibrator"
 	"github.com/gyu-young-park/lck_data_generator/channel"
 	"github.com/gyu-young-park/lck_data_generator/config"
 	"github.com/gyu-young-park/lck_data_generator/crawler"
 	"github.com/gyu-young-park/lck_data_generator/crawler/fandom"
+	crawlermodel "github.com/gyu-young-park/lck_data_generator/crawler/model"
 	"github.com/gyu-young-park/lck_data_generator/filter"
 	"github.com/gyu-young-park/lck_data_generator/firebaseapi"
 	"github.com/gyu-young-park/lck_data_generator/matcher"
@@ -37,20 +39,23 @@ type App struct {
 	VideoStatisticsService videostatistics.Service
 	FirebaseApp            *firebaseapi.FirebaseApp
 	Repo                   repository.Repository
+	Calibrator *calibrator.Calibrator
 }
 
 func NewApp() *App {
 	// app := &App{crawler: inven.NewLCKSetResultCrawler()}
-	app := &App{crawler: fandom.NewLCKDataCrawler()}
+	app := &App{}
 	app.teamMatcher = matcher.NewLCKTeamMatcher()
 	app.seasonMatcher = matcher.NewLCKSeasonAndFandomSeasonMatcher()
 	app.Config = config.NewConfig(config.NewConfigSetterJSON())
+	app.crawler = crawler.New(crawler.CrawlerMode_t(app.Config.CrawlerMode))
 	app.ChannelService = channel.NewServiceWithVideoId(app.Config.Key)
 	app.VideoStatisticsService = videostatistics.NewServiceWithVideoStatistics(app.Config.Key)
 	app.Repo = repository.NewFileRepository()
 	app.server = api.NewHTTPServer()
 	app.videoFilter = filter.NewVideoFilter()
 	app.FirebaseApp = firebaseapi.NewFireBaseAPI(app.Config.FirebaseKeyPath)
+	app.Calibrator = calibrator.NewCalibrator(app.Config)
 	return app
 }
 
@@ -86,11 +91,12 @@ func (app *App) setVideoItemMapper(videoItemMapper videoitem.VideoItemListMapper
 	monthDay := strings.Split(dateFromTitle, ".")
 	date := fmt.Sprintf("%v-%s-%s", videoItem.Snippet.PublishedAt.Year(), strings.TrimSpace(monthDay[0]), strings.TrimSpace(monthDay[1]))
 	// date := videoItem.Snippet.PublishedAt.Format("2006-01-02")
+	calibratedDate := app.Calibrator.GetCalibratedDate(videoItem.Snippet.ResourceID.VideoID,date)
 	videostatistics, err := app.VideoStatisticsService.GetVideoStatistics(videoItem.Snippet.ResourceID.VideoID)
 	if err != nil {
 		fmt.Println(err)
 	}
-	videoItemMapper.AppendWithDuplicatedCheck(date, videoitem.NewVideoItem(
+	videoItemMapper.AppendWithDuplicatedCheck(calibratedDate, videoitem.NewVideoItem(
 		playListTitle,
 		videoItem.Snippet.Title,
 		videoItem.Snippet.ResourceID.VideoID,
@@ -118,7 +124,7 @@ func (app *App) makeLCKMatchVideoItemListMapperWithDate() videoitem.VideoItemLis
 	return videoItemMapper
 }
 
-func (app *App) mappingVideoAndResult(setResultData []*crawler.LCKSetDataModel, date string, videoList videoitem.VideoItemList) *[]repository.LCKMatchModel {
+func (app *App) mappingVideoAndResult(setResultData []*crawlermodel.LCKSetDataModel, date string, videoList videoitem.VideoItemList) *[]repository.LCKMatchModel {
 	var ret []repository.LCKMatchModel
 	for _, item := range setResultData {
 		fmt.Println(item)
@@ -141,7 +147,7 @@ func (app *App) mappingVideoAndResult(setResultData []*crawler.LCKSetDataModel, 
 		fmt.Println("title:", videoItem.Title)
 		fmt.Println("video:", videoItem.VideoId)
 		fmt.Println("season:", videoItem.Season)
-		if len(setResultData) > i {
+		if len(setResultData) > i && len(setResultData) == len(videoList) {
 			team1 := app.teamMatcher.Match(setResultData[i].Team1.Team)
 			team2 := app.teamMatcher.Match(setResultData[i].Team2.Team)
 			matchModel.SetLCKMatchScore(
@@ -176,7 +182,7 @@ func (app *App) makeMatchAndErrorList() (*repository.LCKMatchListModel, *reposit
 		// TODO: config를 사용하여 crawler 의존성 주입할 수 있도록 만들기
 		app.crawler.SetQueryOption(fandom.NewFandomLCKResultQueryParamWithDateAndSeason(date, fandomSeason))
 		rawResult := app.crawler.GetResult()
-		setResultData := rawResult.([]*crawler.LCKSetDataModel)
+		setResultData := rawResult.([]*crawlermodel.LCKSetDataModel)
 		matchAndErrList := app.mappingVideoAndResult(setResultData, date, videoList)
 		for _, match := range *matchAndErrList {
 			if match.IsError {

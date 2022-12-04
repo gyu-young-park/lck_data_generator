@@ -4,13 +4,13 @@ import (
 	"fmt"
 
 	"github.com/gocolly/colly/v2"
-	"github.com/gyu-young-park/lck_data_generator/crawler"
+	crawlermodel "github.com/gyu-young-park/lck_data_generator/crawler/model"
 )
 
 type LCKDataCrawler struct {
 	collector   *colly.Collector
-	queryOption *crawler.QueryOption
-	result      []*crawler.LCKSetDataModel
+	queryOption *crawlermodel.QueryOption
+	result      []*crawlermodel.LCKSetDataModel
 }
 
 func NewLCKDataCrawler() *LCKDataCrawler {
@@ -25,7 +25,7 @@ func NewLCKDataCrawler() *LCKDataCrawler {
 func (l *LCKDataCrawler) Ready() {
 	l.collector.OnHTML(" div.wide-content-scroll", func(e *colly.HTMLElement) {
 		e.ForEach("tbody > tr.multirow-highlighter", func(i int, element *colly.HTMLElement) {
-			var resultData crawler.LCKSetDataModel
+			var resultData crawlermodel.LCKSetDataModel
 			patch := element.ChildText("td:nth-child(2)")
 			fmt.Println(i, " ", patch)
 			resultData.Team1.Team = element.ChildText("td:nth-child(3)")
@@ -57,7 +57,7 @@ func (l *LCKDataCrawler) Clear() {
 	l.queryOption = nil
 }
 
-func (l *LCKDataCrawler) SetQueryOption(queryOption *crawler.QueryOption) {
+func (l *LCKDataCrawler) SetQueryOption(queryOption *crawlermodel.QueryOption) {
 	l.Clear()
 	l.queryOption = queryOption
 }

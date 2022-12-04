@@ -1,4 +1,4 @@
-package crawler
+package crawlermodel
 
 type LCKSetDataModel struct {
 	Date  string

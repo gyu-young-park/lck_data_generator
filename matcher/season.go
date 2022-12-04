@@ -85,6 +85,11 @@ func NewLCKSeasonAndFandomSeasonMatcher() *LCKSeasonAndFandomSeasonMatcher {
 				season:    "LCK%2F2020+Season%2FSummer+Promotion&_run",
 			},
 			{
+				startDate: convertTimeWithNoErr("2020-05-27"),
+				endDate:   convertTimeWithNoErr("2020-06-01"),
+				season:    "2020+Mid-Season+Cup",
+			},
+			{
 				startDate: convertTimeWithNoErr("2020-06-16"),
 				endDate:   convertTimeWithNoErr("2020-08-24"),
 				season:    "LCK%2F2020+Season%2FSummer+Season",
