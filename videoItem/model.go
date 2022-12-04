@@ -26,12 +26,12 @@ type VideoItem struct {
 	Title       string
 	VideoId     string
 	Season      string
-	Statistics  videostatistics.VideoStatisticsModel
+	Statistics  videostatistics.VideoStatisticsResponseModel
 	Thumbnails  playlistitems.VideoThumbnailModel
 	PublishedAt time.Time
 }
 
-func NewVideoItem(playlist string, title string, videoId string, season string, statistics videostatistics.VideoStatisticsModel, thumbnails playlistitems.VideoThumbnailModel, publishedAt time.Time) *VideoItem {
+func NewVideoItem(playlist string, title string, videoId string, season string, statistics videostatistics.VideoStatisticsResponseModel, thumbnails playlistitems.VideoThumbnailModel, publishedAt time.Time) *VideoItem {
 	return &VideoItem{PlayList: playlist, Title: title, VideoId: videoId, Season: season, Statistics: statistics, Thumbnails: thumbnails, PublishedAt: publishedAt}
 }
 

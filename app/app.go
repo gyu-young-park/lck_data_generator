@@ -39,7 +39,7 @@ type App struct {
 	VideoStatisticsService videostatistics.Service
 	FirebaseApp            *firebaseapi.FirebaseApp
 	Repo                   repository.Repository
-	Calibrator *calibrator.Calibrator
+	Calibrator             *calibrator.Calibrator
 }
 
 func NewApp() *App {
@@ -91,7 +91,8 @@ func (app *App) setVideoItemMapper(videoItemMapper videoitem.VideoItemListMapper
 	monthDay := strings.Split(dateFromTitle, ".")
 	date := fmt.Sprintf("%v-%s-%s", videoItem.Snippet.PublishedAt.Year(), strings.TrimSpace(monthDay[0]), strings.TrimSpace(monthDay[1]))
 	// date := videoItem.Snippet.PublishedAt.Format("2006-01-02")
-	calibratedDate := app.Calibrator.GetCalibratedDate(videoItem.Snippet.ResourceID.VideoID,date)
+	calibratedDate := app.Calibrator.GetCalibratedDate(videoItem.Snippet.ResourceID.VideoID, date)
+	//TODO calibrate: add video to mapper, becuase it is not added in lck channel
 	videostatistics, err := app.VideoStatisticsService.GetVideoStatistics(videoItem.Snippet.ResourceID.VideoID)
 	if err != nil {
 		fmt.Println(err)
@@ -138,7 +139,7 @@ func (app *App) mappingVideoAndResult(setResultData []*crawlermodel.LCKSetDataMo
 			videoItem.Title,
 			videoItem.VideoId,
 			videoItem.Season,
-			videoItem.Statistics.Views,
+			videoItem.Statistics.Items[0].Statistics.ViewCount,
 			videoItem.Thumbnails,
 			date,
 			videoItem.PublishedAt.Unix(),
@@ -174,6 +175,8 @@ func (app *App) makeMatchAndErrorList() (*repository.LCKMatchListModel, *reposit
 	videoItemMapper := app.makeLCKMatchVideoItemListMapperWithDate()
 	matchList := repository.LCKMatchListModel{}
 	errorMatchList := repository.LCKMatchListModel{}
+	// TODO: add calibrator to add omitted data
+	app.Calibrator.SetOmittedVideoInVideoMapper(videoItemMapper, app.VideoStatisticsService)
 	for date, videoList := range videoItemMapper {
 		fandomSeason := app.seasonMatcher.Match(date)
 		if fandomSeason == "" {
