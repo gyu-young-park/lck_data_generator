@@ -80,27 +80,27 @@ type TempViewStruct struct {
 
 func (s *ServiceWithVideoStatistics) GetVideoStatistics(videoId string) (VideoStatisticsResponseModel, error) {
 	var videoStatistics VideoStatisticsResponseModel
-	// if videoId == "" {
-	// 	return videoStatistics, fmt.Errorf("Error videoId is not valid%v\n", videoId)
-	// }
-	// s.option.VideoId = videoId
-	// //url := fmt.Sprintf("https://www.googleapis.com/youtube/v3/playlists?channelId=%s&part=%s&key=%s&maxResults=%d&pageToken=%s"
-	// url := fmt.Sprintf("https://www.googleapis.com/youtube/v3/videos?id=%s&key=%s&part=%s",
-	// 	s.option.VideoId, s.option.Key, s.option.Part)
-	// res, err := http.Get(url)
-	// if err != nil {
-	// 	panic(err)
-	// }
-	// defer res.Body.Close()
-	// data, err := ioutil.ReadAll(res.Body)
-	// err = json.Unmarshal(data, &videoStatistics)
-	// if err != nil {
-	// 	panic(err)
-	// }
-	// if len(videoStatistics.Items) != 1 {
-	// 	return videoStatistics, fmt.Errorf("Error views are not valid%v\n", len(videoStatistics.Items))
-	// }
-	videoStatistics.Items = append(videoStatistics.Items, TempViewStruct{})
+	if videoId == "" {
+		return videoStatistics, fmt.Errorf("Error videoId is not valid%v\n", videoId)
+	}
+	s.option.VideoId = videoId
+	//url := fmt.Sprintf("https://www.googleapis.com/youtube/v3/playlists?channelId=%s&part=%s&key=%s&maxResults=%d&pageToken=%s"
+	url := fmt.Sprintf("https://www.googleapis.com/youtube/v3/videos?id=%s&key=%s&part=%s",
+		s.option.VideoId, s.option.Key, s.option.Part)
+	res, err := http.Get(url)
+	if err != nil {
+		panic(err)
+	}
+	defer res.Body.Close()
+	data, err := ioutil.ReadAll(res.Body)
+	err = json.Unmarshal(data, &videoStatistics)
+	if err != nil {
+		panic(err)
+	}
+	if len(videoStatistics.Items) != 1 {
+		return videoStatistics, fmt.Errorf("Error views are not valid%v\n", len(videoStatistics.Items))
+	}
+	// videoStatistics.Items = append(videoStatistics.Items, TempViewStruct{})
 	return videoStatistics, nil
 }
 

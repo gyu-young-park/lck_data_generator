@@ -199,11 +199,11 @@ func (app *App) makeMatchAndErrorList() (*repository.LCKMatchListModel, *reposit
 }
 
 func (app *App) removeAllDBSchema() {
-	// err := app.FirebaseApp.RemoveCollection("lck_match")
-	// if err != nil {
-	// 	fmt.Println(err)
-	// }
-	err := app.FirebaseApp.RemoveCollection("lck_season_with_team")
+	err := app.FirebaseApp.RemoveCollection("lck_match")
+	if err != nil {
+		fmt.Println(err)
+	}
+	err = app.FirebaseApp.RemoveCollection("lck_season_with_team")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -228,9 +228,9 @@ func (app *App) storeAllDataInFirebase(
 	teamList *team.TeamList,
 	seasonList *season.SeasonList,
 ) {
-	// for _, matchData := range matchList.Data {
-	// 	app.FirebaseApp.StoreDataWithDoc("lck_match", matchData.VideoId, firebaseapi.FireStoreDataSchema(structs.Map(matchData)))
-	// }
+	for _, matchData := range matchList.Data {
+		app.FirebaseApp.StoreDataWithDoc("lck_match", matchData.VideoId, firebaseapi.FireStoreDataSchema(structs.Map(matchData)))
+	}
 
 	for _, teamWithSeasonData := range teamListWithSeason.Data {
 		app.FirebaseApp.StoreDataWithDoc("lck_team_with_season", teamWithSeasonData.Season, firebaseapi.FireStoreDataSchema(structs.Map(teamWithSeasonData)))
@@ -333,8 +333,8 @@ func (app *App) Start() {
 	teamList := team.GenerateTeamList()
 	seasonList := season.GenerateSeasonList(matchList)
 
-	// app.removeAllDBSchema()
-	// app.storeAllDataInFirebase(matchList, teamListWithSeason, seasonListWithTeam, teamList, seasonList)
+	app.removeAllDBSchema()
+	app.storeAllDataInFirebase(matchList, teamListWithSeason, seasonListWithTeam, teamList, seasonList)
 	app.storeAllDataInJSONFile(matchList, errorMatchList, teamListWithSeason, seasonListWithTeam, teamList, seasonList)
 	app.server.StartServer()
 }
