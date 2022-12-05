@@ -2,186 +2,6 @@
 	"data": [
 		{
 			"error": true,
-			"playlist": "2021 LCK Spring Split 게임하이라이트",
-			"title": "X를 눌러 ZOE를 플레이 하시오. | 리브 샌박 vs. T1 Game2 H/L 02.21 | 2021 LCK Spring Split",
-			"video_id": "YpCZYKfz0uo",
-			"season": "2021 LCK Spring Split",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/YpCZYKfz0uo/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/YpCZYKfz0uo/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/YpCZYKfz0uo/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/YpCZYKfz0uo/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/YpCZYKfz0uo/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2021-02-21",
-			"published_at": 1613917291
-		},
-		{
-			"error": true,
-			"playlist": "2021 LCK Spring Split 게임하이라이트",
-			"title": "이거 누구 캐리야?? | 리브 샌박 vs. T1 Game1 H/L 02.21 | 2021 LCK Spring Split",
-			"video_id": "ZqW9f6yLE5g",
-			"season": "2021 LCK Spring Split",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/ZqW9f6yLE5g/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/ZqW9f6yLE5g/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/ZqW9f6yLE5g/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/ZqW9f6yLE5g/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/ZqW9f6yLE5g/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2021-02-21",
-			"published_at": 1613914431
-		},
-		{
-			"error": true,
-			"playlist": "2021 LCK Spring Split 게임하이라이트",
-			"title": "바 람용, 오 지네용 | 아프리카 vs. DRX Game2 H/L 02.21 | 2021 LCK Spring Split",
-			"video_id": "Y-kJrfp8Y8E",
-			"season": "2021 LCK Spring Split",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/Y-kJrfp8Y8E/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/Y-kJrfp8Y8E/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/Y-kJrfp8Y8E/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/Y-kJrfp8Y8E/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/Y-kJrfp8Y8E/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2021-02-21",
-			"published_at": 1613904987
-		},
-		{
-			"error": true,
-			"playlist": "2021 LCK Spring Split 게임하이라이트",
-			"title": "여기 붙어라 | 아프리카 vs. DRX Game1 H/L 02.21 | 2021 LCK Spring Split",
-			"video_id": "D3u9iC7sv4c",
-			"season": "2021 LCK Spring Split",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/D3u9iC7sv4c/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/D3u9iC7sv4c/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/D3u9iC7sv4c/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/D3u9iC7sv4c/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/D3u9iC7sv4c/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2021-02-21",
-			"published_at": 1613900205
-		},
-		{
-			"error": true,
 			"playlist": "[2019 스무살우리 LCK Spring] 세트하이라이트",
 			"title": "혈전의 끝! 승리의 아프리카! (젠지 vs 아프리카 하이라이트/19.01.24) [2019 LCK Spring]",
 			"video_id": "W_CI0gerrwA",
@@ -404,996 +224,6 @@
 			},
 			"date": "2019-01-24",
 			"published_at": 1548320124
-		},
-		{
-			"error": true,
-			"playlist": "2021 LCK Spring Split 게임하이라이트",
-			"title": "다이나믹 듀오 | 리브 샌박 vs. 젠지 Game2 H/L 01.30 | 2021 LCK Spring Split",
-			"video_id": "20V5MDiBQhw",
-			"season": "2021 LCK Spring Split",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/20V5MDiBQhw/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/20V5MDiBQhw/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/20V5MDiBQhw/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/20V5MDiBQhw/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/20V5MDiBQhw/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2021-01-30",
-			"published_at": 1612015610
-		},
-		{
-			"error": true,
-			"playlist": "2021 LCK Spring Split 게임하이라이트",
-			"title": "갈갈갈갈갈 | 프레딧 vs. DRX Game3 H/L 01.30 | 2021 LCK Spring Split",
-			"video_id": "L0meWxqtcaM",
-			"season": "2021 LCK Spring Split",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/L0meWxqtcaM/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/L0meWxqtcaM/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/L0meWxqtcaM/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/L0meWxqtcaM/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/L0meWxqtcaM/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2021-01-30",
-			"published_at": 1612006186
-		},
-		{
-			"error": true,
-			"playlist": "2021 LCK Spring Split 게임하이라이트",
-			"title": "유산균 폭발 | 프레딧 vs. DRX Game2 H/L 01.30 | 2021 LCK Spring Split",
-			"video_id": "EK7jcXaeaiA",
-			"season": "2021 LCK Spring Split",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/EK7jcXaeaiA/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/EK7jcXaeaiA/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/EK7jcXaeaiA/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/EK7jcXaeaiA/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/EK7jcXaeaiA/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2021-01-30",
-			"published_at": 1612002391
-		},
-		{
-			"error": true,
-			"playlist": "2021 LCK Spring Split 게임하이라이트",
-			"title": "합체진화 | 프레딧 vs. DRX Game1 H/L 01.30 | 2021 LCK Spring Split",
-			"video_id": "8x31bCjQ63Y",
-			"season": "2021 LCK Spring Split",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/8x31bCjQ63Y/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/8x31bCjQ63Y/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/8x31bCjQ63Y/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/8x31bCjQ63Y/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/8x31bCjQ63Y/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2021-01-30",
-			"published_at": 1611998753
-		},
-		{
-			"error": true,
-			"playlist": "Worlds 2021 LCK 게임 하이라이트",
-			"title": "태조 대 황 건 | HLE vs. BYG 게임 3 하이라이트 | Play-In Stage Day 5 | 10.09 | 2021 월드 챔피언십",
-			"video_id": "j4BTFj8kDqA",
-			"season": "Worlds 2021 LCK",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/j4BTFj8kDqA/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/j4BTFj8kDqA/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/j4BTFj8kDqA/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/j4BTFj8kDqA/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/j4BTFj8kDqA/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2021-10-09",
-			"published_at": 1633788257
-		},
-		{
-			"error": true,
-			"playlist": "Worlds 2021 LCK 게임 하이라이트",
-			"title": "시-원하다! | HLE vs. BYG 게임 2 하이라이트 | Play-In Stage Day 5 | 10.09 | 2021 월드 챔피언십",
-			"video_id": "dni7NHnSRHs",
-			"season": "Worlds 2021 LCK",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/dni7NHnSRHs/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/dni7NHnSRHs/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/dni7NHnSRHs/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/dni7NHnSRHs/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/dni7NHnSRHs/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2021-10-09",
-			"published_at": 1633785380
-		},
-		{
-			"error": true,
-			"playlist": "Worlds 2021 LCK 게임 하이라이트",
-			"title": "쵸. 쵸쵹. 쵹. 쵸초쵹. 쵸. 쵸비~~~~~~ | HLE vs. BYG 게임 1 하이라이트 | Play-In Stage Day 5 | 10.09 | 2021 월드 챔피언십",
-			"video_id": "u-ZigDsk48c",
-			"season": "Worlds 2021 LCK",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/u-ZigDsk48c/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/u-ZigDsk48c/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/u-ZigDsk48c/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/u-ZigDsk48c/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/u-ZigDsk48c/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2021-10-09",
-			"published_at": 1633784044
-		},
-		{
-			"error": true,
-			"playlist": "2021 LCK Spring Split 게임하이라이트",
-			"title": "아이캔빌리빗!! | 담원 기아 vs. DRX Game2 H/L 02.07 | 2021 LCK Spring Split",
-			"video_id": "6HBKWAxBbWA",
-			"season": "2021 LCK Spring Split",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/6HBKWAxBbWA/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/6HBKWAxBbWA/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/6HBKWAxBbWA/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/6HBKWAxBbWA/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/6HBKWAxBbWA/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2021-02-07",
-			"published_at": 1612702539
-		},
-		{
-			"error": true,
-			"playlist": "2021 LCK Spring Split 게임하이라이트",
-			"title": "😾 애옹 | 한화생명 vs. 리브 샌박 Game2 H/L 02.07 | 2021 LCK Spring Split",
-			"video_id": "_l1qMgBDXyY",
-			"season": "2021 LCK Spring Split",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/_l1qMgBDXyY/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/_l1qMgBDXyY/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/_l1qMgBDXyY/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/_l1qMgBDXyY/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/_l1qMgBDXyY/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2021-02-07",
-			"published_at": 1612692915
-		},
-		{
-			"error": true,
-			"playlist": "2021 LCK Spring Split 게임하이라이트",
-			"title": "LCKƆ˥ | 한화생명 vs. 리브 샌박 Game1 H/L 02.07 | 2021 LCK Spring Split",
-			"video_id": "M46vKjxjBbw",
-			"season": "2021 LCK Spring Split",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/M46vKjxjBbw/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/M46vKjxjBbw/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/M46vKjxjBbw/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/M46vKjxjBbw/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/M46vKjxjBbw/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2021-02-07",
-			"published_at": 1612690384
-		},
-		{
-			"error": true,
-			"playlist": "2020 월드 챔피언십 게임하이라이트",
-			"title": "LGC vs SUP | Play-In Stage Day4 H/L 09.28 | 2020 월드 챔피언십",
-			"video_id": "2YLvxW99v98",
-			"season": "2020 월드 챔피언십",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/2YLvxW99v98/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/2YLvxW99v98/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/2YLvxW99v98/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/2YLvxW99v98/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/2YLvxW99v98/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2020-09-28",
-			"published_at": 1601295897
-		},
-		{
-			"error": true,
-			"playlist": "2020 월드 챔피언십 게임하이라이트",
-			"title": "ITZ vs TL | Play-In Stage Day4 H/L 09.28 | 2020 월드 챔피언십",
-			"video_id": "QReT9bgTrM4",
-			"season": "2020 월드 챔피언십",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/QReT9bgTrM4/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/QReT9bgTrM4/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/QReT9bgTrM4/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/QReT9bgTrM4/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/QReT9bgTrM4/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2020-09-28",
-			"published_at": 1601291700
-		},
-		{
-			"error": true,
-			"playlist": "2020 월드 챔피언십 게임하이라이트",
-			"title": "MAD vs LGC | Play-In Stage Day4 H/L 09.28 | 2020 월드 챔피언십",
-			"video_id": "fbmxv5K3Eks",
-			"season": "2020 월드 챔피언십",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/fbmxv5K3Eks/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/fbmxv5K3Eks/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/fbmxv5K3Eks/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/fbmxv5K3Eks/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/fbmxv5K3Eks/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2020-09-28",
-			"published_at": 1601288123
-		},
-		{
-			"error": true,
-			"playlist": "2020 월드 챔피언십 게임하이라이트",
-			"title": "SUP vs TL | Play-In Stage Day4 H/L 09.28 | 2020 월드 챔피언십",
-			"video_id": "8xEhI-GkqSQ",
-			"season": "2020 월드 챔피언십",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/8xEhI-GkqSQ/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/8xEhI-GkqSQ/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/8xEhI-GkqSQ/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/8xEhI-GkqSQ/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/8xEhI-GkqSQ/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2020-09-28",
-			"published_at": 1601283981
-		},
-		{
-			"error": true,
-			"playlist": "[2019 스무살우리 LCK Spring] 세트하이라이트",
-			"title": "'LCK' 때이른 여름 모기에 극성 (SKT vs KT 하이라이트/19.03.14)[2019 LCK SPRING]",
-			"video_id": "pUBqSCeA3Zk",
-			"season": "2019 스무살우리 LCK Spring",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/pUBqSCeA3Zk/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/pUBqSCeA3Zk/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/pUBqSCeA3Zk/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/pUBqSCeA3Zk/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/pUBqSCeA3Zk/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2019-03-14",
-			"published_at": 1552568412
-		},
-		{
-			"error": true,
-			"playlist": "[2019 스무살우리 LCK Spring] 세트하이라이트",
-			"title": "'강' 그는 '드'인가 (SKT vs KT 하이라이트/19.03.14)[2019 LCK SPRING]",
-			"video_id": "JIrrAsQ73MA",
-			"season": "2019 스무살우리 LCK Spring",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/JIrrAsQ73MA/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/JIrrAsQ73MA/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/JIrrAsQ73MA/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/JIrrAsQ73MA/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/JIrrAsQ73MA/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2019-03-14",
-			"published_at": 1552564907
-		},
-		{
-			"error": true,
-			"playlist": "[2019 스무살우리 LCK Spring] 세트하이라이트",
-			"title": "승리에 빠진 자들을 사냥해 볼까? (그리핀 vs 젠지 하이라이트/19.03.14)[2019 LCK SPRING]",
-			"video_id": "Q-dozG6FM44",
-			"season": "2019 스무살우리 LCK Spring",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/Q-dozG6FM44/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/Q-dozG6FM44/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/Q-dozG6FM44/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/Q-dozG6FM44/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/Q-dozG6FM44/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2019-03-14",
-			"published_at": 1552558188
-		},
-		{
-			"error": true,
-			"playlist": "[2019 스무살우리 LCK Spring] 세트하이라이트",
-			"title": "그리핀 잡기 위한 비장의 무기!! 그것은 베인??? (그리핀 vs 젠지 하이라이트/19.03.14)[2019 LCK SPRING]",
-			"video_id": "7qxyP17O47o",
-			"season": "2019 스무살우리 LCK Spring",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/7qxyP17O47o/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/7qxyP17O47o/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/7qxyP17O47o/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/7qxyP17O47o/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/7qxyP17O47o/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2019-03-14",
-			"published_at": 1552554296
-		},
-		{
-			"error": true,
-			"playlist": "2022 LCK 스프링 게임 하이라이트",
-			"title": "Perfect Split | T1 vs. DRX  게임2 하이라이트 | 03.20 | 2022 LCK 스프링 스플릿",
-			"video_id": "MsaLsfcLRNY",
-			"season": "2022 LCK 스프링",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/MsaLsfcLRNY/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/MsaLsfcLRNY/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/MsaLsfcLRNY/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/MsaLsfcLRNY/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/MsaLsfcLRNY/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2022-03-20",
-			"published_at": 1647774540
-		},
-		{
-			"error": true,
-			"playlist": "2022 LCK 스프링 게임 하이라이트",
-			"title": "ㅈㅇㅅ | T1 vs. DRX  게임1 하이라이트 | 03.20 | 2022 LCK 스프링 스플릿",
-			"video_id": "VeMmwc1FYUw",
-			"season": "2022 LCK 스프링",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/VeMmwc1FYUw/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/VeMmwc1FYUw/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/VeMmwc1FYUw/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/VeMmwc1FYUw/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/VeMmwc1FYUw/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2022-03-20",
-			"published_at": 1647771389
-		},
-		{
-			"error": true,
-			"playlist": "2022 LCK 스프링 게임 하이라이트",
-			"title": "오직 스케이트 생각뿐이었다... | 광동 vs. 리브 샌박 게임2 하이라이트 | 03.20 | 2022 LCK 스프링 스플릿",
-			"video_id": "HvBRnS112HI",
-			"season": "2022 LCK 스프링",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/HvBRnS112HI/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/HvBRnS112HI/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/HvBRnS112HI/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/HvBRnS112HI/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/HvBRnS112HI/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2022-03-20",
-			"published_at": 1647764081
-		},
-		{
-			"error": true,
-			"playlist": "2022 LCK 스프링 게임 하이라이트",
-			"title": "스팀팩 | 광동 vs. 리브 샌박 게임1 하이라이트 | 03.20 | 2022 LCK 스프링 스플릿",
-			"video_id": "oX1h_zP7ZZs",
-			"season": "2022 LCK 스프링",
-			"team1": "",
-			"outcome1": "",
-			"team2": "",
-			"outcome2": "",
-			"team_list": null,
-			"result_list": null,
-			"win_team": "",
-			"lose_team": "",
-			"views": "",
-			"thumbnails": {
-				"default": {
-					"url": "https://i.ytimg.com/vi/oX1h_zP7ZZs/default.jpg",
-					"width": 120,
-					"height": 90
-				},
-				"medium": {
-					"url": "https://i.ytimg.com/vi/oX1h_zP7ZZs/mqdefault.jpg",
-					"width": 320,
-					"height": 180
-				},
-				"high": {
-					"url": "https://i.ytimg.com/vi/oX1h_zP7ZZs/hqdefault.jpg",
-					"width": 480,
-					"height": 360
-				},
-				"standard": {
-					"url": "https://i.ytimg.com/vi/oX1h_zP7ZZs/sddefault.jpg",
-					"width": 640,
-					"height": 480
-				},
-				"maxres": {
-					"url": "https://i.ytimg.com/vi/oX1h_zP7ZZs/maxresdefault.jpg",
-					"width": 1280,
-					"height": 720
-				}
-			},
-			"date": "2022-03-20",
-			"published_at": 1647760561
 		},
 		{
 			"error": true,
@@ -1754,6 +584,321 @@
 			},
 			"date": "2020-09-27",
 			"published_at": 1601198580
+		},
+		{
+			"error": true,
+			"playlist": "Worlds 2021 LCK 게임 하이라이트",
+			"title": "태조 대 황 건 | HLE vs. BYG 게임 3 하이라이트 | Play-In Stage Day 5 | 10.09 | 2021 월드 챔피언십",
+			"video_id": "j4BTFj8kDqA",
+			"season": "Worlds 2021 LCK",
+			"team1": "",
+			"outcome1": "",
+			"team2": "",
+			"outcome2": "",
+			"team_list": null,
+			"result_list": null,
+			"win_team": "",
+			"lose_team": "",
+			"views": "",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/j4BTFj8kDqA/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/j4BTFj8kDqA/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/j4BTFj8kDqA/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/j4BTFj8kDqA/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/j4BTFj8kDqA/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"date": "2021-10-09",
+			"published_at": 1633788257
+		},
+		{
+			"error": true,
+			"playlist": "Worlds 2021 LCK 게임 하이라이트",
+			"title": "시-원하다! | HLE vs. BYG 게임 2 하이라이트 | Play-In Stage Day 5 | 10.09 | 2021 월드 챔피언십",
+			"video_id": "dni7NHnSRHs",
+			"season": "Worlds 2021 LCK",
+			"team1": "",
+			"outcome1": "",
+			"team2": "",
+			"outcome2": "",
+			"team_list": null,
+			"result_list": null,
+			"win_team": "",
+			"lose_team": "",
+			"views": "",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/dni7NHnSRHs/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/dni7NHnSRHs/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/dni7NHnSRHs/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/dni7NHnSRHs/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/dni7NHnSRHs/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"date": "2021-10-09",
+			"published_at": 1633785380
+		},
+		{
+			"error": true,
+			"playlist": "Worlds 2021 LCK 게임 하이라이트",
+			"title": "쵸. 쵸쵹. 쵹. 쵸초쵹. 쵸. 쵸비~~~~~~ | HLE vs. BYG 게임 1 하이라이트 | Play-In Stage Day 5 | 10.09 | 2021 월드 챔피언십",
+			"video_id": "u-ZigDsk48c",
+			"season": "Worlds 2021 LCK",
+			"team1": "",
+			"outcome1": "",
+			"team2": "",
+			"outcome2": "",
+			"team_list": null,
+			"result_list": null,
+			"win_team": "",
+			"lose_team": "",
+			"views": "",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/u-ZigDsk48c/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/u-ZigDsk48c/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/u-ZigDsk48c/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/u-ZigDsk48c/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/u-ZigDsk48c/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"date": "2021-10-09",
+			"published_at": 1633784044
+		},
+		{
+			"error": true,
+			"playlist": "2020 월드 챔피언십 게임하이라이트",
+			"title": "LGC vs SUP | Play-In Stage Day4 H/L 09.28 | 2020 월드 챔피언십",
+			"video_id": "2YLvxW99v98",
+			"season": "2020 월드 챔피언십",
+			"team1": "",
+			"outcome1": "",
+			"team2": "",
+			"outcome2": "",
+			"team_list": null,
+			"result_list": null,
+			"win_team": "",
+			"lose_team": "",
+			"views": "",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/2YLvxW99v98/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/2YLvxW99v98/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/2YLvxW99v98/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/2YLvxW99v98/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/2YLvxW99v98/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"date": "2020-09-28",
+			"published_at": 1601295897
+		},
+		{
+			"error": true,
+			"playlist": "2020 월드 챔피언십 게임하이라이트",
+			"title": "ITZ vs TL | Play-In Stage Day4 H/L 09.28 | 2020 월드 챔피언십",
+			"video_id": "QReT9bgTrM4",
+			"season": "2020 월드 챔피언십",
+			"team1": "",
+			"outcome1": "",
+			"team2": "",
+			"outcome2": "",
+			"team_list": null,
+			"result_list": null,
+			"win_team": "",
+			"lose_team": "",
+			"views": "",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/QReT9bgTrM4/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/QReT9bgTrM4/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/QReT9bgTrM4/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/QReT9bgTrM4/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/QReT9bgTrM4/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"date": "2020-09-28",
+			"published_at": 1601291700
+		},
+		{
+			"error": true,
+			"playlist": "2020 월드 챔피언십 게임하이라이트",
+			"title": "MAD vs LGC | Play-In Stage Day4 H/L 09.28 | 2020 월드 챔피언십",
+			"video_id": "fbmxv5K3Eks",
+			"season": "2020 월드 챔피언십",
+			"team1": "",
+			"outcome1": "",
+			"team2": "",
+			"outcome2": "",
+			"team_list": null,
+			"result_list": null,
+			"win_team": "",
+			"lose_team": "",
+			"views": "",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/fbmxv5K3Eks/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/fbmxv5K3Eks/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/fbmxv5K3Eks/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/fbmxv5K3Eks/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/fbmxv5K3Eks/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"date": "2020-09-28",
+			"published_at": 1601288123
+		},
+		{
+			"error": true,
+			"playlist": "2020 월드 챔피언십 게임하이라이트",
+			"title": "SUP vs TL | Play-In Stage Day4 H/L 09.28 | 2020 월드 챔피언십",
+			"video_id": "8xEhI-GkqSQ",
+			"season": "2020 월드 챔피언십",
+			"team1": "",
+			"outcome1": "",
+			"team2": "",
+			"outcome2": "",
+			"team_list": null,
+			"result_list": null,
+			"win_team": "",
+			"lose_team": "",
+			"views": "",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/8xEhI-GkqSQ/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/8xEhI-GkqSQ/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/8xEhI-GkqSQ/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/8xEhI-GkqSQ/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/8xEhI-GkqSQ/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"date": "2020-09-28",
+			"published_at": 1601283981
 		}
 	],
 	"error": ""

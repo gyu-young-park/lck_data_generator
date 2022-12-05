@@ -1,68 +1,22 @@
 {
 	"data": [
 		{
-			"team": "JD Gaming",
+			"team": "Hong Kong Attitude",
 			"seasons": [
-				"2020 월드 챔피언십",
-				"Worlds 2022 LCK",
-				"2020 LoL 미드 시즌 컵"
-			]
-		},
-		{
-			"team": "Suning",
-			"seasons": [
-				"2020 월드 챔피언십"
-			]
-		},
-		{
-			"team": "G2 Esports",
-			"seasons": [
-				"2020 월드 챔피언십",
-				"2022 MSI LCK",
 				"2019 Worlds Championship"
-			]
-		},
-		{
-			"team": "TSM",
-			"seasons": [
-				"2020 월드 챔피언십"
-			]
-		},
-		{
-			"team": "Fredit BRION",
-			"seasons": [
-				"2022 LCK 스프링",
-				"2022 LCK 서머 스플릿",
-				"2021 LCK 서머",
-				"2021 LCK Spring Split"
-			]
-		},
-		{
-			"team": "FunPlus Phoenix",
-			"seasons": [
-				"2019 Worlds Championship",
-				"2020 LoL 미드 시즌 컵"
-			]
-		},
-		{
-			"team": "Jin Air",
-			"seasons": [
-				"2019 우리은행 LCK Summer",
-				"2019 스무살우리 LCK Spring",
-				"2019 LCK Summer 승강전",
-				"2020 LCK 스프링 승강전"
 			]
 		},
 		{
 			"team": "Team Liquid",
 			"seasons": [
-				"2020 월드 챔피언십",
-				"2019 Worlds Championship"
+				"2019 Worlds Championship",
+				"2020 월드 챔피언십"
 			]
 		},
 		{
-			"team": "SuperMassive Esports",
+			"team": "Fnatic",
 			"seasons": [
+				"2019 Worlds Championship",
 				"2020 월드 챔피언십"
 			]
 		},
@@ -70,137 +24,6 @@
 			"team": "INTZ",
 			"seasons": [
 				"2020 월드 챔피언십"
-			]
-		},
-		{
-			"team": "Lowkey Esports.Vietnam",
-			"seasons": [
-				"2019 Worlds Championship"
-			]
-		},
-		{
-			"team": "MEGA",
-			"seasons": [
-				"2019 Worlds Championship"
-			]
-		},
-		{
-			"team": "Invictus Gaming",
-			"seasons": [
-				"2020 LoL 미드 시즌 컵",
-				"2019 Worlds Championship"
-			]
-		},
-		{
-			"team": "Isurus",
-			"seasons": [
-				"2019 Worlds Championship"
-			]
-		},
-		{
-			"team": "J Team",
-			"seasons": [
-				"2019 Worlds Championship"
-			]
-		},
-		{
-			"team": "Seorabeol Gaming",
-			"seasons": [
-				"2020 LCK 서머 승강전"
-			]
-		},
-		{
-			"team": "Hong Kong Attitude",
-			"seasons": [
-				"2019 Worlds Championship"
-			]
-		},
-		{
-			"team": "Royal Youth",
-			"seasons": [
-				"2019 Worlds Championship"
-			]
-		},
-		{
-			"team": "T1",
-			"seasons": [
-				"2021 LCK 서머",
-				"2019 스무살우리 LCK Spring",
-				"2019 Worlds Championship",
-				"2022 LCK 서머 스플릿",
-				"Worlds 2022 LCK",
-				"Worlds 2021 LCK",
-				"2019 우리은행 LCK Summer",
-				"2022 LCK 스프링",
-				"2020 LCK 스프링",
-				"2020 LCK 서머",
-				"2022 MSI LCK",
-				"2021 Worlds LCK 대표 선발전",
-				"2021 LCK Spring Split",
-				"2020 LoL 월드 챔피언십 LCK 선발전",
-				"2020 LoL 미드 시즌 컵"
-			]
-		},
-		{
-			"team": "EDward Gaming",
-			"seasons": [
-				"Worlds 2022 LCK",
-				"Worlds 2021 LCK"
-			]
-		},
-		{
-			"team": "MAMMOTH",
-			"seasons": [
-				"2019 Worlds Championship"
-			]
-		},
-		{
-			"team": "PSG Talon",
-			"seasons": [
-				"2020 월드 챔피언십"
-			]
-		},
-		{
-			"team": "ahq eSports Club",
-			"seasons": [
-				"2019 Worlds Championship"
-			]
-		},
-		{
-			"team": "Rogue (European Team)",
-			"seasons": [
-				"2020 월드 챔피언십"
-			]
-		},
-		{
-			"team": "Machi Esports",
-			"seasons": [
-				"2020 월드 챔피언십"
-			]
-		},
-		{
-			"team": "Cloud9",
-			"seasons": [
-				"2019 Worlds Championship",
-				"Worlds 2021 LCK"
-			]
-		},
-		{
-			"team": "GEN.G",
-			"seasons": [
-				"2021 LCK 서머",
-				"2022 LCK 서머 스플릿",
-				"Worlds 2022 LCK",
-				"2020 월드 챔피언십",
-				"2020 LoL 월드 챔피언십 LCK 선발전",
-				"2020 LCK 서머",
-				"2019 우리은행 LCK Summer",
-				"2022 LCK 스프링",
-				"Worlds 2021 LCK",
-				"2020 LoL 미드 시즌 컵",
-				"2021 LCK Spring Split",
-				"2020 LCK 스프링",
-				"2019 스무살우리 LCK Spring"
 			]
 		},
 		{
@@ -212,57 +35,101 @@
 			]
 		},
 		{
-			"team": "Legacy Esports",
-			"seasons": [
-				"2020 월드 챔피언십"
-			]
-		},
-		{
-			"team": "ES Sharks",
-			"seasons": [
-				"2019 LCK Summer 승강전"
-			]
-		},
-		{
-			"team": "VSG (Korean Team)",
-			"seasons": [
-				"2019 LCK Summer 승강전"
-			]
-		},
-		{
-			"team": "Liiv Sandbox",
-			"seasons": [
-				"2022 LCK 스프링",
-				"2019 우리은행 LCK Summer",
-				"2022 LCK 서머 스플릿",
-				"2021 LCK 서머",
-				"2020 LCK 스프링",
-				"2019 LoL 월드 챔피언십 한국 대표 선발전",
-				"2020 LCK 서머",
-				"2021 LCK Spring Split",
-				"2019 스무살우리 LCK Spring",
-				"2021 Worlds LCK 대표 선발전",
-				"2020 LCK 서머 승강전",
-				"2022 LCK 대표 선발전"
-			]
-		},
-		{
-			"team": "Royal Never Give Up",
-			"seasons": [
-				"Worlds 2022 LCK",
-				"2021 MSI",
-				"2019 Worlds Championship",
-				"2022 MSI LCK"
-			]
-		},
-		{
-			"team": "Clutch Gaming",
+			"team": "Flamengo Esports",
 			"seasons": [
 				"2019 Worlds Championship"
 			]
 		},
 		{
-			"team": "LGD Gaming",
+			"team": "Seorabeol Gaming",
+			"seasons": [
+				"2020 LCK 서머 승강전"
+			]
+		},
+		{
+			"team": "J Team",
+			"seasons": [
+				"2019 Worlds Championship"
+			]
+		},
+		{
+			"team": "Hanwha Life",
+			"seasons": [
+				"Worlds 2021 LCK",
+				"2022 LCK 서머 스플릿",
+				"2020 LCK 서머",
+				"2021 LCK Spring Split",
+				"2020 LCK 스프링 승강전",
+				"2022 LCK 스프링",
+				"2021 Worlds LCK 대표 선발전",
+				"2019 스무살우리 LCK Spring",
+				"2021 LCK 서머",
+				"2020 LCK 스프링",
+				"2019 우리은행 LCK Summer"
+			]
+		},
+		{
+			"team": "T1",
+			"seasons": [
+				"2022 MSI LCK",
+				"2021 Worlds LCK 대표 선발전",
+				"2019 우리은행 LCK Summer",
+				"Worlds 2022 LCK",
+				"2019 스무살우리 LCK Spring",
+				"2019 Worlds Championship",
+				"Worlds 2021 LCK",
+				"2021 LCK 서머",
+				"2022 LCK 스프링",
+				"2021 LCK Spring Split",
+				"2020 LCK 서머",
+				"2020 LoL 월드 챔피언십 LCK 선발전",
+				"2020 LoL 미드 시즌 컵",
+				"2022 LCK 서머 스플릿",
+				"2020 LCK 스프링"
+			]
+		},
+		{
+			"team": "DRX",
+			"seasons": [
+				"2020 월드 챔피언십",
+				"2019 LoL 월드 챔피언십 한국 대표 선발전",
+				"2021 LCK Spring Split",
+				"2021 LCK 서머",
+				"2020 LCK 스프링",
+				"2020 LCK 서머",
+				"2022 LCK 대표 선발전",
+				"2020 LoL 미드 시즌 컵",
+				"2022 LCK 스프링",
+				"2019 스무살우리 LCK Spring",
+				"2019 우리은행 LCK Summer",
+				"Worlds 2022 LCK",
+				"2022 LCK 서머 스플릿"
+			]
+		},
+		{
+			"team": "Griffin",
+			"seasons": [
+				"2019 스무살우리 LCK Spring",
+				"2020 LCK 스프링",
+				"2019 우리은행 LCK Summer",
+				"2019 Worlds Championship",
+				"2020 LCK 서머 승강전"
+			]
+		},
+		{
+			"team": "GAM Esports",
+			"seasons": [
+				"2019 Worlds Championship"
+			]
+		},
+		{
+			"team": "Isurus",
+			"seasons": [
+				"2019 Worlds Championship"
+			]
+		},
+		{
+			"team": "Machi Esports",
 			"seasons": [
 				"2020 월드 챔피언십"
 			]
@@ -274,66 +141,31 @@
 			]
 		},
 		{
-			"team": "Flamengo Esports",
+			"team": "MAMMOTH",
 			"seasons": [
 				"2019 Worlds Championship"
 			]
 		},
 		{
-			"team": "Hanwha Life",
+			"team": "GEN.G",
 			"seasons": [
 				"2021 LCK Spring Split",
+				"Worlds 2022 LCK",
+				"2020 LCK 스프링",
 				"2020 LCK 서머",
-				"2021 Worlds LCK 대표 선발전",
-				"2019 스무살우리 LCK Spring",
-				"2021 LCK 서머",
-				"2020 LCK 스프링 승강전",
 				"Worlds 2021 LCK",
-				"2019 우리은행 LCK Summer",
 				"2022 LCK 스프링",
-				"2022 LCK 서머 스플릿",
-				"2020 LCK 스프링"
-			]
-		},
-		{
-			"team": "KT Rolster",
-			"seasons": [
-				"2022 LCK 대표 선발전",
 				"2019 스무살우리 LCK Spring",
 				"2022 LCK 서머 스플릿",
+				"2020 월드 챔피언십",
 				"2020 LoL 월드 챔피언십 LCK 선발전",
 				"2021 LCK 서머",
-				"2020 LCK 스프링",
-				"2021 LCK Spring Split",
-				"2019 LCK Summer 승강전",
-				"2020 LCK 서머",
-				"2022 LCK 스프링",
-				"2019 우리은행 LCK Summer"
-			]
-		},
-		{
-			"team": "DK",
-			"seasons": [
 				"2019 우리은행 LCK Summer",
-				"2022 LCK 스프링",
-				"2019 Worlds Championship",
-				"2021 MSI",
-				"Worlds 2021 LCK",
-				"2019 LoL 월드 챔피언십 한국 대표 선발전",
-				"2022 LCK 대표 선발전",
-				"2020 LoL 미드 시즌 컵",
-				"2021 LCK Spring Split",
-				"2020 LCK 스프링",
-				"2022 LCK 서머 스플릿",
-				"2019 스무살우리 LCK Spring",
-				"2021 LCK 서머",
-				"2020 월드 챔피언십",
-				"Worlds 2022 LCK",
-				"2020 LCK 서머"
+				"2020 LoL 미드 시즌 컵"
 			]
 		},
 		{
-			"team": "GAM Esports",
+			"team": "MEGA",
 			"seasons": [
 				"2019 Worlds Championship"
 			]
@@ -346,82 +178,178 @@
 			]
 		},
 		{
+			"team": "PSG Talon",
+			"seasons": [
+				"2020 월드 챔피언십"
+			]
+		},
+		{
+			"team": "Invictus Gaming",
+			"seasons": [
+				"2019 Worlds Championship",
+				"2020 LoL 미드 시즌 컵"
+			]
+		},
+		{
+			"team": "Suning",
+			"seasons": [
+				"2020 월드 챔피언십"
+			]
+		},
+		{
+			"team": "Kwangdong Freecs",
+			"seasons": [
+				"2019 스무살우리 LCK Spring",
+				"2019 우리은행 LCK Summer",
+				"2021 LCK 서머",
+				"2022 LCK 서머 스플릿",
+				"2022 LCK 스프링",
+				"2020 LCK 스프링",
+				"2020 LCK 서머",
+				"2020 LoL 월드 챔피언십 LCK 선발전",
+				"2019 LoL 월드 챔피언십 한국 대표 선발전",
+				"2021 LCK Spring Split"
+			]
+		},
+		{
+			"team": "Jin Air",
+			"seasons": [
+				"2019 우리은행 LCK Summer",
+				"2020 LCK 스프링 승강전",
+				"2019 스무살우리 LCK Spring",
+				"2019 LCK Summer 승강전"
+			]
+		},
+		{
+			"team": "JD Gaming",
+			"seasons": [
+				"Worlds 2022 LCK",
+				"2020 월드 챔피언십",
+				"2020 LoL 미드 시즌 컵"
+			]
+		},
+		{
+			"team": "Royal Never Give Up",
+			"seasons": [
+				"2022 MSI LCK",
+				"2019 Worlds Championship",
+				"Worlds 2022 LCK",
+				"2021 MSI"
+			]
+		},
+		{
+			"team": "Legacy Esports",
+			"seasons": [
+				"2020 월드 챔피언십"
+			]
+		},
+		{
+			"team": "EDward Gaming",
+			"seasons": [
+				"Worlds 2022 LCK",
+				"Worlds 2021 LCK"
+			]
+		},
+		{
+			"team": "VSG (Korean Team)",
+			"seasons": [
+				"2019 LCK Summer 승강전"
+			]
+		},
+		{
+			"team": "DK",
+			"seasons": [
+				"2022 LCK 서머 스플릿",
+				"2020 월드 챔피언십",
+				"2020 LCK 스프링",
+				"2019 우리은행 LCK Summer",
+				"Worlds 2021 LCK",
+				"2022 LCK 스프링",
+				"Worlds 2022 LCK",
+				"2020 LoL 미드 시즌 컵",
+				"2019 스무살우리 LCK Spring",
+				"2022 LCK 대표 선발전",
+				"2019 LoL 월드 챔피언십 한국 대표 선발전",
+				"2019 Worlds Championship",
+				"2021 LCK 서머",
+				"2021 LCK Spring Split",
+				"2020 LCK 서머",
+				"2021 MSI"
+			]
+		},
+		{
+			"team": "Lowkey Esports.Vietnam",
+			"seasons": [
+				"2019 Worlds Championship"
+			]
+		},
+		{
+			"team": "FunPlus Phoenix",
+			"seasons": [
+				"2020 LoL 미드 시즌 컵",
+				"2019 Worlds Championship"
+			]
+		},
+		{
 			"team": "Splyce",
 			"seasons": [
 				"2019 Worlds Championship"
 			]
 		},
 		{
-			"team": "DetonatioN FocusMe",
+			"team": "Rainbow7",
 			"seasons": [
-				"2019 Worlds Championship"
+				"2020 월드 챔피언십"
 			]
 		},
 		{
-			"team": "Fnatic",
+			"team": "TSM",
 			"seasons": [
-				"2019 Worlds Championship",
 				"2020 월드 챔피언십"
 			]
 		},
 		{
 			"team": "NS RED FORCE",
 			"seasons": [
-				"2019 Worlds Championship",
-				"2020 LCK 서머 승강전",
-				"2020 월드 챔피언십",
-				"2021 Worlds LCK 대표 선발전",
-				"2021 MSI",
-				"2020 LCK 서머",
-				"2021 LCK Spring Split",
 				"2022 LCK 스프링",
-				"2022 LCK 서머 스플릿",
 				"2021 LCK 서머",
+				"2020 LCK 서머",
+				"2022 LCK 서머 스플릿",
 				"Worlds 2021 LCK",
+				"2021 Worlds LCK 대표 선발전",
+				"2021 LCK Spring Split",
+				"2021 MSI",
+				"2020 LCK 서머 승강전",
+				"2019 Worlds Championship",
+				"2020 월드 챔피언십",
 				"2020 LCK 스프링 승강전"
 			]
 		},
 		{
-			"team": "DRX",
+			"team": "Fredit BRION",
 			"seasons": [
-				"2021 LCK Spring Split",
-				"2021 LCK 서머",
-				"2019 스무살우리 LCK Spring",
-				"2020 LCK 서머",
 				"2022 LCK 서머 스플릿",
-				"2020 LCK 스프링",
-				"2019 LoL 월드 챔피언십 한국 대표 선발전",
-				"2020 월드 챔피언십",
-				"2019 우리은행 LCK Summer",
-				"Worlds 2022 LCK",
+				"2021 LCK Spring Split",
 				"2022 LCK 스프링",
-				"2022 LCK 대표 선발전",
-				"2020 LoL 미드 시즌 컵"
+				"2021 LCK 서머"
 			]
 		},
 		{
-			"team": "Griffin",
+			"team": "ahq eSports Club",
 			"seasons": [
-				"2019 우리은행 LCK Summer",
-				"2020 LCK 스프링",
-				"2019 스무살우리 LCK Spring",
-				"2020 LCK 서머 승강전",
 				"2019 Worlds Championship"
 			]
 		},
 		{
-			"team": "Kwangdong Freecs",
+			"team": "ES Sharks",
 			"seasons": [
-				"2021 LCK Spring Split",
-				"2019 스무살우리 LCK Spring",
-				"2021 LCK 서머",
-				"2020 LCK 스프링",
-				"2019 우리은행 LCK Summer",
-				"2022 LCK 스프링",
-				"2022 LCK 서머 스플릿",
-				"2020 LCK 서머",
-				"2020 LoL 월드 챔피언십 LCK 선발전",
-				"2019 LoL 월드 챔피언십 한국 대표 선발전"
+				"2019 LCK Summer 승강전"
+			]
+		},
+		{
+			"team": "LGD Gaming",
+			"seasons": [
+				"2020 월드 챔피언십"
 			]
 		},
 		{
@@ -431,9 +359,81 @@
 			]
 		},
 		{
-			"team": "Rainbow7",
+			"team": "KT Rolster",
+			"seasons": [
+				"2019 스무살우리 LCK Spring",
+				"2021 LCK Spring Split",
+				"2020 LCK 스프링",
+				"2020 LCK 서머",
+				"2021 LCK 서머",
+				"2019 LCK Summer 승강전",
+				"2020 LoL 월드 챔피언십 LCK 선발전",
+				"2022 LCK 서머 스플릿",
+				"2019 우리은행 LCK Summer",
+				"2022 LCK 스프링",
+				"2022 LCK 대표 선발전"
+			]
+		},
+		{
+			"team": "Royal Youth",
+			"seasons": [
+				"2019 Worlds Championship"
+			]
+		},
+		{
+			"team": "G2 Esports",
+			"seasons": [
+				"2020 월드 챔피언십",
+				"2019 Worlds Championship",
+				"2022 MSI LCK"
+			]
+		},
+		{
+			"team": "Clutch Gaming",
+			"seasons": [
+				"2019 Worlds Championship"
+			]
+		},
+		{
+			"team": "SuperMassive Esports",
 			"seasons": [
 				"2020 월드 챔피언십"
+			]
+		},
+		{
+			"team": "Liiv Sandbox",
+			"seasons": [
+				"2020 LCK 서머 승강전",
+				"2019 LoL 월드 챔피언십 한국 대표 선발전",
+				"2022 LCK 대표 선발전",
+				"2019 스무살우리 LCK Spring",
+				"2019 우리은행 LCK Summer",
+				"2022 LCK 스프링",
+				"2020 LCK 서머",
+				"2020 LCK 스프링",
+				"2021 Worlds LCK 대표 선발전",
+				"2021 LCK Spring Split",
+				"2022 LCK 서머 스플릿",
+				"2021 LCK 서머"
+			]
+		},
+		{
+			"team": "Cloud9",
+			"seasons": [
+				"2019 Worlds Championship",
+				"Worlds 2021 LCK"
+			]
+		},
+		{
+			"team": "Rogue (European Team)",
+			"seasons": [
+				"2020 월드 챔피언십"
+			]
+		},
+		{
+			"team": "DetonatioN FocusMe",
+			"seasons": [
+				"2019 Worlds Championship"
 			]
 		}
 	],

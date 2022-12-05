@@ -37,8 +37,8 @@ func setOmittedVideoCalibrateTable(crawlerMode string) {
 		fmt.Println("[setOmittedVideoCalibrateTable]Err:", err)
 		return
 	}
-	for _, caliData := range caliVideoDataList.Data {
-		omittedVideoCalibrateTable[caliData.Date] = &caliData
+	for i, _ := range caliVideoDataList.Data {
+		omittedVideoCalibrateTable[caliVideoDataList.Data[i].Date] = &caliVideoDataList.Data[i]
 	}
 }
 
